@@ -1,5 +1,9 @@
 <?xml version='1.0' encoding='utf-8'?>
 
+<meta http-equiv='cache-control' content='no-cache'> 
+<meta http-equiv='expires' content='0'> 
+<meta http-equiv='pragma' content='no-cache'>
+
 <pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
 
   <docinfo>
@@ -55,7 +59,7 @@
     </frontmatter>
 
     <chapter xml:id="chapter-title">
-      <title>Chapter title</title>
+      <title>Limits</title>
 
       <section xml:id="section-title">
         <title>Section title</title>
