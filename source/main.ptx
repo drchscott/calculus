@@ -15,7 +15,7 @@
     </latex-image-preamble>
   </docinfo>
 
-  <book xml:id="calculus book">
+  <book xml:id="Lean Calculus">
     <title>Lean Calculus</title>
     <!-- <subtitle>An example to get you started</subtitle> -->
 
@@ -39,6 +39,7 @@
         <p>For future development, the plan is to flesh out the text by providing incremental introduction of Python / Sage coding so that students learn basic 3rd generation coding principles while also providing themselves the tools to visualize the core concepts in action via many of the powerful anciliary ideas including applications to many scientific disciplines</p>
       </preface>
 
+      <!--
       <colophon>
         <website>
           <name>
@@ -55,6 +56,7 @@
           </shortlicense>
         </copyright>
       </colophon>
+      -->
 
     </frontmatter>
 
