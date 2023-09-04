@@ -11,24 +11,31 @@
     </latex-image-preamble>
   </docinfo>
 
-  <book xml:id="my-great-book">
-    <title>My Great Book</title>
-    <subtitle>An example to get you started</subtitle>
+  <book xml:id="calculus book">
+    <title>Lean Calculus</title>
+    <!-- <subtitle>An example to get you started</subtitle> -->
 
     <frontmatter xml:id="frontmatter">
       <titlepage>
         <author>
-          <personname>You</personname>
-          <department>Your department</department>
-          <institution>Your institution</institution>
+          <personname>Dr. Chad Scott</personname>
+          <department>Mathematics and Computer Science Department</department>
+          <institution>University of Wisconsin - Superior</institution>
         </author>
         <date>
           <today />
         </date>
       </titlepage>
 
-      <colophon>
+      <preface xml:id="preface">
+        <p>The purpose of this text is to provide a distinctly lean presentation of traditional Calculus 1 material.</p>
 
+        <p>The philosophy here is, in brief, that the core ideas of limit > derivative > integral are easy to understand and that understanding them happens for the largest audience by keeping the matter as direct and uncluttered as possible.  Further, anciliary concepts can be easily picked up once that core is in place and consequencly should not be presented initially since they clutter the presentation and produce possible distraction that reduces the chance that the critical core is understood. </p>
+
+        <p>For future development, the plan is to flesh out the text by providing incremental introduction of Python / Sage coding so that students learn basic 3rd generation coding principles while also providing themselves the tools to visualize the core concepts in action via many of the powerful anciliary ideas including applications to many scientific disciplines</p>
+      </preface>
+
+      <colophon>
         <website>
           <name>
             <c>example.org</c>
@@ -44,6 +51,7 @@
           </shortlicense>
         </copyright>
       </colophon>
+
     </frontmatter>
 
     <chapter xml:id="chapter-title">
