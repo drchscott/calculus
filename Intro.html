@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lean Calculus</title>
+<title>The Main Idea and Associated Language</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="Limits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -221,20 +221,58 @@ window.MathJax = {
 </li>
 <li>
 <div class="toc-item"><a href="Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="Introduction.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Introduction</span></a></div></li>
-<li><div class="toc-item"><a href="basicLimitProps.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Basic Limit Properties</span></a></div></li>
-</ul>
+<ul class="structural"><li class="active"><div class="toc-item"><a href="Intro.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Main Idea and Associated Language</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="Topic-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Next Topic</span></a></div></li>
+<li><div class="toc-item"><a href="Topic-4.html" class="internal"><span class="codenumber">4</span> <span class="title">Next Topic</span></a></div></li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="Lean-Calculus"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></li>
-<li><a href="Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></li>
-<li><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></li>
-</ul></nav></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="Intro"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">The Main Idea and Associated Language</span>
+</h2>
+<div class="para" id="p-4">Consider the function</div>
+<div class="para logical" id="p-5"><div class="displaymath process-math">
+\begin{equation*}
+sin(x)/x
+\end{equation*}
+</div></div>
+<div class="para" id="p-6">Notice that this function can’t be evaluated at x=0 (i.e. 0 is not in its domain.)  But, we could compute it for values of x *close* to 0.  For example, consider the following table for sin(x)/x.</div>
+<div class="para" id="p-7"><div class="tabular-box natural-width"><table class="tabular">
+<tr class="header-horizontal">
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(x\)</span></th>
+<th scope="col" class="c m b1 r0 l0 t0 lines"><span class="process-math">\(sin(x)/x\)</span></th>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.500</td>
+<td class="c m b0 r0 l0 t0 lines">0.958851</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.100</td>
+<td class="c m b0 r0 l0 t0 lines">0.998334</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.010</td>
+<td class="c m b0 r0 l0 t0 lines">0.999983</td>
+</tr>
+<tr>
+<td class="c m b0 r0 l0 t0 lines">0.001</td>
+<td class="c m b0 r0 l0 t0 lines">0.999999</td>
+</tr>
+</table></div></div>
+<div class="para" id="p-8">Look at this table.  As we move the <span class="process-math">\(x\)</span> values closer to <span class="process-math">\(0\text{,}\)</span> what are the <span class="process-math">\(sin(x)/x\)</span> values getting closer to? It’s apparent that as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(0\text{,}\)</span> that <span class="process-math">\(sin(x)/x\)</span> approaches <span class="process-math">\(1\text{.}\)</span>  Of course, to be fair, at the moment we’re only letting <span class="process-math">\(x\)</span> approach <span class="process-math">\(0\)</span> from the right hand (positive) side of <span class="process-math">\(0\text{.}\)</span>  Let’s create some notation to record this kind of information.</div>
+<article class="definition definition-like" id="limit"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.1.1</span><span class="period">.</span>
+</h3>If <span class="process-math">\(f(x)\)</span> approaches a number, say <span class="process-math">\(l\text{,}\)</span> as <span class="process-math">\(x\)</span> approaches a number <span class="process-math">\(a\)</span> from its right hand side, then we write<div class="displaymath process-math" id="md-1">
+\begin{gather*}
+\displaystyle \lim_{x\to a^{+}}f(x)=l
+\end{gather*}
+</div>which is pronounced "The limit of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\(l\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the right".  We also say that <span class="process-math">\(f(x)\)</span> has a right hand limit of <span class="process-math">\(l\)</span> at <span class="process-math">\(a\text{.}\)</span>  Analogously, If <span class="process-math">\(f(x)\)</span> approaches a number, say <span class="process-math">\(k\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from its left hand side, then we write<div class="displaymath process-math" id="md-2">
+\begin{gather*}
+\displaystyle \lim_{x\to a^{-}}f(x)=k
+\end{gather*}
+</div>which is pronounced "The limit of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\(k\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left".  Again, we also say that <span class="process-math">\(f(x)\)</span> has a left hand limit of <span class="process-math">\(k\)</span> at <span class="process-math">\(a\text{.}\)</span></article></section></div>
 <div class="ptx-content-footer">
-<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="Limits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
