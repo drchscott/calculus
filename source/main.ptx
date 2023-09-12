@@ -38,10 +38,12 @@
 
     <chapter xml:id="Limits">
       <title>Limits</title>
+      <section xml:id="Introduction">
+        <title>Introduction</title>
 
       <p>Consider the function</p>
       <p><me>sin(x)/x</me></p>
-      <p>Notice that this function can't be evaluated at x=0 (i.e. 0 is not in its domain.)  But, we could compute it for values of x *close* to 0.  For example, fill in the sin(x)/x column below for the column of x values given.</p>
+      <p>Notice that this function can't be evaluated at x=0 (i.e. 0 is not in its domain.)  But, we could compute it for values of x *close* to 0.  For example, consider the following table for sin(x)/x.</p>
       <p>
           <tabular halign="center">
             <row header="yes" bottom="minor" >
@@ -50,29 +52,59 @@
             </row>
             <row>
               <cell>0.500</cell>
-              <cell></cell>
+              <cell>0.958851</cell>
             </row>
             <row>
               <cell>0.100</cell>
-              <cell></cell>
+              <cell>0.998334</cell>
             </row>
             <row>
               <cell>0.010</cell>
-              <cell></cell>
+              <cell>0.999983</cell>
             </row>
             <row>
               <cell>0.001</cell>
-              <cell></cell>
+              <cell>0.999999</cell>
             </row>
           </tabular>
 
       </p>
       <p>
-        You'll notice that as the domain values (i.e. the values of <m>x</m>) approach <m>0</m>, the values of <m>sin(x)/x</m> approach <m>1</m>.  In fact, if we continue to fill out this chart with values of <m>x</m> closer and closer to <m>0</m>, we'll notice that <m>sin(x)/x</m> gets closer and closer to <m>1</m>.  Of course, to be fair, at the moment we're only letting <m>x</m> approach <m>0</m> from the right hand (positive) side of <m>0</m>.
+        Look at this table.  As we move the <m>x</m> values closer to <m>0</m>, what are the <m>sin(x)/x</m> values getting closer to? It's apparent that as <m>x</m> approaches <m>0</m>, that <m>sin(x)/x</m> approaches <m>1</m>.  Of course, to be fair, at the moment we're only letting <m>x</m> approach <m>0</m> from the right hand (positive) side of <m>0</m>.  Let's create some notation to record this kind of information.
       </p>
-      <definition xml:id="limit">
-        If <m>f(x)</m> approaches <m>l</m> as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write *** which is pronounced 'The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right.
+
+      <definition xml:id="sideLimit">
+        If <m>f(x)</m> approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its <underline>left</underline> hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.
       </definition>
+
+      <p>
+        It is critical to note here that we are using the word "approach" in the definition above to indicate that we simply take values of the domain variable <m>x</m> *close* to <m>a</m> but not equal to it.  In computing limits, we do not use <m>x=a</m>.  We're just identifying what <m>f(x)</m> is becoming as <m>x</m> *approaches* <m>a</m>.  In fact, in many cases such as <m>sin(x)/x</m>, we can't even compute the function at <m>x=a=0</m>.
+      </p>
+
+      <example>
+        For <m>f(x)=sin(x)/x</m> from above, make a table like the one above but this time use 4 or 5 domain values approaching <m>0</m> from the left.  Use the notation from the definition above to write your conclusion about the left hand limit.
+      </example>
+
+      <p>
+        Finally, since it will often be the case that both the left hand and right hand limit come out the same (but not always) for a function, we just drop the <m>+</m> and <m>-</m> in that case.  In other words ...
+      </p>
+
+      <definition xml:id="limit">
+        In case both the left hand and right hand limit of a function are the same (i.e. <m>\displaystyle \lim_{x\to a^{+}}f(x)=\displaystyle \lim_{x\to a^{-}}f(x)=l</m>), then we simply write <m>\displaystyle \lim_{x\to a}f(x)=l</m> without any reference to <m>+</m> or <m>-</m>.  In this case we say that <m>f(x)</m> has a limit of <m>l</m> at <m>a</m>.
+      </definition>
+
+      <example>
+        For <m>f(x)=|x|/x</m>, notice that once again <m>0</m> is not in its domain.  Make tables for left and right hand approaches to <m>0</m> and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.
+      </example>
+
+    </section>
+
+    <section xml:id="basicLimitProps">
+      <title>Basic Limit Properties</title>
+      <p>
+        Coming soon...
+      </p> 
+    </section>
 
     </chapter>
 
@@ -80,20 +112,6 @@
       <title>Continuity</title>
 
       <p>Stuff about continuity</p>
-
-    </chapter>
-
-    <chapter xml:id="Topic-3">
-      <title>Next Topic</title>
-
-      <p>Stuff about next topic</p>
-
-    </chapter>
-
-    <chapter xml:id="Topic-4">
-      <title>Next Topic</title>
-
-      <p>Stuff about next topic</p>
 
     </chapter>
 
