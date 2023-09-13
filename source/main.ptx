@@ -38,8 +38,8 @@
 
     <chapter xml:id="Limits">
       <title>Limits</title>
-      <section xml:id="Introduction">
-        <title>Introduction</title>
+      <section xml:id="mainIdea">
+        <title>The Main Idea</title>
 
       <p>Consider the function</p>
       <p><me>sin(x)/x</me></p>
@@ -99,8 +99,60 @@
 
     </section>
 
-    <section xml:id="basicLimitProps">
-      <title>Basic Limit Properties</title>
+    <section xml:id="infinityLimits">
+      <title>Infinity Stuff</title>
+      <p>
+        Consider the function <m>f(x)=1/x</m>.  What can you say about <m>\displaystyle \lim_{x\to 0^{+}}f(x)</m>?  Well, let's make a table and see.
+      </p> 
+      <p>
+        <tabular halign="center">
+          <row header="yes" bottom="minor" >
+            <cell><m>x</m></cell>
+            <cell><m>1/x</m></cell>
+          </row>
+          <row>
+            <cell>1.000</cell>
+            <cell>1</cell>
+          </row>
+          <row>
+            <cell>0.100</cell>
+            <cell>10</cell>
+          </row>
+          <row>
+            <cell>0.010</cell>
+            <cell>100</cell>
+          </row>
+          <row>
+            <cell>0.001</cell>
+            <cell>1000</cell>
+          </row>
+        </tabular>
+      </p>
+      <p>
+        So, it's pretty apparent that as <m>x\to 0^{+}</m>, the function <m>1/x</m> isn't headed toward any number.  So, there is no limit.  Said differently, the right hand limit of <m>1/x</m>does not exist at <m>0</m>.  So, the limit notation we've created so far isn't useful.  However, it would be useful to record this information.  To do that, we write <m>\displaystyle \lim_{x\to 0^{+}}f(x)=\infty</m>.  Please note here that this notation is *not* saying that a limit exists.  It just is language explaining *how* it doesn't exist.
+      </p>
+      <example>
+        Make another table for <m>1/x</m> but this time with value of <m>x</m> approaching <m>0</m> from the left.  What do you see?  What is a reasonable way to use limit notation and the <m>\infty</m> symbol to express what you find?
+      </example>
+      <definition xml:id="defInfinityLimits1">
+        When <m>f(x)</m> grows positively without bound as <m>x</m> goes to <m>a</m> from the right, we write <m>\displaystyle \lim_{x\to a^{+}}f(x)=\infty</m>.  Also, when <m>f(x)</m> grows positively without bound as <m>x</m> goes to <m>a</m> from the left, we write <m>\displaystyle \lim_{x\to a^{-}}f(x)=\infty</m>.   Similarly, when <m>f(x)</m> grows negatively without bound as <m>x</m> goes to <m>a</m> from the right, we write <m>\displaystyle \lim_{x\to a^{+}}f(x)=-\infty</m> and when <m>f(x)</m> grows negatively without bound as <m>x</m> goes to <m>a</m> from the left, we write <m>\displaystyle \lim_{x\to a^{-}}f(x)=-\infty</m>.  As with actual limits, if we omit the <m>+</m> and <m>-</m> then we are saying that the behavior is the same from both directions.
+      </definition>
+      <p>
+        We also use the <m>\infty</m> symbol as a *place* to let the domain variable *approach*.  When we let <m>x</m> get arbitrarily positively large, we write <m>x \to \infty</m>  So, for example, consider our friend <m>1/x</m>.   If you make a table for this taking larger and larger positive values of <m>x</m>, you'll see that <m>1/x</m> approaches <m>0</m>.  So, in that case, we can write <m>\displaystyle \lim_{x\to \infty}1/x=0</m>.
+      </p>
+      <example>
+        Make another table for <m>1/x</m> but this time with value of <m>x</m> getting negatively large without bound (e.g. <m>-1, -10, -100, -1000, etc.</m>).  What do you see?  What is a reasonable way to use limit notation and the <m>\infty</m> symbol to express what you find?
+      </example>
+      <definition xml:id="defInfinityLimits2">
+        To express a limit when we let the domain variable grow positively without bound, we write <m>\displaystyle \lim_{x\to \infty}</m> and to express a limit when we let the domain variable grow negatively without bound, we write <m>\displaystyle \lim_{x\to -\infty}</m>.
+      </definition>
+      <example>
+        Use limit notation and the infinity symbol to express what is happening to <m>x^2</m> as <m>x</m> grows positively without bound.
+      </example>
+    </section>
+
+    <section xml:id="limitProps">
+      <title>Limit Properties</title>
       <p>
         Coming soon ...
       </p> 
