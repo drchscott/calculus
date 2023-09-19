@@ -76,10 +76,13 @@
       <definition xml:id="sideLimit">
         If <m>f(x)</m> approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its <underline>left</underline> hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.
       </definition>
-
       <p>
-        It is critical to note here that we are using the word "approach" in the definition above to indicate that we simply take values of the domain variable <m>x</m> *close* to <m>a</m> but not equal to it.  In computing limits, we do not use <m>x=a</m>.  We're just identifying what <m>f(x)</m> is becoming as <m>x</m> *approaches* <m>a</m>.  In fact, in many cases such as <m>sin(x)/x</m>, we can't even compute the function at <m>x=a=0</m>.
+        So now, with this new notation, it seems reasonable to write 
+        <md><mrow>\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1</mrow></md>
       </p>
+      <remark>
+        It is critical to note here that we are using the word "approach" in the definition above to indicate that we simply take values of the domain variable <m>x</m> *close* to <m>a</m> but not equal to it.  In computing limits, we do not use <m>x=a</m>.  We're just identifying what <m>f(x)</m> is becoming as <m>x</m> *approaches* <m>a</m>.  In fact, in many cases such as <m>sin(x)/x</m>, we can't even compute the function at <m>x=a=0</m>.
+      </remark>
 
       <example>
         For <m>f(x)=sin(x)/x</m> from above, make a table like the one above but this time use 4 or 5 domain values approaching <m>0</m> from the left.  Use the notation from the definition above to write your conclusion about the left hand limit.
@@ -154,8 +157,101 @@
     <section xml:id="limitProps">
       <title>Limit Properties</title>
       <p>
-        Coming soon ...
-      </p> 
+        A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed.  Consider, for example, our friend <m>sin(x)/x</m>.  Look at the table we made at the beginning of the first section.  We stopped looking once we let <m>x</m> get down to <m>0.001</m>.  But what about even closer?  Like <m>x=0.0003</m> or <m>x=0.0000000162</m> or <m>x=0.0000000000004</m>?  Maybe waaaay down there <m>sin(x)/x</m> starts getting wonky.  Maybe.  So, right now we're just guessing that <m>\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1</m>.  Educated guessing ... yes.  But still just guessing.  We'd like to start moving past just guessing.  We start doing that in this section.  We start by looking at a couple of functions whose limits are not in question.  
+      </p>
+      <p>
+        First, consider a constant function like <m>f(x)=5</m>.  No matter what you put in for <m>x</m>, it gives us <m>5</m>.  So, there's no question what it's approaching regardless of where we let <m>x</m> go.  It's always giving <m>5</m>.  So, we have ...
+      </p>
+      <theorem xml:id="thm-limitOfConstants">
+        <statement>
+          <p>
+            If <m>f(x)</m> is constant, say <m>f(x)=k</m> for some number <m>k</m>, and <m>a</m> is any number, Then <m>\displaystyle \lim_{x\to a}f(x)=k</m>.
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        Secondly, consider the function <m>f(x)=x</m>.  Well, this function just does whatever <m>x</m> does.  So, where <m>x</m> goes, so does <m>f(x)=x</m>.  Thus, we have ...
+      </p>
+      <theorem xml:id="thm-limitOfIdentity">
+        <statement>
+          <p>
+            If <m>f(x)=x</m> and <m>a</m> is any number, Then <m>\displaystyle \lim_{x\to a}f(x)=a</m>.
+          </p>
+        </statement>
+      </theorem>
+      <p>
+        It is our good fortune that limits behave according to the following theorem.
+      </p>
+      
+      <theorem xml:id="thm-limitBasicProperties">
+        <statement>
+          <p>
+            If <m>\displaystyle \lim_{x\to a}f(x)=l</m> and <m>\displaystyle \lim_{x\to a}g(x)=k</m> and <m>r</m> and <m>s</m> are any two numbers and the right hand side of the following equalities are defined, Then <m>\displaystyle \lim_{x\to a}(rf(x)+sg(x))=rl+sk</m>, <m>\displaystyle \lim_{x\to a}(f(x)g(x))=lk</m>, and <m>\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k</m>.
+          </p>
+        </statement>
+      </theorem>
+      <remark>
+        It is also the case that if all of the <m>\displaystyle \lim_{x\to a}</m> are replaced with either <m>\displaystyle \lim_{x\to a^{+}}</m> or <m>\displaystyle \lim_{x\to a^{-}}</m>, then the theorem <xref ref="thm-limitBasicProperties"/> is still correct.
+      </remark>
+      <p>
+        Often, people cite this basic properties theorem by saying, "the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits".
+      </p>
+      <remark>
+        Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn't valid, isn't a thing).  For example, if <m>k=0</m> in the theorem, then we certainly are not claiming that <m>\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k</m> since the right hand side of this equality is <m>l/0</m> which isn't even a thing to claim something is.
+      </remark>
+      <example>
+        Use <xref ref="thm-limitBasicProperties"/> to compute <m>\displaystyle \lim_{x\to 2}(x^2)</m>, <m>\displaystyle \lim_{x\to -1}(x^2+3x)</m>, and <m>\displaystyle \lim_{x\to 0}(x^2+3x)/(x+2)</m>.
+      </example>
+      <p>
+        Using <xref ref="thm-limitBasicProperties" />, we quickly deduce the following quick conclusions (called "corollaries" by mathematicians).
+      </p>
+      <corollary xml:id="limitCorollaries">
+        <statement>
+          <ol>
+            <li>
+              <p>
+                If <m>q</m> is a nonzero rational number and <m>a</m> is a nonzero number at which <m>a^q</m> is defined, then <m>\displaystyle \lim_{x\to a}x^q=a^q</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>p(x)</m> and <m>q(x)</m> are polynomials and <m>q(a)\ne 0</m>, then <m>\displaystyle \lim_{x\to a}(p(x)/q(x))=p(a)/q(a)</m>.
+              </p>
+            </li>
+          </ol>
+        </statement>
+      </corollary>
+      <p>
+        Finally, we provide here a short list of known limits for use in subsequent sections.
+      </p>
+      <theorem xml:id="thm-aFewKnownLimits">
+        <statement>
+          <ol>
+            <li>
+              <p>
+                If <m>a</m> is any number, then <m>\displaystyle \lim_{x\to a}sin(x)=sin(a)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>a</m> is any number, then <m>\displaystyle \lim_{x\to a}cos(x)=cos(a)</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>a</m> is any number, then <m>\displaystyle \lim_{x\to a}e^x=e^a</m>.
+              </p>
+            </li>
+            <li>
+              <p>
+                If <m>a > 0</m>, then <m>\displaystyle \lim_{x\to a}ln(x)=ln(a)</m>.
+              </p>
+            </li>
+          </ol>
+        </statement>
+      </theorem>
+      
+      
     </section>
 
     </chapter>
