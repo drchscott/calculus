@@ -1,0 +1,13 @@
+INFO    : PreTeXt project found in `/workspaces/calculus`.
+WARNING : Using CLI version 2.0.0 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or changing `requirements.txt` to match 2.0.0.
+ERROR   : XML Syntax Error caused build to fail:
+ERROR   : /workspaces/calculus/source/main.ptx:315:17:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: chapter line 259 and example
+/workspaces/calculus/source/main.ptx:317:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: book line 14 and chapter
+/workspaces/calculus/source/main.ptx:320:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: pretext line 3 and book
+/workspaces/calculus/source/main.ptx:321:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+
