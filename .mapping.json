@@ -1,1 +1,1 @@
-{"source/main.ptx": ["Lean-Calculus", "frontmatter", "preface", "Limits", "mainIdea", "infinityLimits", "limitProps", "Continuity"]}
+{"source/main.ptx": ["Lean-Calculus", "frontmatter", "preface", "Limits", "mainIdea", "infinityLimits", "limitProps", "Continuity", "defContinuitySection", "basicPropsOfContinuity", "otherPropsOfContinuity"]}

@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Front Matter</title>
+<title>Definition</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="Lean-Calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Lean-Calculus.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="preface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="Continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Continuity.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="basicPropsOfContinuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -215,7 +215,7 @@ window.MathJax = {
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
-<li class="active">
+<li>
 <div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
 </li>
@@ -230,21 +230,47 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="defContinuitySection.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="defContinuitySection.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition</span></a></div></li>
 <li><div class="toc-item"><a href="basicPropsOfContinuity.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Basic Properties</span></a></div></li>
 <li><div class="toc-item"><a href="otherPropsOfContinuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Intermediate Values</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="frontmatter" id="frontmatter"><h2 class="heading"><span class="title">Lean Calculus</span></h2>
-<div class="author">
-<div class="author-name">Dr. Chad Scott</div>
-<div class="author-info">Mathematics and Computer Science<br>University of Wisconsin - Superior</div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="defContinuitySection"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Definition</span>
+</h2>
+<div class="para" id="p-31">Consider ...</div>
+<figure class="figure figure-like" id="figure-1"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/firstDiscontinuityExampleGraph.svg" role="img" class="contained" alt="First discontinuity example"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.1<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para logical" id="p-32">
+<div class="para">Which, for the record, happens to be the graph of the following function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \left\{ \begin{array}{cc}
+x^2 \amp 0 \le x \lt 1 \\
+1.5 \amp x=1 \\
+2-x \amp 1 \lt x \le 2
+\end{array}
+\right.
+\end{equation*}
 </div>
-<div class="date">September 24, 2023</div>
-<nav class="summary-links"><ul><li><a href="preface.html" class="internal"><span class="title">Preface</span></a></li></ul></nav></section></div>
+</div>
+<div class="para logical" id="p-33">
+<div class="para">Using the limit notation developed to this point, we notice that <span class="process-math">\(\displaystyle \lim_{x\to 1}f(x)=1\text{.}\)</span>  As it happens for this function though, we notice that this does not match the value of <span class="process-math">\(f(1)=1.5\text{.}\)</span>  That is, for this particular function at the domain value <span class="process-math">\(x=1\text{,}\)</span> we have</div>
+<div class="displaymath process-math" id="md-4">
+\begin{gather*}
+\displaystyle \lim_{x\to 1}f(x) \ne f(1)
+\end{gather*}
+</div>
+<div class="para">Visually (i.e. looking at the graph of <span class="process-math">\(f\)</span>), this shows up as some sort of "break" in the graph of <span class="process-math">\(f\)</span> at <span class="process-math">\(x=1\text{.}\)</span>  In such cases, we say that <span class="process-math">\(f\)</span> has a "discontinuity" at <span class="process-math">\(x=1\text{.}\)</span>  Precisely, we have</div>
+</div>
+<article class="definition definition-like" id="defContinuity"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
+</h3>When it is the case that <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=f(a)\text{,}\)</span> we say that <span class="process-math">\(f\)</span> is "continuous at <span class="process-math">\(a\)</span>".  Otherwise, we say that <span class="process-math">\(f\)</span> is "discontinuous at <span class="process-math">\(a\)</span>".</article><div class="para" id="p-34">It is worth noting here that some discontinuities are "removable" and some are not.  Consider <span class="process-math">\(f(x)=1/x\text{.}\)</span>  This familiar function has the graph</div>
+<figure class="figure figure-like" id="figure-2"><div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/badDiscontinuityExampleGraph.svg" role="img" class="contained" alt="Bad discontinuity example"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">2.1.3<span class="period">.</span></span><span class="space"> </span></figcaption></figure><div class="para" id="p-35">At <span class="process-math">\(x=0\text{,}\)</span> this function has no limit of any kind (and isn’t even defined) at <span class="process-math">\(0\text{.}\)</span>  Even worse, if we chose to define a function that was <span class="process-math">\(1/x\)</span> for all <span class="process-math">\(x\ne 0\)</span> and set it to be *something* at <span class="process-math">\(0\text{,}\)</span> there is nothing we could set it to in order to make it continuous since <span class="process-math">\(1/x\)</span> has no limit at <span class="process-math">\(0\text{.}\)</span>  So, this discontinuity at <span class="process-math">\(0\)</span> is quite bad.</div>
+<div class="para" id="p-36">On the other hand, looking at the graph at the start of the section, if we had just defined that function to be <span class="process-math">\(f(1)=1\)</span> instead of <span class="process-math">\(f(1)=1.5\text{,}\)</span> then <span class="process-math">\(f\)</span> would have been continuous at <span class="process-math">\(1\)</span> and, as apparent from the graph, everywhere else between <span class="process-math">\(x=0\)</span> and <span class="process-math">\(x=2\text{.}\)</span>  Such discontinuities are often called "removable".  So, we’d say that for the function at the start of the section, the discontinuity at <span class="process-math">\(x=1\)</span> is "removable".</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="Lean-Calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="preface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="Continuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="basicPropsOfContinuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

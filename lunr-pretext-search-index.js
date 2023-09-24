@@ -190,22 +190,94 @@ var ptx_lunr_docs = [
   "body": "    If is a nonzero rational number and is a nonzero number at which is defined, then .    If and are polynomials and , then .     "
 },
 {
-  "id": "thm-aFewKnownLimits",
+  "id": "thm-AFewKnownLimits",
   "level": "2",
-  "url": "limitProps.html#thm-aFewKnownLimits",
+  "url": "limitProps.html#thm-AFewKnownLimits",
   "type": "Theorem",
   "number": "1.3.8",
   "title": "",
   "body": "    If is any number, then .    If is any number, then .    If is any number, then .    If , then .     "
 },
 {
-  "id": "Continuity",
+  "id": "defContinuitySection",
   "level": "1",
-  "url": "Continuity.html",
-  "type": "Chapter",
-  "number": "2",
-  "title": "Continuity",
-  "body": " Continuity  Stuff about continuity  "
+  "url": "defContinuitySection.html",
+  "type": "Section",
+  "number": "2.1",
+  "title": "Definition",
+  "body": " Definition  Consider ...     First discontinuity example     Which, for the record, happens to be the graph of the following function   Using the limit notation developed to this point, we notice that . As it happens for this function though, we notice that this does not match the value of . That is, for this particular function at the domain value , we have Visually (i.e. looking at the graph of ), this shows up as some sort of \"break\" in the graph of at . In such cases, we say that has a \"discontinuity\" at . Precisely, we have  When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \".  It is worth noting here that some discontinuities are \"removable\" and some are not. Consider . This familiar function has the graph     Bad discontinuity example     At , this function has no limit of any kind (and isn't even defined) at . Even worse, if we chose to define a function that was for all and set it to be *something* at , there is nothing we could set it to in order to make it continuous since has no limit at . So, this discontinuity at is quite bad.  On the other hand, looking at the graph at the start of the section, if we had just defined that function to be instead of , then would have been continuous at and, as apparent from the graph, everywhere else between and . Such discontinuities are often called \"removable\". So, we'd say that for the function at the start of the section, the discontinuity at is \"removable\".  "
+},
+{
+  "id": "figure-1",
+  "level": "2",
+  "url": "defContinuitySection.html#figure-1",
+  "type": "Figure",
+  "number": "2.1.1",
+  "title": "",
+  "body": "   First discontinuity example    "
+},
+{
+  "id": "defContinuity",
+  "level": "2",
+  "url": "defContinuitySection.html#defContinuity",
+  "type": "Definition",
+  "number": "2.1.2",
+  "title": "",
+  "body": "When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \". "
+},
+{
+  "id": "figure-2",
+  "level": "2",
+  "url": "defContinuitySection.html#figure-2",
+  "type": "Figure",
+  "number": "2.1.3",
+  "title": "",
+  "body": "   Bad discontinuity example    "
+},
+{
+  "id": "basicPropsOfContinuity",
+  "level": "1",
+  "url": "basicPropsOfContinuity.html",
+  "type": "Section",
+  "number": "2.2",
+  "title": "Basic Properties",
+  "body": " Basic Properties  In light of the definition of continuity from the previous section, we see that and are really saying ...   Rational functions, , , and are all continuous wherever they are defined.   The basic limit properties then yield the following   If and are both continuous at a given , then and are all continuous at that . Further, if also then is continuous at .   So, for example, if we want to calculate the limit of at , it's very easy since we know from the corollary above that , which is simply is continuous at . Thus   "
+},
+{
+  "id": "thm-AFewKnownContinuities",
+  "level": "2",
+  "url": "basicPropsOfContinuity.html#thm-AFewKnownContinuities",
+  "type": "Theorem",
+  "number": "2.2.1",
+  "title": "",
+  "body": " Rational functions, , , and are all continuous wherever they are defined.  "
+},
+{
+  "id": "cor-basicContinuityProps",
+  "level": "2",
+  "url": "basicPropsOfContinuity.html#cor-basicContinuityProps",
+  "type": "Corollary",
+  "number": "2.2.2",
+  "title": "",
+  "body": " If and are both continuous at a given , then and are all continuous at that . Further, if also then is continuous at .  "
+},
+{
+  "id": "otherPropsOfContinuity",
+  "level": "1",
+  "url": "otherPropsOfContinuity.html",
+  "type": "Section",
+  "number": "2.3",
+  "title": "Intermediate Values",
+  "body": " Intermediate Values  Recall the graph of this function from the first section of this chapter.   Notice that it has the value at (i.e. ) and it has the value at (i.e. ). But, does it ever have the value (i.e. is there a domain value for which )? Imagine a horizontal line on the graph at a height of and you'll see that the answer is \"no\". So, why not? What goes wrong that this function has the value and but never not has the intermediate value ? Hopefully the answer is apparent. Namely, the function has a discontinuity so there is a \"break\" \/ \"jump\" over some of the intermediate values like . One of the nice properties of functions that are continuous on an interval of numbers (i.e. continous at every number in an interval) is that it obtains all of its intermediate values. Specifically, we have the following theorem known by mathematicians as the \"Intermediate Value Theorem (IVT)\".   If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .   Consider for example the function above but this time defined with . Here, let's plot it.   Now, if you look at any two values the function obtains, you'll see that every value in between them is also obtained by the function. In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between. Look over at the graph and you'll see that the function also obtains that value. Why? Well, we removed the disontinuity so now this function is continuous on the interval so we have the IVT.  "
+},
+{
+  "id": "thm-IVT",
+  "level": "2",
+  "url": "otherPropsOfContinuity.html#thm-IVT",
+  "type": "Theorem",
+  "number": "2.3.1",
+  "title": "",
+  "body": " If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .  "
 }
 ]
 

@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Front Matter</title>
+<title>Intermediate Values</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="Lean-Calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Lean-Calculus.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="preface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="basicPropsOfContinuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Continuity.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -215,7 +215,7 @@ window.MathJax = {
 \)</span></div>
 <div class="ptx-page">
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
-<li class="active">
+<li>
 <div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
 <ul class="structural"><li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
 </li>
@@ -232,19 +232,19 @@ window.MathJax = {
 <ul class="structural">
 <li><div class="toc-item"><a href="defContinuitySection.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition</span></a></div></li>
 <li><div class="toc-item"><a href="basicPropsOfContinuity.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Basic Properties</span></a></div></li>
-<li><div class="toc-item"><a href="otherPropsOfContinuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Intermediate Values</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="otherPropsOfContinuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Intermediate Values</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="frontmatter" id="frontmatter"><h2 class="heading"><span class="title">Lean Calculus</span></h2>
-<div class="author">
-<div class="author-name">Dr. Chad Scott</div>
-<div class="author-info">Mathematics and Computer Science<br>University of Wisconsin - Superior</div>
-</div>
-<div class="date">September 24, 2023</div>
-<nav class="summary-links"><ul><li><a href="preface.html" class="internal"><span class="title">Preface</span></a></li></ul></nav></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="otherPropsOfContinuity"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.3</span><span class="space"> </span><span class="title">Intermediate Values</span>
+</h2>
+<div class="para" id="p-40">Recall the graph of this function from the first section of this chapter. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-3.svg" role="img" class="contained"></div> Notice that it has the value <span class="process-math">\(0\)</span> at <span class="process-math">\(0\)</span> (i.e. <span class="process-math">\(f(0)=0\)</span>) and it has the value <span class="process-math">\(1.5\)</span> at <span class="process-math">\(1\)</span> (i.e. <span class="process-math">\(f(1)=1.5\)</span>).  But, does it ever have the value <span class="process-math">\(1.3\)</span> (i.e. is there a domain value <span class="process-math">\(x\)</span> for which <span class="process-math">\(f(x)=1.3\)</span>)?  Imagine a horizontal line on the graph at a height of <span class="process-math">\(1.3\)</span> and you’ll see that the answer is "no".  So, why not?  What goes wrong that this function has the value <span class="process-math">\(0\)</span> and <span class="process-math">\(1.5\)</span> but never not has the intermediate value <span class="process-math">\(1.3\text{?}\)</span>  Hopefully the answer is apparent.  Namely, the function has a discontinuity so there is a "break" / "jump" over some of the intermediate values like <span class="process-math">\(1.3\text{.}\)</span>  One of the nice properties of functions that are continuous on an interval of numbers (i.e. continous at every number in an interval) is that it obtains all of its intermediate values.  Specifically, we have the following theorem known by mathematicians as the "Intermediate Value Theorem (IVT)".</div>
+<article class="theorem theorem-like" id="thm-IVT"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
+</h3>If <span class="process-math">\(f\)</span> is continuous on an interval <span class="process-math">\(I\)</span> (whether open, half open, or closed) and <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> are two values that <span class="process-math">\(f\)</span> obtains and finally <span class="process-math">\(w\)</span> happens to be a number between (i.e. intermediate to) <span class="process-math">\(r\)</span> and <span class="process-math">\(s\text{,}\)</span> then there is some <span class="process-math">\(x\)</span> in <span class="process-math">\(I\)</span> so that <span class="process-math">\(f(x)=w\text{.}\)</span></article><div class="para" id="p-41">Consider for example the function above but this time defined with <span class="process-math">\(f(1)=1\text{.}\)</span>  Here, let’s plot it. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-4.svg" role="img" class="contained"></div> Now, if you look at any two values the function obtains, you’ll see that every value in between them is also obtained by the function.  In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between.  Look over at the graph and you’ll see that the function also obtains that value.  Why?  Well, we removed the disontinuity so now this function is continuous on the interval <span class="process-math">\(I=[0,2]\)</span> so we have the IVT.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="Lean-Calculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="preface.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="basicPropsOfContinuity.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
