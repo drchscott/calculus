@@ -278,6 +278,42 @@ var ptx_lunr_docs = [
   "number": "2.3.1",
   "title": "",
   "body": " If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .  "
+},
+{
+  "id": "sec-tangentProblem",
+  "level": "1",
+  "url": "sec-tangentProblem.html",
+  "type": "Section",
+  "number": "3.1",
+  "title": "Tangent Problem",
+  "body": " Tangent Problem  Consider this graph of .   In addition to , a couple of lines are plotted here. They both pass through the point on the graph. Notice that the black line is special in a particular way. Namely, it just \"touches\" the graph at without \"cutting\" through the graph. If you used any other line passing touching (i.e. touch but use a different slope) like the dashed line, then it \"cuts through\". You should recall from your precalculus experience that lines like the black one here are called \"tangent\" lines. Tangent lines to graphs are very important to applied scientists such as physicists. It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that. Why? Well, after a little thought you hopefully realized that while we have a point that the line passes through , we would need either another point the line passes through or the slope of the line in order to write an equation for it. But, we have neither. So, the tangent line is just an idea and not something we can concretely describe at this point. Our goal is to solve this \"tangent line problem\" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.  So... how? How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem? Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through and a point on the graph just a teensy bit to the right or left of . So, suppose is a teensy number. We could adjust by that amount and look up at the graph to the point . For example, we could take giving us the point on the graph . The line going through the two points and has a slope (rise\/run) equal to (i.e. ). So, that line *can* be plotted since we have both a slope, ), and a point the line passes through, . Here, let's plot that line as a dashed line and show it along with the tangent line.   You'll notice that while this dashed line is not quite the tangent line, it is ... close. We could get even closer by choosing a point even closer to . In other words, make smaller (either a teensier positive or negative number). For smaller and smaller values of , the resulting lines should look more and more line the tangent line. For example, suppose we take like and . Those give lines with the following slopes         .75  2.75    0.5  2.5    0.1  2.1    0.01  2.01     If we plot all of these lines, here is what they look like     So, what do we think the slope of the tangent line is likely to be? It's apparent that if we let continue to shrink, the associated lines have slopes that are getting closer and closer to . Plotting the line through with slope gives us exactly the tangent line depicted in black. So, at least for the function and the point on its graph, we've solved the tangent line problem!  Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.)  "
+},
+{
+  "id": "example-7",
+  "level": "2",
+  "url": "sec-tangentProblem.html#example-7",
+  "type": "Example",
+  "number": "3.1.1",
+  "title": "",
+  "body": "Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.) "
+},
+{
+  "id": "sec-definitionOfDerivative",
+  "level": "1",
+  "url": "sec-definitionOfDerivative.html",
+  "type": "Section",
+  "number": "3.2",
+  "title": "Definition",
+  "body": " Definition  coming soon.  "
+},
+{
+  "id": "sec-propertiesOfDerivative",
+  "level": "1",
+  "url": "sec-propertiesOfDerivative.html",
+  "type": "Section",
+  "number": "3.3",
+  "title": "Basic Properties",
+  "body": " Basic Properties  coming soon.  "
 }
 ]
 
