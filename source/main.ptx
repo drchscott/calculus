@@ -372,8 +372,103 @@
       Now, if you look at any two values the function obtains, you'll see that every value in between them is also obtained by the function.  In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between.  Look over at the graph and you'll see that the function also obtains that value.  Why?  Well, we removed the disontinuity so now this function is continuous on the interval <m>I=[0,2]</m> so we have the IVT.
     </p> 
   </section>
+</chapter>
 
-    </chapter>
+<chapter xml:id="Derivatives">
+  <title>Derivatives</title>
+  <section xml:id="sec-tangentProblem">
+    <title>Tangent Problem</title>
+    <p>
+      Consider this graph of <m>f(x)=x^2</m>.      
+      <image width="65%">
+        <sageplot>
+          fg = plot(x^2, x, -.5, 2, color='black')
+          tl = plot(2*(x-1)+1, x, -.5, 2, color='black')
+          l1 = plot(3*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+          pt = point((1, 1), rgbcolor='black', pointsize=30)
+          fg+tl+l1+pt
+        </sageplot>
+      </image>
+      In addition to <m>x^2</m>, a couple of lines are plotted here.  They both pass through the point <m>(1,1)</m> on the graph.  Notice that the black line is special in a particular way.  Namely, it just "touches" the graph at <m>(1,1)</m> without "cutting" through the graph.  If you used any other line passing touching <m>(1,1)</m> (i.e. touch <m>(1,1)</m> but use a different slope) like the dashed line, then it "cuts through".  You should recall from your precalculus experience that lines like the black one here are called "tangent" lines.  Tangent lines to graphs are very important to applied scientists such as physicists.  It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that.  Why?  Well, after a little thought you hopefully realized that while we have a point that the line passes through <m>(1,1)</m>, we would need either another point the line passes through or the slope of the line in order to write an equation for it.  But, we have neither.  So, the tangent line is just an idea and not something we can concretely describe at this point.  Our goal is to solve this "tangent line problem" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.
+    </p>
+    <p>
+    So... how?  How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem?  Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through <m>(1,1)</m> and a point on the graph just a teensy bit to the right or left of <m>(1,1)</m>.  So, suppose <m>h</m> is a teensy number.  We could adjust <m>1</m> by that amount and look up at the graph to the point <m>(1+h, f(1+h))</m>.  For example, we could take <m>h=.75</m> giving us the point on the graph <m>(1.75,1.75^2)=(1.75,3.0625)</m>.  The line going through the two points <m>(1,1)</m> and <m>(1.75,1.75^2)=(1.75,3.0625)</m> has a slope (rise/run) equal to <m>(3.0625-1)/(1.75-1) = 2.75</m> (i.e. <m>(f(1+h)-f(1))/h</m>).  So, that line *can* be plotted since we have both a slope, <m>2.75</m>), and a point the line passes through, <m>(1,1)</m>.  Here, let's plot that line as a dashed line and show it along with the tangent line.
+    <image width="65%">
+      <sageplot>
+        fg = plot(x^2, x, -.5, 2, color='black')
+        tl = plot(2*(x-1)+1, x, -.5, 2, color='black')
+        l1 = plot(2.75*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+        pt = point((1, 1), rgbcolor='black', pointsize=30)
+        pt2 = point((1.75, 3.0625), rgbcolor='red', pointsize=30)
+        fg+tl+l1+pt+pt2
+      </sageplot>
+    </image>
+    You'll notice that while this dashed line is not quite the tangent line, it is ... close.  We could get even closer by choosing a point even closer to <m>(1,1)</m>.  In other words, make <m>h</m> smaller (either a teensier positive or negative number).  For smaller and smaller values of <m>h</m>, the resulting lines should look more and more line the tangent line. For example, suppose we take <m>h's</m> like <m>.75, .5, .1,</m> and <m>.01</m>.  Those give lines with the following slopes
+  </p>
+  <p>
+    <tabular halign="center">
+      <row header="yes" bottom="minor" >
+        <cell><m>h</m></cell>
+        <cell><m>(f(1+h)-f(1))/h</m></cell>
+      </row>
+      <row>
+        <cell>.75</cell>
+        <cell>2.75</cell>
+      </row>
+      <row>
+        <cell>0.5</cell>
+        <cell>2.5</cell>
+      </row>
+      <row>
+        <cell>0.1</cell>
+        <cell>2.1</cell>
+      </row>
+      <row>
+        <cell>0.01</cell>
+        <cell>2.01</cell>
+      </row>
+    </tabular>
+    </p>
+    <p>
+      If we plot all of these lines, here is what they look like
+      <image width="65%">
+        <sageplot>
+          fg = plot(x^2, x, -.5, 2, color='black')
+          tl = plot(2*(x-1)+1, x, -.5, 2, color='black')
+          l1 = plot(2.75*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+          l2 = plot(2.5*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+          l3 = plot(2.1*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+          l4 = plot(2.01*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
+          pt = point((1, 1), rgbcolor='black', pointsize=30)
+          pt1 = point((1.75, 3.0625), rgbcolor='red', pointsize=30)
+          pt2 = point((1.5, 2.25), rgbcolor='red', pointsize=30)
+          pt3 = point((1.1, 1.21), rgbcolor='red', pointsize=30)
+          pt4 = point((1.01, 1.0201), rgbcolor='red', pointsize=30)
+          fg+tl+l1+l2+l3+l4+pt+pt1+pt2+pt3+pt4
+        </sageplot>
+      </image>
+    </p>
+    <p>
+      So, what do we think the slope of the tangent line is likely to be?  It's apparent that if we let <m>h</m> continue to shrink, the associated lines have slopes that are getting closer and closer to <m>2</m>.  Plotting the line through <m>(1,1)</m> with slope <m>2</m> gives us exactly the tangent line depicted in black.  So, at least for the function <m>f(x)=x^2</m> and the point <m>(1,1)</m> on its graph, we've solved the tangent line problem!
+    </p>
+    <example>
+      Implement the same solution but this time look at a different point on the graph of <m>f(x)=x^2</m> (e.g. maybe <m>x=1.5</m> or <m>x=-0.5</m>) etc.)
+    </example>
+  </section>
+  <section xml:id="sec-definitionOfDerivative">
+    <title>Definition</title>
+    <p>
+      coming soon.
+    </p>
+  </section>
+  <section xml:id="sec-propertiesOfDerivative">
+    <title>Basic Properties</title>
+    <p>
+      coming soon.
+    </p>
+  </section>
+
+</chapter>
 
 
   </book>
