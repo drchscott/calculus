@@ -458,7 +458,36 @@
   <section xml:id="sec-definitionOfDerivative">
     <title>Definition</title>
     <p>
-      coming soon.
+      The tangent problem solution from the previous section motivates us to define a function in the following way.
+    </p>
+    <definition xml:id="def-derivative">
+      For a fucntion defined on an interval and a point <m>x</m> in that interval, we define
+      <me>
+        f'(x)=\displaystyle \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
+      </me>
+      for any <m>x</m> for which this limit exists.  We call this function the "derivative" of <m>f</m> and for any <m>x</m> where its defined, we say that <m>f</m> is "differentiable" there.  The derivative function <m>f'(x)</m> is sometimes denoted <m>\frac{df}{dx}(x)</m>.  
+    </definition>
+    <p>
+      For example, suppose the function is just a constant like <m>f(x)=k</m>.  Think about the graph of that function.  It's just a flat line at a height of <m>k</m>.  Consequently, regardless of the value of <m>x</m>, the tangent line is flat (i.e. <m>0</m> slope), so when <m>f(x)</m> is constant, we get <m>f'(x)=0</m> for all values of <m>x</m>.  We note here that when the expression for the definition of <m>f</m> is particularly simple, we often lazily just write the expression down instead of the name of the function.  So, for example, we could write <m>k'=0</m>.
+    </p>
+    <p>
+      Here's another example.  Consider <m>f(x)=x</m>.  The graph of <m>x</m> is a straight line with slope <m>1</m>.  So, this is any easy one to get the derivative at any value of <m>x</m>.  Namely, for <m>f(x)=x</m>, we have <m>f'(x)=1</m> (i.e. <m>x'=1</m>) for any value of <m>x</m>.
+    </p>
+    <p>
+      So, those two examples don't require the use of any of our new limit finding skills.  They are obvious from geometry.  But, In the previous section, we did some of these computations for <m>f(x)=x^2</m>.  Looking back, you'll recall we found <m>f'(1)=2</m>.  Even more, if you worked through the example there doing both of the given <m>x</m> values, you would have found that <m>f'(-.5)=-1</m> and <m>f'(1.5)=3</m>.  So, based on those facts, can you speculate on a general expression for <m>(x^2)'</m>?  Well, let's use our limit finding skills to compute <m>f'(x)</m> for a very broad range of <m>x</m> values all at once.  So, suppose <m>x</m> is, generically, a number in the domain of <m>f(x)=x^2</m>.  Now,
+    </p>
+    <me>
+      \begin{array}{llll}
+        f'(x) \amp = \amp \displaystyle \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} \amp (\text{from definition of derivative}) \\
+              \amp = \amp \displaystyle \lim_{h\to 0} \frac{(x+h)^2-x^2}{h} \amp (\text{from definition of f}) \\
+              \amp = \amp \displaystyle \lim_{h\to 0} \frac{x^2+2xh+h^2-x^2}{h} \amp (\text{from basic algebra}) \\
+              \amp = \amp \displaystyle \lim_{h\to 0} \frac{h(2x+h)}{h} \amp (\text{from basic algebra}) \\
+              \amp = \amp \displaystyle \lim_{h\to 0} 2x+h \amp (\text{from basic algebra}) \\
+              \amp = \amp \displaystyle 2x \amp (\text{from limit basics}) \\
+      \end{array}
+    </me>
+    <p>
+      Notice here that the derivative function requires computing a limit using the value <m>f(x)</m>.  So, the domain of the derivative is, at most, the domain of <m>f</m>.  Indeed, if we look at the function <m>f(x)=|x|</m>, we see from its graph that <m>|x|'</m> is <m>1</m> for <m>x \gt 0</m> and <m>|x|'</m> is <m>-1</m> for <m>x \lt 0</m>.  But what about at <m>x=0</m>?  If we calculate the definition of <m>|x|'</m> at <m>x=0</m> using <m>h \to 0^{+}</m>, we get <m>1</m> but using <m>h \to 0^{-}</m>, we get <m>-1</m>.  So, for <m>|x|</m>, the derivative doesn't exist at <m>x=0</m>.  Of course, again, looking at the graph you can see there is a "point" or "cusp" at <m>x=0</m> so there is no well defined tangent line there.  So, we should have expected a failure to find the derivative (i.e. slope of the tangent line) there.
     </p>
   </section>
   <section xml:id="sec-propertiesOfDerivative">
