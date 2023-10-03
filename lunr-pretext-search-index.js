@@ -304,7 +304,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Definition",
-  "body": " Definition  coming soon.  "
+  "body": " Definition  The tangent problem solution from the previous section motivates us to define a function in the following way.  For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .  For example, suppose the function is just a constant like . Think about the graph of that function. It's just a flat line at a height of . Consequently, regardless of the value of , the tangent line is flat (i.e. slope), so when is constant, we get for all values of . We note here that when the expression for the definition of is particularly simple, we often lazily just write the expression down instead of the name of the function. So, for example, we could write .  Here's another example. Consider . The graph of is a straight line with slope . So, this is any easy one to get the derivative at any value of . Namely, for , we have (i.e. ) for any value of .  So, those two examples don't require the use of any of our new limit finding skills. They are obvious from geometry. But, In the previous section, we did some of these computations for . Looking back, you'll recall we found . Even more, if you worked through the example there doing both of the given values, you would have found that and . So, based on those facts, can you speculate on a general expression for ? Well, let's use our limit finding skills to compute for a very broad range of values all at once. So, suppose is, generically, a number in the domain of . Now,   Notice here that the derivative function requires computing a limit using the value . So, the domain of the derivative is, at most, the domain of . Indeed, if we look at the function , we see from its graph that is for and is for . But what about at ? If we calculate the definition of at using , we get but using , we get . So, for , the derivative doesn't exist at . Of course, again, looking at the graph you can see there is a \"point\" or \"cusp\" at so there is no well defined tangent line there. So, we should have expected a failure to find the derivative (i.e. slope of the tangent line) there.  "
+},
+{
+  "id": "def-derivative",
+  "level": "2",
+  "url": "sec-definitionOfDerivative.html#def-derivative",
+  "type": "Definition",
+  "number": "3.2.1",
+  "title": "",
+  "body": "For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted . "
 },
 {
   "id": "sec-propertiesOfDerivative",
