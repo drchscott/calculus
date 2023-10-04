@@ -304,7 +304,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Definition",
-  "body": " Definition  The tangent problem solution from the previous section motivates us to define a function in the following way.  For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .  For example, suppose the function is just a constant like . Think about the graph of that function. It's just a flat line at a height of . Consequently, regardless of the value of , the tangent line is flat (i.e. slope), so when is constant, we get for all values of . We note here that when the expression for the definition of is particularly simple, we often lazily just write the expression down instead of the name of the function. So, for example, we could write .  Here's another example. Consider . The graph of is a straight line with slope . So, this is any easy one to get the derivative at any value of . Namely, for , we have (i.e. ) for any value of .  So, those two examples don't require the use of any of our new limit finding skills. They are obvious from geometry. But, In the previous section, we did some of these computations for . Looking back, you'll recall we found . Even more, if you worked through the example there doing both of the given values, you would have found that and . So, based on those facts, can you speculate on a general expression for ? Well, let's use our limit finding skills to compute for a very broad range of values all at once. So, suppose is, generically, a number in the domain of . Now,   Notice here that the derivative function requires computing a limit using the value . So, the domain of the derivative is, at most, the domain of . Indeed, if we look at the function , we see from its graph that is for and is for . But what about at ? If we calculate the definition of at using , we get but using , we get . So, for , the derivative doesn't exist at . Of course, again, looking at the graph you can see there is a \"point\" or \"cusp\" at so there is no well defined tangent line there. So, we should have expected a failure to find the derivative (i.e. slope of the tangent line) there.  "
+  "body": " Definition  The tangent problem solution from the previous section motivates us to define a function in the following way.  For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .  For example, suppose the function is just a constant like . Think about the graph of that function. It's just a flat line at a height of . Consequently, regardless of the value of , the tangent line is flat (i.e. slope), so when is constant, we get for all values of . We note here that when the expression for the definition of is particularly simple, we often lazily just write the expression down instead of the name of the function. So, for example, we could write .  Here's another example. Consider . The graph of is a straight line with slope . So, this is any easy one to get the derivative at any value of . Namely, for , we have (i.e. ) for any value of .  So, those two examples don't require the use of any of our new limit finding skills. They are obvious from geometry. But, In the previous section, we did some of these computations for . Looking back, you'll recall we found . Even more, if you worked through the example there doing both of the given values, you would have found that and . So, based on those facts, can you speculate on a general expression for ? Well, let's use our limit finding skills to compute for a very broad range of values all at once. So, suppose is, generically, a number in the domain of . Now,   Notice here that the derivative function requires computing a limit using the value . So, the domain of the derivative is, at most, the domain of . So, does that mean that it is always the case that for every in the domain of , we can find ? No. Unfortunately not. Consider for example . Let's graph this function near .     Think for a moment of the point on this graph. It is not entirely clear what the tangent line there should be. There are lots of lines touching that point that don't \"cut\" through the graph and could be possible tangent lines. It's apparent that for the slope of the tangent line is and for the slope of the tangent line is . But what about at ? Well, let's compute using the definition.   We looked at this limit in the chapter on limits. It turns out that it doesn't exist as we found but unfortunately . So, does not exist \/ is not defined when . Apparently, that is generally the case when \"cusps\" like this exist in the graph.  There is another circumstance where one can see that derivatives do not exist. Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there. For example, look at the function which is graphed here.   Suppose we try to find its derivative at (i.e. slope of the tangent line to ). To see what it should be from the definition, let's add tiny positive values of like and to . These give and . Let's plot those and see what the lines through those points and look like.   We see here that the limit of those slopes is positively infinite. In other words, it doesn't exist. In general it is true that a failure of continuity at a point means that the function can't be differentiated there. Stated more directly we have ...    If is differentiable at a given value in its domain, then it must be continous there too.    "
 },
 {
   "id": "def-derivative",
@@ -316,13 +316,49 @@ var ptx_lunr_docs = [
   "body": "For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted . "
 },
 {
+  "id": "thm-differentiableImpliesContinuous",
+  "level": "2",
+  "url": "sec-definitionOfDerivative.html#thm-differentiableImpliesContinuous",
+  "type": "Theorem",
+  "number": "3.2.2",
+  "title": "",
+  "body": "  If is differentiable at a given value in its domain, then it must be continous there too.   "
+},
+{
   "id": "sec-propertiesOfDerivative",
   "level": "1",
   "url": "sec-propertiesOfDerivative.html",
   "type": "Section",
   "number": "3.3",
   "title": "Basic Properties",
-  "body": " Basic Properties  coming soon.  "
+  "body": " Basic Properties  So, in previous sections, we figured out a few derivatives like , and . Now what? Well, careful application of the definition of derivative would also give the following     and     Even better, derivative is as robust a concept as limit in that it yields the following basic properties theorem.      If and are any numbers and and are differentiable at , then .    If and are differentiable at , then .    If and are differentiable at and , then .      Perhaps the first obvious thing we can prove from these basic facts is that . How? Do you see it? Well, notice that times . So, the product property 2 of derivatives in the theorem above applies here giving . Similarly we could get . Do you see a pattern: , , , etc. In greatest generality, we have    If is defined on a given open interval, then there    More dramatic is that using the few derivatives we know and this basic properties theorem, we are now able to differentiate a large swath of functions. Let's throw one together like We now can compute   "
+},
+{
+  "id": "thm-knownDerivatives",
+  "level": "2",
+  "url": "sec-propertiesOfDerivative.html#thm-knownDerivatives",
+  "type": "Theorem",
+  "number": "3.3.1",
+  "title": "",
+  "body": "   and    "
+},
+{
+  "id": "thm-derivativeBasicProperties",
+  "level": "2",
+  "url": "sec-propertiesOfDerivative.html#thm-derivativeBasicProperties",
+  "type": "Theorem",
+  "number": "3.3.2",
+  "title": "",
+  "body": "    If and are any numbers and and are differentiable at , then .    If and are differentiable at , then .    If and are differentiable at and , then .     "
+},
+{
+  "id": "thm-derivativeOfPowerFunctions",
+  "level": "2",
+  "url": "sec-propertiesOfDerivative.html#thm-derivativeOfPowerFunctions",
+  "type": "Theorem",
+  "number": "3.3.3",
+  "title": "",
+  "body": "  If is defined on a given open interval, then there   "
 }
 ]
 

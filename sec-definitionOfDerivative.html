@@ -271,7 +271,37 @@ f'(x) \amp = \amp \displaystyle \lim_{h\to 0} \frac{f(x+h)-f(x)}{h} \amp (\text{
 \end{array}
 \end{equation*}
 </div>
-<div class="para" id="p-51">Notice here that the derivative function requires computing a limit using the value <span class="process-math">\(f(x)\text{.}\)</span>  So, the domain of the derivative is, at most, the domain of <span class="process-math">\(f\text{.}\)</span>  Indeed, if we look at the function <span class="process-math">\(f(x)=|x|\text{,}\)</span> we see from its graph that <span class="process-math">\(|x|'\)</span> is <span class="process-math">\(1\)</span> for <span class="process-math">\(x \gt 0\)</span> and <span class="process-math">\(|x|'\)</span> is <span class="process-math">\(-1\)</span> for <span class="process-math">\(x \lt 0\text{.}\)</span>  But what about at <span class="process-math">\(x=0\text{?}\)</span>  If we calculate the definition of <span class="process-math">\(|x|'\)</span> at <span class="process-math">\(x=0\)</span> using <span class="process-math">\(h \to 0^{+}\text{,}\)</span> we get <span class="process-math">\(1\)</span> but using <span class="process-math">\(h \to 0^{-}\text{,}\)</span> we get <span class="process-math">\(-1\text{.}\)</span>  So, for <span class="process-math">\(|x|\text{,}\)</span> the derivative doesn’t exist at <span class="process-math">\(x=0\text{.}\)</span>  Of course, again, looking at the graph you can see there is a "point" or "cusp" at <span class="process-math">\(x=0\)</span> so there is no well defined tangent line there.  So, we should have expected a failure to find the derivative (i.e. slope of the tangent line) there.</div></section></div>
+<div class="para" id="p-51">Notice here that the derivative function requires computing a limit using the value <span class="process-math">\(f(x)\text{.}\)</span>  So, the domain of the derivative is, at most, the domain of <span class="process-math">\(f\text{.}\)</span>  So, does that mean that it is always the case that for every <span class="process-math">\(x\)</span> in the domain of <span class="process-math">\(f\text{,}\)</span> we can find <span class="process-math">\(f'(x)\text{?}\)</span>  No.  Unfortunately not.  Consider for example <span class="process-math">\(f(x)=|x|\text{.}\)</span>  Let’s graph this function near <span class="process-math">\(x=0\text{.}\)</span>
+</div>
+<div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-8.svg" role="img" class="contained"></div>
+<div class="para" id="p-52">Think for a moment of the point <span class="process-math">\((0,0)\)</span> on this graph.  It is not entirely clear what the tangent line there should be.  There are lots of lines touching that point that don’t "cut" through the graph and could be possible tangent lines.  It’s apparent that for <span class="process-math">\(x \gt 0\)</span> the slope of the tangent line is <span class="process-math">\(1\)</span> and for <span class="process-math">\(x \lt 0\)</span> the slope of the tangent line is <span class="process-math">\(-1\text{.}\)</span>  But what about at <span class="process-math">\(x=0\text{?}\)</span>  Well, let’s compute using the definition.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{llll}
+f'(0) \amp = \amp \displaystyle \lim_{h\to 0} \frac{f(0+h)-f(0)}{h} \amp (\text{from definition of derivative}) \\
+\amp = \amp \displaystyle \lim_{h\to 0} \frac{|0+h|-|0|}{h} \amp (\text{def of absolute value}) \\
+\amp = \amp \displaystyle \lim_{h\to 0} \frac{|h|}{h} \amp (\text{def of absolute value}) \\
+\end{array}
+\end{equation*}
+</div>
+<div class="para" id="p-53">We looked at this limit in the chapter on limits.  It turns out that it doesn’t exist as we found <span class="process-math">\(\displaystyle \lim_{h\to 0^{+}} \frac{|h|}{h} = 1\)</span> but unfortunately <span class="process-math">\(\displaystyle \lim_{h\to 0^{-}} \frac{|h|}{h} = -1\text{.}\)</span>  So, <span class="process-math">\(f'(x)\)</span> does not exist / is not defined when <span class="process-math">\(x=0\text{.}\)</span>  Apparently, that is generally the case when "cusps" like this exist in the graph.</div>
+<div class="para logical" id="p-54">
+<div class="para">There is another circumstance where one can see that derivatives do not exist.  Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there.  For example, look at the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \left\{ \begin{array}{cc}
+1 \amp 0 \lt x\\
+-1 \amp x \le 0
+\end{array}
+\right.
+\end{equation*}
+</div>
+<div class="para">which is graphed here. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-9.svg" role="img" class="contained"></div> Suppose we try to find its derivative at <span class="process-math">\(x=0\)</span> (i.e. slope of the tangent line to <span class="process-math">\((0,f(0))=(0,-1)\)</span>).  To see what it should be from the definition, let’s add tiny positive values of <span class="process-math">\(h\)</span> like <span class="process-math">\(.5, .2,\)</span> and <span class="process-math">\(.1\)</span> to <span class="process-math">\(x=0\text{.}\)</span>  These give <span class="process-math">\(f(.5)=1, f(.2)=1,\)</span> and <span class="process-math">\(f(.1)=1\text{.}\)</span>  Let’s plot those and see what the lines through those points and <span class="process-math">\((0,-1)\)</span> look like. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-10.svg" role="img" class="contained"></div> We see here that the limit of those slopes is positively infinite.  In other words, it doesn’t exist.  In general it is true that a failure of continuity at a point means that the function can’t be differentiated there.  Stated more directly we have ...</div>
+</div>
+<article class="theorem theorem-like" id="thm-differentiableImpliesContinuous"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.2.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-55">If <span class="process-math">\(f\)</span> is differentiable at a given value in its domain, then it must be continous there too.</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-tangentProblem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-propertiesOfDerivative.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

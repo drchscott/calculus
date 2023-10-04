@@ -247,7 +247,46 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-propertiesOfDerivative"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">3.3</span><span class="space"> </span><span class="title">Basic Properties</span>
 </h2>
-<div class="para" id="p-52">coming soon.</div></section></div>
+<div class="para" id="p-56">So, in previous sections, we figured out a few derivatives like <span class="process-math">\(k'=0\text{,}\)</span> <span class="process-math">\(x'=1\)</span> and <span class="process-math">\((x^2)'=2x\text{.}\)</span>  Now what?  Well, careful application of the definition of derivative would also give the following</div>
+<article class="theorem theorem-like" id="thm-knownDerivatives"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-57">
+<span class="process-math">\(sin'(x)=cos(x), cos'(x)=-sin(x), (e^x)'=e^x\)</span> and <span class="process-math">\(ln'(x)=1/x\)</span>
+</div></article><div class="para" id="p-58">Even better, derivative is as robust a concept as limit in that it yields the following basic properties theorem.</div>
+<article class="theorem theorem-like" id="thm-derivativeBasicProperties"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h3>
+<ol class="decimal">
+<li id="li-7"><div class="para" id="p-59">If <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> are any numbers and <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable at <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\((rf+sg)'(x)=rf'(x)+sg'(x)\text{.}\)</span>
+</div></li>
+<li id="li-8"><div class="para" id="p-60">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable at <span class="process-math">\(x\text{,}\)</span> then <span class="process-math">\((fg)'(x)=f'(x)g(x)+f(x)g'(x)\text{.}\)</span>
+</div></li>
+<li id="li-9"><div class="para" id="p-61">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are differentiable at <span class="process-math">\(x\)</span> and <span class="process-math">\(g(x)\ne 0\text{,}\)</span> then <span class="process-math">\((\frac{f}{g})'(x)=\frac{f'(x)g(x)-f(x)g'(x)}{(g(x))^2}\text{.}\)</span>
+</div></li>
+</ol></article><div class="para" id="p-62">Perhaps the first obvious thing we can prove from these basic facts is that <span class="process-math">\((x^3)'=3x^2\text{.}\)</span>  How?  Do you see it?  Well, notice that <span class="process-math">\(x^3=x^2\)</span> times <span class="process-math">\(x\text{.}\)</span>  So, the product property 2 of derivatives in the theorem above applies here giving <span class="process-math">\((x^3)'=(x^2x)'=(x^2)'x+x^2x' = 2xx + x^2= 3x^2\text{.}\)</span>  Similarly we could get <span class="process-math">\((x^4)'=4x^3\text{.}\)</span>  Do you see a pattern:  <span class="process-math">\((x^2)'=2x\text{,}\)</span> <span class="process-math">\((x^3)'=3x^2\text{,}\)</span> <span class="process-math">\((x^4)'=4x^3\text{,}\)</span> etc.  In greatest generality, we have</div>
+<article class="theorem theorem-like" id="thm-derivativeOfPowerFunctions"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-63">If <span class="process-math">\(x^{r-1}\)</span> is defined on a given open interval, then <span class="process-math">\((x^r)'=rx^{r-1}\)</span> there</div></article><div class="para logical" id="p-64">
+<div class="para">More dramatic is that using the few derivatives we know and this basic properties theorem, we are now able to differentiate a large swath of functions.  Let’s throw one together like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x)=\frac{sin(x)}{x^2+1}
+\end{equation*}
+</div>
+<div class="para">We now can compute</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{llll}
+f'(x) \amp = \amp (\frac{sin(x)}{x^2+1})' \amp (\text{from definition of f}) \\
+\amp = \amp \frac{sin'(x)(x^2+1)-sin(x)(x^2+1)'}{(x^2+1)^2} \amp (\text{the quotient property 3 of derivative}) \\
+\amp = \amp \frac{cos(x)(x^2+1)-sin(x)((x^2)'+1')}{(x^2+1)^2} \amp (\text{known derivatives + sum property 1 of derivative}) \\
+\amp = \amp \frac{cos(x)(x^2+1)-sin(x)(2x)}{(x^2+1)^2} \amp (\text{known derivative})
+\end{array}
+\end{equation*}
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-definitionOfDerivative.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
