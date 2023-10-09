@@ -367,7 +367,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.4",
   "title": "Chain Rule",
-  "body": " Chain Rule  The derivative has one more, arguably more fundamental, basic property.    If is differentiable at and is differentiable at , then     This critical, fundamental property, of the derivative is know as the Chain Rule. Let's try it out.   "
+  "body": " Chain Rule  The derivative has one more, arguably more fundamental, basic property that is generally referred to as the chain rule.   Chain Rule   If is differentiable at and is differentiable at , then     Let's try it out.   "
 },
 {
   "id": "thm-chainRule",
@@ -375,8 +375,8 @@ var ptx_lunr_docs = [
   "url": "sec-chainRule.html#thm-chainRule",
   "type": "Theorem",
   "number": "3.4.1",
-  "title": "",
-  "body": "  If is differentiable at and is differentiable at , then    "
+  "title": "Chain Rule.",
+  "body": " Chain Rule   If is differentiable at and is differentiable at , then    "
 }
 ]
 
