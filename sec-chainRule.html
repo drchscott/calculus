@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Lean Calculus</title>
+<title>Chain Rule</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><span class="up-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></span><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-propertiesOfDerivative.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Derivatives.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -241,18 +241,31 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-tangentProblem.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangent Problem</span></a></div></li>
 <li><div class="toc-item"><a href="sec-definitionOfDerivative.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definition</span></a></div></li>
 <li><div class="toc-item"><a href="sec-propertiesOfDerivative.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Basic Properties</span></a></div></li>
-<li><div class="toc-item"><a href="sec-chainRule.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Chain Rule</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-chainRule.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Chain Rule</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="book" id="Lean-Calculus"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></li>
-<li><a href="Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></li>
-<li><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></li>
-<li><a href="Derivatives.html" class="internal"><span class="codenumber">3</span> <span class="title">Derivatives</span></a></li>
-</ul></nav></section></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-chainRule"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">3.4</span><span class="space"> </span><span class="title">Chain Rule</span>
+</h2>
+<div class="para" id="p-65">The derivative has one more, arguably more fundamental, basic property.</div>
+<article class="theorem theorem-like" id="thm-chainRule"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-66">If <span class="process-math">\(g\)</span> is differentiable at <span class="process-math">\(x\)</span> and <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(g(x)\text{,}\)</span> then <span class="process-math">\((f(g(x))'=g'(x)f'(g(x))\)</span>
+</div></article><div class="para logical" id="p-67">
+<div class="para">This critical, fundamental property, of the derivative is know as the Chain Rule.  Let’s try it out.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{llll}
+(sin(x^2))' \amp = \amp (x^2)'sin'(x^2) \amp (\text{from the chain rule}) \\
+\amp = \amp 2xcos(x^2) \amp (\text{known derivatives}) \\
+\end{array}
+\end{equation*}
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
-<span class="previous-button button disabled"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></span><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="frontmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-propertiesOfDerivative.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

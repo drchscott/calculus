@@ -359,6 +359,24 @@ var ptx_lunr_docs = [
   "number": "3.3.3",
   "title": "",
   "body": "  If is defined on a given open interval, then there   "
+},
+{
+  "id": "sec-chainRule",
+  "level": "1",
+  "url": "sec-chainRule.html",
+  "type": "Section",
+  "number": "3.4",
+  "title": "Chain Rule",
+  "body": " Chain Rule  The derivative has one more, arguably more fundamental, basic property.    If is differentiable at and is differentiable at , then     This critical, fundamental property, of the derivative is know as the Chain Rule. Let's try it out.   "
+},
+{
+  "id": "thm-chainRule",
+  "level": "2",
+  "url": "sec-chainRule.html#thm-chainRule",
+  "type": "Theorem",
+  "number": "3.4.1",
+  "title": "",
+  "body": "  If is differentiable at and is differentiable at , then    "
 }
 ]
 
