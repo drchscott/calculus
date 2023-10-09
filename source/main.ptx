@@ -617,9 +617,10 @@
   <section xml:id="sec-chainRule">
     <title>Chain Rule</title>
     <p>
-      The derivative has one more, arguably more fundamental, basic property.
+      The derivative has one more, arguably more fundamental, basic property that is generally referred to as the chain rule.
     </p>    
     <theorem xml:id="thm-chainRule">
+      <title>Chain Rule</title>
       <statement>
         <p>
           If <m>g</m> is differentiable at <m>x</m> and <m>f</m> is differentiable at <m>g(x)</m>, then <m>(f(g(x))'=g'(x)f'(g(x))</m>
@@ -627,7 +628,7 @@
       </statement>
     </theorem>
     <p>
-      This critical, fundamental property, of the derivative is know as the Chain Rule.  Let's try it out.
+      Let's try it out.
       <me>
         \begin{array}{llll}
           (sin(x^2))' \amp = \amp (x^2)'sin'(x^2) \amp (\text{from the chain rule}) \\
