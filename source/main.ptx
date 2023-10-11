@@ -640,6 +640,53 @@
 
 </chapter>
 
+<chapter xml:id="ch-appsOfDerivative">
+  <title>Derivative Applications</title>
+
+  <section xml:id="sec-inverseFunctions">
+    <title>Inverse Functions</title>
+    <p>
+      The chain rule <xref ref="thm-chainRule"/> from <xref ref="sec-chainRule"/> yields an assortment of powerful corollaries.  
+    </p>
+    <corollary xml:id="cor-inverseFunctionDerivatives">
+      <statement>
+        <p>
+          If <m>f</m> is invertible (i.e. 1-1) and differentiable on an interval, then 
+          <me>
+            (f^{-1})'(x)=\frac{1}{f'(f^{-1}(x))}
+          </me>
+          
+        </p>
+      </statement>
+    </corollary>
+    <p>
+      We don't dwell much on proof in this text but, can you see the proof here?  When we use the name "corollary" for a mathematical statement, we are stating that the proof follows quickly from previous theorems.  So corollaries provide a gentle introduction to the idea of proof writing.  So, it seems appropriate at this stage to be, at least occasionally, discussing such proofs.  In this case, the corollary above follows quickly from the chain rule.  Why?  Notice that by the definition of inverse functions, we have that <m>f(f^{-1}(x))=x</m>.  Now, use the chain rule to help with differentiating both sides of this equation and see what you get.
+    </p>
+    <p>
+      It's important to note here that, like the basic properties of differentiation from previous sections, this is once again saying that if you know the derivative of one function (<m>f</m> in this case), then you get for free the derivative of another function (<m>f^{-1}</m> in this case).  Let's try it out.
+      <me>
+        \begin{array}{llll}
+          (sin^{-1}(x))' \amp = \amp \frac{1}{sin'(sin^{-1}(x))} \amp (\text{corollary above}) \\
+                \amp = \amp \frac{1}{cos(sin^{-1}(x))} \amp (\text{know derivative of sin}) \\
+                \amp = \amp \frac{1}{\sqrt{1-x^2}} \amp (\text{trig fact}) \\
+        \end{array}
+      </me>
+    </p>
+    <p>
+      If you are not remembering / missing some trig stuff, the last equality above may throw you a bit.  Bear in mind, that that is a trig fact and not calculus per se.  Still, if you don't recall that composing a trig function with an inverse trig function leads to an algebraic expression (e.g. <m>cos(sin^{-1}(x))=\sqrt{1-x^2}</m>), then this might be a good time to at least review / look at <m>sin</m> composed with <m>cos^{-1}</m> and <m>cos</m> composed with <m>sin^{-1}</m>
+    </p>
+
+    
+  </section>
+  <section xml:id="sec-implicitFunctions">
+    <title>Implicit Functions</title>
+    <p>
+      coming soon...
+    </p>
+  </section>
+  
+</chapter>
+
 
   </book>
 </pretext>
