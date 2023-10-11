@@ -377,6 +377,33 @@ var ptx_lunr_docs = [
   "number": "3.4.1",
   "title": "Chain Rule.",
   "body": " Chain Rule   If is differentiable at and is differentiable at , then    "
+},
+{
+  "id": "sec-inverseFunctions",
+  "level": "1",
+  "url": "sec-inverseFunctions.html",
+  "type": "Section",
+  "number": "4.1",
+  "title": "Inverse Functions",
+  "body": " Inverse Functions  The chain rule from yields an assortment of powerful corollaries.    If is invertible (i.e. 1-1) and differentiable on an interval, then     We don't dwell much on proof in this text but, can you see the proof here? When we use the name \"corollary\" for a mathematical statement, we are stating that the proof follows quickly from previous theorems. So corollaries provide a gentle introduction to the idea of proof writing. So, it seems appropriate at this stage to be, at least occasionally, discussing such proofs. In this case, the corollary above follows quickly from the chain rule. Why? Notice that by the definition of inverse functions, we have that . Now, use the chain rule to help with differentiating both sides of this equation and see what you get.  It's important to note here that, like the basic properties of differentiation from previous sections, this is once again saying that if you know the derivative of one function ( in this case), then you get for free the derivative of another function ( in this case). Let's try it out.   If you are not remembering \/ missing some trig stuff, the last equality above may throw you a bit. Bear in mind, that that is a trig fact and not calculus per se. Still, if you don't recall that composing a trig function with an inverse trig function leads to an algebraic expression (e.g. ), then this might be a good time to at least review \/ look at composed with and composed with   "
+},
+{
+  "id": "cor-inverseFunctionDerivatives",
+  "level": "2",
+  "url": "sec-inverseFunctions.html#cor-inverseFunctionDerivatives",
+  "type": "Corollary",
+  "number": "4.1.1",
+  "title": "",
+  "body": "  If is invertible (i.e. 1-1) and differentiable on an interval, then    "
+},
+{
+  "id": "sec-implicitFunctions",
+  "level": "1",
+  "url": "sec-implicitFunctions.html",
+  "type": "Section",
+  "number": "4.2",
+  "title": "Implicit Functions",
+  "body": " Implicit Functions  coming soon...  "
 }
 ]
 
