@@ -681,8 +681,18 @@
   <section xml:id="sec-implicitFunctions">
     <title>Implicit Functions</title>
     <p>
-      coming soon...
+      I'm thinking of a function with domain variable, say <m>x</m>.  Let's call it <m>y</m>.  Suppose that I told you that <m>x^2y=1</m>.  Notice that here I have not *explicitly* defined <m>y</m> in terms of <m>x</m>.  Can you compute the derivative of <m>y</m>?  Probably you realize that by dividing both sides by <m>x^2</m>, you find the *explicit* expression <m>y=1/x^2</m> so that you can then compute the derivative directly <m>y'=-2/x^3</m>.  
     </p>
+    <p>
+      But, sometimes equations can be very complicated and finding such explicit expressions for the function implied there just might not be possible.  So, suppose we pretend for a moment that we can't solve <m>x^2y=1</m> explicitly for <m>y</m>.  I know, we can and we did just above.  But, play along like we can't.  Is there nothing we can do to get information about <m>y'</m>?  Well, there is.  Since you know that <m>y</m> is *some* function of <m>x</m>, that means that <m>x^2y</m> is a product of two functions of <m>x</m> (namely <m>x^2</m> and <m>y</m>)  We also know from previous sections how to differentiate a product.  So, differentiation both sides of the equation <m>x^2y=1</m> gives <m>2xy+x^2y'=0</m>.  Solving for <m>y'</m> gives <m>y'=-2xy/x^2=-2y/x</m>.  This doesn't give <m>y'</m> explicitly yet since we don't know <m>y</m> explicitly yet.  But, if someone came along and told us that <m>y=1/x^2</m>, notice that this conclusion gives us immediately that <m>y'=-2/x^3</m>.
+    </p>
+    <p>
+      Of course, it may never happen that you explicitly know what <m>y</m> is so that getting an explicit description of <m>y'</m> might not be possible.  So, does this mean we have no information about <m>y'</m>? Quite the contrary.  Suppose for example that due to some physical knowledge of the situation represented by the equation, we knew that the function <m>y</m> had the value <m>1</m> at <m>x=1</m> (i.e. <m>y(1)=1</m>).  Then the equation we found, <m>y'=-2y/x</m>, tells us that <m>y'(1)=-2(1)/1=-2</m>.  So, we know the slope of the tangent line to the graph of <m>y</m> at <m>(1,1)</m> even though we have no explicit formula helping us to graph <m>y</m>.  Now that we have the slope of the tangent line, <m>2</m>, and the point on the graph it passes through, <m>(1,1)</m>, we can write an equation for the tangent line:
+    </p>
+    <me>
+      y-1 = 2(x-1)
+    </me>
+    
   </section>
   
 </chapter>
