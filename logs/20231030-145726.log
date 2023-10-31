@@ -1,0 +1,19 @@
+INFO    : PreTeXt project found in `/workspaces/calculus`.
+WARNING : Using CLI version 2.0.0 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or changing `requirements.txt` to match 2.0.0.
+ERROR   : XML Syntax Error caused build to fail:
+ERROR   : /workspaces/calculus/source/main.ptx:759:32:FATAL:PARSER:ERR_ATTRIBUTE_NOT_STARTED: AttValue: " or ' expected
+/workspaces/calculus/source/main.ptx:759:32:FATAL:PARSER:ERR_SPACE_REQUIRED: attributes construct error
+/workspaces/calculus/source/main.ptx:759:32:FATAL:PARSER:ERR_GT_REQUIRED: Couldn't find end of Start Tag sageplot line 759
+/workspaces/calculus/source/main.ptx:766:20:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: image line 758 and sageplot
+/workspaces/calculus/source/main.ptx:767:15:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: p line 756 and image
+/workspaces/calculus/source/main.ptx:768:9:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: section line 754 and p
+/workspaces/calculus/source/main.ptx:777:13:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: chapter line 643 and section
+/workspaces/calculus/source/main.ptx:779:11:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: book line 14 and chapter
+/workspaces/calculus/source/main.ptx:782:10:FATAL:PARSER:ERR_TAG_NAME_MISMATCH: Opening and ending tag mismatch: pretext line 3 and book
+/workspaces/calculus/source/main.ptx:783:1:FATAL:PARSER:ERR_DOCUMENT_END: Extra content at the end of the document
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+
