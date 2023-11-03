@@ -440,6 +440,15 @@ var ptx_lunr_docs = [
   "number": "4.4.1",
   "title": "The Extreme Value Theorem.",
   "body": " The Extreme Value Theorem   If is continuous on a closed interval, Then obtains an global max and a global min on that interval.   "
+},
+{
+  "id": "sec-modeling",
+  "level": "1",
+  "url": "sec-modeling.html",
+  "type": "Section",
+  "number": "4.5",
+  "title": "Modeling",
+  "body": " Modeling  The goal of this text is to keep the calculus presentation as lean and clear as possible. But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus. So, in this section let's quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus. The general notion here is that of \"modeling\". This sort of process is very natural for us humans. The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you. So, we're taking the interest in travelling about the world and modeling it using paper and drawings. In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around. How useful the information is depends on how good the model is and how well we can work with it. The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.  Let's avoid getting too complicated but also make sure we don't produce something trivial. We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.  Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container. We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal. The dimensions of the container don't much matter to them but they want the containers to have a volume of 1000 cubic centimeters. After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter. So, what dimensions should we use?  "
 }
 ]
 
