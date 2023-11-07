@@ -824,13 +824,13 @@
     </p>
     <p>
       That's it!  We've created a mathematical model of the original problem.  From here on, the work is done with familiar mathamematics.  We're simply using optimization skills from previous experience.  As a matter of completeness, let's work through the math.  So...
-      <me>C'(r)=8\pi-\frac{2000}{r^2}</me>
-      From this, we see that <m>0=C'(r)</m> only when <m>0=8\pi r^2 -2000</m> which means 
-      <me>r=\sqrt{\frac{250}{\pi}} \approx 8.92</me>
-      To the left of that <m>r</m>, <m>C'(r)</m> isn't 0, so it's either positive or negative and we can easily evaluate <m>C'(r)</m> at some point to the left and see that it is negative.  So, <m>C(r)</m> decreases until it reaches <m>r \approx 8.92</m>.  Similarly, to the right of that <m>r</m>, we see that <m>C'(r)</m> is positive so <m>C(r)</m> increases.  Thus, by first derivative analysis, we see that <m>C(r)</m> is minimal at <m>r \approx 8.92</m>.
+      <me>C'(r)=8\pi r-\frac{2000}{r^2}</me>
+      From this, we see that <m>0=C'(r)</m> only when <m>0=8\pi r^3 -2000</m> which means 
+      <me>r=(\frac{250}{\pi})^\frac{1}{3} \approx 4.3</me>
+      To the left of that <m>r</m>, <m>C'(r)</m> isn't 0, so it's either positive or negative and we can easily evaluate <m>C'(r)</m> at some point to the left and see that it is negative.  So, <m>C(r)</m> decreases until it reaches <m>r \approx 4.3</m>.  Similarly, to the right of that <m>r</m>, we see that <m>C'(r)</m> is positive so <m>C(r)</m> increases.  Thus, by first derivative analysis, we see that <m>C(r)</m> is minimal at <m>r \approx 4.3</m>.
     </p>
     <p>
-      We can now report that to minimize cost in this situation, we should use <m>r \approx 8.92</m> which means <m>h \approx 4</m> for a minimal cost of approximately <m>1224.08</m> cents.
+      We can now report that to minimize cost in this situation, we should use <m>r \approx 4.3</m> which means <m>h \approx 17.2</m> for a minimal cost of approximately <m>697.47</m> cents.
     </p>
     
   </section>
