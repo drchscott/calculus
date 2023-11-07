@@ -260,7 +260,55 @@ window.MathJax = {
 </h2>
 <div class="para" id="p-84">The goal of this text is to keep the calculus presentation as lean and clear as possible.  But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus.  So, in this section let’s quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus.  The general notion here is that of "modeling".  This sort of process is very natural for us humans.  The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you.  So, we’re taking the interest in travelling about the world and modeling it using paper and drawings.  In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around.  How useful the information is depends on how good the model is and how well we can work with it.  The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.</div>
 <div class="para" id="p-85">Let’s avoid getting too complicated but also make sure we don’t produce something trivial.  We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.</div>
-<div class="para" id="p-86">Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container.  We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal.  The dimensions of the container don’t much matter to them but they want the containers to have a volume of 1000 cubic centimeters.  After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter.  So, what dimensions should we use?</div></section></div>
+<div class="para" id="p-86">Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container.  We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal.  The dimensions of the container don’t much matter to them but they want the containers to have a volume of 1000 cubic centimeters.  After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter.  So, what dimensions should we use?</div>
+<div class="para logical" id="p-87">
+<div class="para">Well, generally when people say "cylindrical containers" they mean right circular cyclinders so they could be described with 2 dimensions.  For example, we could use the radius of the circular ends and the height of the container.  Hmmmm... but, if we have one of those dimensions, it occurs to us that the other dimension would be determined since the container is supposed to have volume <span class="process-math">\(1000cm^3\text{.}\)</span>  After all, from our geometry background, we know that if we denote the radius with an <span class="process-math">\(r\)</span> and the height with an <span class="process-math">\(h\text{,}\)</span> then volume is given by <span class="process-math">\(\pi r^2h\text{.}\)</span>  So, for us, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\pi r^2h=1000
+\end{equation*}
+</div>
+<div class="para">That means that for any given radius, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+h=\frac{1000}{\pi r^2}
+\end{equation*}
+</div>
+<div class="para">This is good news because it means we’re down to just one variable... <span class="process-math">\(r\text{.}\)</span>
+</div>
+</div>
+<div class="para logical" id="p-88">
+<div class="para">Now, we’re trying to deal with costs.  So, let’s make a function for cost based on our variable <span class="process-math">\(r\text{.}\)</span>  We’ll do it in terms of cents since that is how the problem was described to us.  Well, the area of the top and bottom combined is <span class="process-math">\(2\pi r^2cm^2\text{.}\)</span>  Since the cost for those is 2 cents per <span class="process-math">\(cm^2\text{,}\)</span> we see that the top and bottom contribute <span class="process-math">\(4\pi r^2\)</span> cents to the cost.  Now, if you lay out the side of the cylinder flat, you see it is a rectangle with dimensions <span class="process-math">\(h=\frac{1000}{\pi r^2}\)</span> and circumference of the circle making the top and bottom of the cylinder, <span class="process-math">\(2\pi r\text{.}\)</span>  So, the area of the side of the cylinder is the product of those two dimensions giving an area of</div>
+<div class="displaymath process-math">
+\begin{equation*}
+(2\pi r)(\frac{1000}{\pi r^2})cm^2 = \frac{2000}{r}cm^2
+\end{equation*}
+</div>
+<div class="para">That area only costs 1 cent per <span class="process-math">\(cm^2\)</span> so it contributes <span class="process-math">\(\frac{2000}{r}\)</span> cents to the cost.  Finally, we have a cost function.  Let’s denote cost with a <span class="process-math">\(C\)</span> so that now we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+C(r)=4\pi r^2 + \frac{2000}{r}
+\end{equation*}
+</div>
+<div class="para">Even more, we know that the domain we want to use is any positive <span class="process-math">\(r\)</span> (i.e. the open interval <span class="process-math">\((0,\infty)\)</span>).</div>
+</div>
+<div class="para logical" id="p-89">
+<div class="para">That’s it!  We’ve created a mathematical model of the original problem.  From here on, the work is done with familiar mathamematics.  We’re simply using optimization skills from previous experience.  As a matter of completeness, let’s work through the math.  So...</div>
+<div class="displaymath process-math">
+\begin{equation*}
+C'(r)=8\pi-\frac{2000}{r^2}
+\end{equation*}
+</div>
+<div class="para">From this, we see that <span class="process-math">\(0=C'(r)\)</span> only when <span class="process-math">\(0=8\pi r^2 -2000\)</span> which means</div>
+<div class="displaymath process-math">
+\begin{equation*}
+r=\sqrt{\frac{250}{\pi}} \approx 8.92
+\end{equation*}
+</div>
+<div class="para">To the left of that <span class="process-math">\(r\text{,}\)</span> <span class="process-math">\(C'(r)\)</span> isn’t 0, so it’s either positive or negative and we can easily evaluate <span class="process-math">\(C'(r)\)</span> at some point to the left and see that it is negative.  So, <span class="process-math">\(C(r)\)</span> decreases until it reaches <span class="process-math">\(r \approx 8.92\text{.}\)</span>  Similarly, to the right of that <span class="process-math">\(r\text{,}\)</span> we see that <span class="process-math">\(C'(r)\)</span> is positive so <span class="process-math">\(C(r)\)</span> increases.  Thus, by first derivative analysis, we see that <span class="process-math">\(C(r)\)</span> is minimal at <span class="process-math">\(r \approx 8.92\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="p-90">We can now report that to minimize cost in this situation, we should use <span class="process-math">\(r \approx 8.92\)</span> which means <span class="process-math">\(h \approx 4\)</span> for a minimal cost of approximately <span class="process-math">\(1224.08\)</span> cents.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-theExtremeValueTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
