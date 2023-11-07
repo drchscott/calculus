@@ -1,0 +1,116 @@
+INFO    : PreTeXt project found in `/workspaces/calculus`.
+WARNING : Using CLI version 2.0.0 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or changing `requirements.txt` to match 2.0.0.
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting firstDiscontinuityExampleGraph.sage to firstDiscontinuityExampleGraph.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting badDiscontinuityExampleGraph.sage to badDiscontinuityExampleGraph.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting image-4.sage to image-4.pdf
+INFO    : converting image-3.sage to image-3.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting image-5.sage to image-5.pdf
+INFO    : converting image-7.sage to image-7.pdf
+INFO    : converting image-6.sage to image-6.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting image-10.sage to image-10.pdf
+INFO    : converting image-9.sage to image-9.pdf
+INFO    : converting image-8.sage to image-8.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting image-11.sage to image-11.pdf
+INFO    : converting image-12.sage to image-12.pdf
+INFO    : converting image-13.sage to image-13.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PDF graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : converting image-15.sage to image-15.pdf
+INFO    : converting image-14.sage to image-14.pdf
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to PNG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/extract-sageplot.xsl
+INFO    : Removing temporary directory /tmp/tmpswlngo2p
+INFO    : Removing temporary directory /tmp/tmp1r7t28yv
+INFO    : Removing temporary directory /tmp/tmpnzwogj5l
+INFO    : Removing temporary directory /tmp/tmptymulxja
+INFO    : Removing temporary directory /tmp/tmpfho6x1nv
+INFO    : Removing temporary directory /tmp/tmp0ngg1s_y
+INFO    : Removing temporary directory /tmp/tmpwm8ig1r2
+INFO    : Removing temporary directory /tmp/tmptons2ih5
+INFO    : Removing temporary directory /tmp/tmp7gpuj2ql
+INFO    : Removing temporary directory /tmp/tmpqzhh0ex_
+INFO    : Removing temporary directory /tmp/tmpf5ik8dvi
+INFO    : Removing temporary directory /tmp/tmpdr5krwz0
+INFO    : Removing temporary directory /tmp/tmp23g_edvd
+INFO    : Removing temporary directory /tmp/tmpaqqx2k7y
+INFO    : Preparing to build into /workspaces/calculus/output/print.
+INFO    : discovering source file's directory name: /workspaces/calculus/source
+INFO    : verifying and expanding input directory: /workspaces/calculus/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calculus/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus/assets
+INFO    : converting /workspaces/calculus/source/main.ptx to LaTeX as /tmp/tmphyno_bqc/main.tex
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/xsl/pretext-latex.xsl
+INFO    : comprehensive messages, warnings, and errors:
+INFO    : successful application of /root/.ptx/xsl/pretext-latex.xsl
+INFO    : 
+Success! Run `pretext view` to see the results.
+

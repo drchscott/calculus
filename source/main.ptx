@@ -808,6 +808,30 @@
     <p>
       Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container.  We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal.  The dimensions of the container don't much matter to them but they want the containers to have a volume of 1000 cubic centimeters.  After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter.  So, what dimensions should we use?
     </p>
+    <p>
+      Well, generally when people say "cylindrical containers" they mean right circular cyclinders so they could be described with 2 dimensions.  For example, we could use the radius of the circular ends and the height of the container.  Hmmmm... but, if we have one of those dimensions, it occurs to us that the other dimension would be determined since the container is supposed to have volume <m>1000cm^3</m>.  After all, from our geometry background, we know that if we denote the radius with an <m>r</m> and the height with an <m>h</m>, then volume is given by <m>\pi r^2h</m>.  So, for us, we have
+      <me>\pi r^2h=1000</me>
+      That means that for any given radius, we have 
+      <me>h=\frac{1000}{\pi r^2}</me>
+      This is good news because it means we're down to just one variable... <m>r</m>.
+    </p>
+    <p>
+      Now, we're trying to deal with costs.  So, let's make a function for cost based on our variable <m>r</m>.  We'll do it in terms of cents since that is how the problem was described to us.  Well, the area of the top and bottom combined is <m>2\pi r^2cm^2</m>.  Since the cost for those is 2 cents per <m>cm^2</m>, we see that the top and bottom contribute <m>4\pi r^2</m> cents to the cost.  Now, if you lay out the side of the cylinder flat, you see it is a rectangle with dimensions <m>h=\frac{1000}{\pi r^2}</m> and circumference of the circle making the top and bottom of the cylinder, <m>2\pi r</m>.  So, the area of the side of the cylinder is the product of those two dimensions giving an area of 
+      <me>(2\pi r)(\frac{1000}{\pi r^2})cm^2 = \frac{2000}{r}cm^2</me>
+      That area only costs 1 cent per <m>cm^2</m> so it contributes <m>\frac{2000}{r}</m> cents to the cost.  Finally, we have a cost function.  Let's denote cost with a <m>C</m> so that now we have
+      <me>C(r)=4\pi r^2 + \frac{2000}{r}</me>
+      Even more, we know that the domain we want to use is any positive <m>r</m> (i.e. the open interval <m>(0,\infty)</m>).
+    </p>
+    <p>
+      That's it!  We've created a mathematical model of the original problem.  From here on, the work is done with familiar mathamematics.  We're simply using optimization skills from previous experience.  As a matter of completeness, let's work through the math.  So...
+      <me>C'(r)=8\pi-\frac{2000}{r^2}</me>
+      From this, we see that <m>0=C'(r)</m> only when <m>0=8\pi r^2 -2000</m> which means 
+      <me>r=\sqrt{\frac{250}{\pi}} \approx 8.92</me>
+      To the left of that <m>r</m>, <m>C'(r)</m> isn't 0, so it's either positive or negative and we can easily evaluate <m>C'(r)</m> at some point to the left and see that it is negative.  So, <m>C(r)</m> decreases until it reaches <m>r \approx 8.92</m>.  Similarly, to the right of that <m>r</m>, we see that <m>C'(r)</m> is positive so <m>C(r)</m> increases.  Thus, by first derivative analysis, we see that <m>C(r)</m> is minimal at <m>r \approx 8.92</m>.
+    </p>
+    <p>
+      We can now report that to minimize cost in this situation, we should use <m>r \approx 8.92</m> which means <m>h \approx 4</m> for a minimal cost of approximately <m>1224.08</m> cents.
+    </p>
     
   </section>
   
