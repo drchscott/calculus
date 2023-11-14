@@ -866,7 +866,23 @@
             plot1
           </sageplot>
         </image>
-        Now what?  That's the area problem.  Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function.
+        Now what?  That's the area problem.  Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function.  This area trapped above minus area trapped below needs some notation and language.  So....
+      </p>
+        <definition xml:id="def-integralNotation">
+          <title>Definition of Integral</title>
+          <statement>
+            <p>
+              For a function <m>f</m> definied on a closed interval <m>[a,b]</m> that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by
+              <me>\int_{a}^{b} f(x)dx</me>
+              and we refer to this as *the integral of <m>f</m> on <m>[a,b]</m>*.
+            </p>
+          </statement>
+        </definition>
+      <p>
+        A little thought suggests that, for familiar geometric shapes, integrals have the following *linearity* properties.
+        <me>\int_{a}^{b} (rf(x)+sg(x))dx = r\int_{a}^{b} f(x)dx + s\int_{a}^{b} g(x)dx</me>
+        And when <m>a \lt c \lt b</m>,
+        <me>\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx</me>
       </p>
     </section>
 
@@ -992,12 +1008,12 @@
             \begin{array}{lll}
               R_n \amp = \amp (\frac{2}{n})^2(1 + 2 + 3 + \dots + n) \\
                  \amp = \amp (\frac{2}{n})^2\frac{n(n+1)}{2} \\
-                 \amp = \amp \frac{n(n+1)}{n^2} \\
-                 \amp = \amp \frac{n}{n}\frac{n+1}{n} \\
-                 \amp = \amp 1+\frac{1}{n} \\
+                 \amp = \amp 2\frac{n(n+1)}{n^2} \\
+                 \amp = \amp 2\frac{n}{n}\frac{n+1}{n} \\
+                 \amp = \amp 2(1+\frac{1}{n}) \\
             \end{array}
           </me>
-          So, if we want <m>R_{100}</m>, it's super easy now as we see that it is <m>1+\frac{1}{100} = 1.01</m>.  Even more, it is now very clear that the more and more thinner and thinner rectangles we use, the more this is looking like <m>1</m>.
+          So, if we want <m>R_{100}</m>, it's super easy now as we see that it is <m>2(1+\frac{1}{100}) = 2.02</m>.  Even more, it is now very clear that the more and more (thinner and thinner) rectangles we use, the more this is looking like <m>2</m>.
         </p>
           <definition xml:id="def-integral">
             <title>Definition of Integral</title>
@@ -1005,14 +1021,32 @@
               <p>
                 For a continuous function <m>f</m> definied on a closed interval <m>[a,b]</m>, we define
                 <me>\int_{a}^{b} f(x)dx = \displaystyle \lim_{n\to \infty} R_n</me>
-                We call this the *integral of <m>f</m> on <m>[a,b]</m>*
               </p>
             </statement>
           </definition>
-
-
+          <p>
+            As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.
+          </p>
+          <theorem xml:id="thm-propertiesOfIntegral">
+            <title>Basic Properties of Integral</title>
+            <statement>
+              <p>
+                <ol>
+                  <li>
+                    <p>
+                      <m>\int_{a}^{b} (rf(x)+sg(x))dx = r\int_{a}^{b} f(x)dx + s\int_{a}^{b} g(x)dx</m>
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      If <m>a \lt c \lt b</m>, Then <m>\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx</m>
+                    </p>
+                  </li>
+                </ol>
+              </p>
+            </statement>
+          </theorem>
     </section>
-
   
 </chapter>
 
