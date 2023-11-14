@@ -12,7 +12,35 @@
 </head>
 <body class="ignore-math">
 <h3 class="heading"><span class="type">Paragraph</span></h3>
-<div class="para">Riemann’s solution from the previous section suggests that we would get more and more accurate estimates if we computed <span class="process-math">\(R_{10}, R_{100}, R_{1000}, \)</span> etc.  That way we’d be using thinner and thinner approximating rectangles.  But, each time we do a Riemann sum, it’s a lot of work.  So, let’s try something.  Suppose we don’t specify exactly how many rectangles to use.  Just let <span class="process-math">\(n\)</span> denote a positive number so that <span class="process-math">\(R_n\)</span> is denoting the Riemann sum for that many rectanges.  As <span class="process-math">\(n\)</span> gets larger, the rectangles should get thinner and <span class="process-math">\(R_n\)</span> should be a better and better approximation to the area.  Can we get <span class="process-math">\(R_n\)</span> written without specifying the exact value of <span class="process-math">\(n\text{?}\)</span>  Well, let’s try.</div>
-<span class="incontext"><a href="sec-defOfIntegral.html#p-94" class="internal">in-context</a></span>
+<div class="para logical">
+<div class="para">Historically, the mathematician Bernhard Riemann is credited with the approach / solution to the area problem presented in this section.  To see how it works, we’ll do a case study on something for which we know the answer.  That way, when we apply Riemann’s approach, we’ll know whether it’s working or not.  So, let’s look at <span class="process-math">\(f(x)=x\)</span> on <span class="process-math">\([0,2]\text{.}\)</span>  Notice that this gives a triangle above the axis with leg lengths 2 and 2 so that the triangle has area 2. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-19.svg" role="img" class="contained"></div> Riemann’s idea is to chop the interval <span class="process-math">\([0,2]\)</span> into equally sized subintervals.  For example, if we chop it into 4 subintervals, each subinterval would have size <span class="process-math">\((2-0)/4 = 1/2\text{.}\)</span>  The subintervals would be <span class="process-math">\([0,1/2], [1/2,2/2], [2/2,3/2],\)</span> and <span class="process-math">\([3/2,4/2]\text{.}\)</span>  For each subinterval, Riemann evaluated the function (<span class="process-math">\(f(x)=x\)</span> for us) somewhere in each subinterval and used that evaluation as the height of a rectangle and the subinterval as the base of the rectangle.  For simplicity, let’s evaluate our function at the right endpoints of the subintervals.  So, here’s what we have. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-20.svg" role="img" class="contained"></div> Now, unlike the area under the curve, these rectangles *are* familiar geometric shapes so we can compute their areas.  Even better, if we add up all of their areas, it will give us an *approximate* value of the area under the curve.  Of course, it will be off by some amount since we can clearly see that the rectangles stick outside of the area in question.  Still ... it gives some approximation.  So, let’s compute it.  Each rectangle has the same size base of <span class="process-math">\(1/2\)</span> and the heights are <span class="process-math">\(f(1/2)=1/2, f(2/2)=2/2, f(3/2)=3/2, \)</span> and <span class="process-math">\(f(4/2)=4/2\text{.}\)</span>  One quick note:  Instead of writing things like <span class="process-math">\(4/2\)</span> as <span class="process-math">\(2\text{,}\)</span> I’m leaving it in terms of the subinterval size <span class="process-math">\(1/2\text{.}\)</span>  That will be helpful later so avoid reducing such things for now.  So, the approximate area as given by these rectangular areas is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_4 \amp = \amp \frac{1}{2}\frac{1}{2} + \frac{1}{2}\frac{2}{2} + \frac{1}{2}\frac{3}{2} + \frac{1}{2}\frac{4}{2} \\
+\amp = \amp \frac{1}{2}(\frac{1}{2} + \frac{2}{2} + \frac{3}{2} + \frac{4}{2}) \\
+\amp = \amp \frac{1}{2}\frac{1 + 2 + 3 + 4}{2} \\
+\amp = \amp \frac{1}{2}\frac{10}{2} \\
+\amp = \amp \frac{5}{2} \\
+\amp = \amp 2.5
+\end{array}
+\end{equation*}
+</div>
+<div class="para">So?  Not bad.  We know the actual, exact, area is 2 but this process estimated it at 2.5.  How could we improve?  The answer is, hopefully, very apparent.  Namely, we could just up the number of subintervals.  When we do that, the size of the subintervals shrinks so that the rectangles are thinner (more like pins).  So, the amount of the rectangle poking out of the actual area will be less.  In other words, the estimate by using them *should* be more accurate.  Let’s check!  Let’s chop the interval into 8 equal subintervals this time.  So each subinterval will have size <span class="process-math">\((2-0)/8=1/4\)</span> this time. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-21.svg" role="img" class="contained"></div> Now, let’s add up all those rectangular areas.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_8 \amp = \amp \frac{1}{4}\frac{1}{4} + \frac{1}{4}\frac{2}{4} + \frac{1}{4}\frac{3}{4} + \frac{1}{4}\frac{4}{4} + \frac{1}{4}\frac{5}{4} + \frac{1}{4}\frac{6}{4} + \frac{1}{4}\frac{7}{4} + \frac{1}{4}\frac{8}{4} \\
+\amp = \amp \frac{1}{4}(\frac{1}{4} + \frac{2}{4} + \frac{3}{4} + \frac{4}{4} + \frac{5}{4} + \frac{6}{4} + \frac{7}{4} + \frac{8}{4}) \\
+\amp = \amp \frac{1}{4}\frac{1 + 2 + 3 + 4 + 5 + 6 + 7 + 8}{4} \\
+\amp = \amp \frac{1}{4}\frac{36}{4} \\
+\amp = \amp \frac{9}{4} \\
+\amp = \amp 2.25
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Using these 8 smaller subintervals gives the more accurate estimate 2.25 instead of 2.5 that we got with the 4 larger subintervals.  So, we have every reason to expect if we continue to use more and more subintervals of equal size (so thinner and thinner rectangles) that we’ll get more and more accurate estimates of the area.</div>
+</div>
+<span class="incontext"><a href="sec-RiemannsSolution.html#p-94" class="internal">in-context</a></span>
 </body>
 </html>

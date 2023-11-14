@@ -457,7 +457,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Area Problem",
-  "body": " Area Problem  For a given function defined on a closed interval, let's try to find the area that its graph traps above the axis minus the area it traps below the axis. For example, if we plot on we get   Notice that this graph traps some area above the axis (in a triangle with legs of length 2 and 2 over ) and some area below the axis (in a triangle with legs of length 1 and 1 over ). Do you see them? Here, let's highlight them.   If we subtract the area below from the area above we get . Of course, that is a case where we have well established formulas for calculating areas (triangles in this case). What if the graph produces shapes for which we do *not* have familiar geometric formulas. Consider, for example, on the interval .   Now what? That's the area problem. Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function.  "
+  "body": " Area Problem  For a given function defined on a closed interval, let's try to find the area that its graph traps above the axis minus the area it traps below the axis. For example, if we plot on we get   Notice that this graph traps some area above the axis (in a triangle with legs of length 2 and 2 over ) and some area below the axis (in a triangle with legs of length 1 and 1 over ). Do you see them? Here, let's highlight them.   If we subtract the area below from the area above we get . Of course, that is a case where we have well established formulas for calculating areas (triangles in this case). What if the graph produces shapes for which we do *not* have familiar geometric formulas. Consider, for example, on the interval .   Now what? That's the area problem. Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function. This area trapped above minus area trapped below needs some notation and language. So....   Definition of Integral   For a function definied on a closed interval that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by and we refer to this as *the integral of on *.    A little thought suggests that, for familiar geometric shapes, integrals have the following *linearity* properties. And when ,   "
+},
+{
+  "id": "def-integralNotation",
+  "level": "2",
+  "url": "sec-areaProblem.html#def-integralNotation",
+  "type": "Definition",
+  "number": "5.1.1",
+  "title": "Definition of Integral.",
+  "body": " Definition of Integral   For a function definied on a closed interval that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by and we refer to this as *the integral of on *.   "
 },
 {
   "id": "sec-RiemannsSolution",
@@ -475,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Definition",
-  "body": " Definition  Riemann's solution from the previous section suggests that we would get more and more accurate estimates if we computed etc. That way we'd be using thinner and thinner approximating rectangles. But, each time we do a Riemann sum, it's a lot of work. So, let's try something. Suppose we don't specify exactly how many rectangles to use. Just let denote a positive number so that is denoting the Riemann sum for that many rectanges. As gets larger, the rectangles should get thinner and should be a better and better approximation to the area. Can we get written without specifying the exact value of ? Well, let's try.  For the moment, let's stay focused on the simple example from the previous section (i.e. on ). First, we note that the interval we're working over runs from to . So, it has size 2-0 = 2. Chopping that into n equal subintervals means that each subinterval will have size (1\/n)th the size of the whole interval so each one will have size . Now that we know the size of the subintervals and we also know that the first one starts at the left end of the whole interval (i.e. at 0 in this case), we see that the subintervals we're using are Thus, the right endpoints of the subintervals where we'll be evaluating in order to get the heights of our rectanges are So, finally, we can compute We take a moment now to note some facts about sums like the one that shows up here. Namely,   Special Sums                        We present these summation facts without proof here. But, please note, they are fairly straightforward to verify. One can find many nice treatments online and generally if this text is being used for teaching a course, one should expect to see some presentation of one or more verifications in class. The first of them is particularly evident and is often attributed to the hisotric luminary mathematician, Karl Gauss.  With these summation facts in place, we can continue the work above. So, if we want , it's super easy now as we see that it is . Even more, it is now very clear that the more and more thinner and thinner rectangles we use, the more this is looking like .   Definition of Integral   For a continuous function definied on a closed interval , we define We call this the *integral of on *    "
+  "body": " Definition  Riemann's solution from the previous section suggests that we would get more and more accurate estimates if we computed etc. That way we'd be using thinner and thinner approximating rectangles. But, each time we do a Riemann sum, it's a lot of work. So, let's try something. Suppose we don't specify exactly how many rectangles to use. Just let denote a positive number so that is denoting the Riemann sum for that many rectanges. As gets larger, the rectangles should get thinner and should be a better and better approximation to the area. Can we get written without specifying the exact value of ? Well, let's try.  For the moment, let's stay focused on the simple example from the previous section (i.e. on ). First, we note that the interval we're working over runs from to . So, it has size 2-0 = 2. Chopping that into n equal subintervals means that each subinterval will have size (1\/n)th the size of the whole interval so each one will have size . Now that we know the size of the subintervals and we also know that the first one starts at the left end of the whole interval (i.e. at 0 in this case), we see that the subintervals we're using are Thus, the right endpoints of the subintervals where we'll be evaluating in order to get the heights of our rectanges are So, finally, we can compute We take a moment now to note some facts about sums like the one that shows up here. Namely,   Special Sums                        We present these summation facts without proof here. But, please note, they are fairly straightforward to verify. One can find many nice treatments online and generally if this text is being used for teaching a course, one should expect to see some presentation of one or more verifications in class. The first of them is particularly evident and is often attributed to the hisotric luminary mathematician, Karl Gauss.  With these summation facts in place, we can continue the work above. So, if we want , it's super easy now as we see that it is . Even more, it is now very clear that the more and more (thinner and thinner) rectangles we use, the more this is looking like .   Definition of Integral   For a continuous function definied on a closed interval , we define     As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.   Basic Properties of Integral           If , Then        "
 },
 {
   "id": "thm-sumFormulas",
@@ -493,7 +502,16 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "5.3.2",
   "title": "Definition of Integral.",
-  "body": " Definition of Integral   For a continuous function definied on a closed interval , we define We call this the *integral of on *   "
+  "body": " Definition of Integral   For a continuous function definied on a closed interval , we define    "
+},
+{
+  "id": "thm-propertiesOfIntegral",
+  "level": "2",
+  "url": "sec-defOfIntegral.html#thm-propertiesOfIntegral",
+  "type": "Theorem",
+  "number": "5.3.3",
+  "title": "Basic Properties of Integral.",
+  "body": " Basic Properties of Integral           If , Then       "
 }
 ]
 
