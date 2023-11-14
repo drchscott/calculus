@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Limit Properties</title>
+<title>Integration</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="infinityLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-modeling.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Lean-Calculus.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-areaProblem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -224,7 +224,7 @@ window.MathJax = {
 <ul class="structural">
 <li><div class="toc-item"><a href="mainIdea.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Main Idea</span></a></div></li>
 <li><div class="toc-item"><a href="infinityLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Infinity Stuff</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limit Properties</span></a></div></li>
+<li><div class="toc-item"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limit Properties</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -254,7 +254,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-modeling.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Modeling</span></a></div></li>
 </ul>
 </li>
-<li>
+<li class="active">
 <div class="toc-item"><a href="ch-integration.html" class="internal"><span class="codenumber">5</span> <span class="title">Integration</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec-areaProblem.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Area Problem</span></a></div></li>
@@ -263,58 +263,16 @@ window.MathJax = {
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="limitProps"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Limit Properties</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-integration"><h2 class="heading">
+<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">5</span><span class="space"> </span><span class="title">Integration</span>
 </h2>
-<div class="para" id="p-15">A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed.  Consider, for example, our friend <span class="process-math">\(sin(x)/x\text{.}\)</span>  Look at the table we made at the beginning of the first section.  We stopped looking once we let <span class="process-math">\(x\)</span> get down to <span class="process-math">\(0.001\text{.}\)</span>  But what about even closer?  Like <span class="process-math">\(x=0.0003\)</span> or <span class="process-math">\(x=0.0000000162\)</span> or <span class="process-math">\(x=0.0000000000004\text{?}\)</span>  Maybe waaaay down there <span class="process-math">\(sin(x)/x\)</span> starts getting wonky.  Maybe.  So, right now we’re just guessing that <span class="process-math">\(\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1\text{.}\)</span>  Educated guessing ... yes.  But still just guessing.  We’d like to start moving past just guessing.  We start doing that in this section.  We start by looking at a couple of functions whose limits are not in question.</div>
-<div class="para" id="p-16">First, consider a constant function like <span class="process-math">\(f(x)=5\text{.}\)</span>  No matter what you put in for <span class="process-math">\(x\text{,}\)</span> it gives us <span class="process-math">\(5\text{.}\)</span>  So, there’s no question what it’s approaching regardless of where we let <span class="process-math">\(x\)</span> go.  It’s always giving <span class="process-math">\(5\text{.}\)</span>  So, we have ...</div>
-<article class="theorem theorem-like" id="thm-limitOfConstants"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-17">If <span class="process-math">\(f(x)\)</span> is constant, say <span class="process-math">\(f(x)=k\)</span> for some number <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(a\)</span> is any number, Then <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=k\text{.}\)</span>
-</div></article><div class="para" id="p-18">Secondly, consider the function <span class="process-math">\(f(x)=x\text{.}\)</span>  Well, this function just does whatever <span class="process-math">\(x\)</span> does.  So, where <span class="process-math">\(x\)</span> goes, so does <span class="process-math">\(f(x)=x\text{.}\)</span>  Thus, we have ...</div>
-<article class="theorem theorem-like" id="thm-limitOfIdentity"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-19">If <span class="process-math">\(f(x)=x\)</span> and <span class="process-math">\(a\)</span> is any number, Then <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=a\text{.}\)</span>
-</div></article><div class="para" id="p-20">It is our good fortune that limits behave according to the following theorem.</div>
-<article class="theorem theorem-like" id="thm-limitBasicProperties"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-21">If <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=l\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a}g(x)=k\)</span> and <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> are any two numbers and the right hand side of the following equalities are defined, Then <span class="process-math">\(\displaystyle \lim_{x\to a}(rf(x)+sg(x))=rl+sk\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)g(x))=lk\text{,}\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k\text{.}\)</span>
-</div></article><article class="remark remark-like" id="remark-2"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
-</h3>It is also the case that if all of the <span class="process-math">\(\displaystyle \lim_{x\to a}\)</span> are replaced with either <span class="process-math">\(\displaystyle \lim_{x\to a^{+}}\)</span> or <span class="process-math">\(\displaystyle \lim_{x\to a^{-}}\text{,}\)</span> then the theorem <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a> is still correct.</article><div class="para" id="p-22">Often, people cite this basic properties theorem by saying, "the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits".</div>
-<article class="remark remark-like" id="remark-3"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
-</h3>Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn’t valid, isn’t a thing).  For example, if <span class="process-math">\(k=0\)</span> in the theorem, then we certainly are not claiming that <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k\)</span> since the right hand side of this equality is <span class="process-math">\(l/0\)</span> which isn’t even a thing to claim something is.</article><article class="example example-like" id="example-6"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like">Use <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a> to compute <span class="process-math">\(\displaystyle \lim_{x\to 2}(x^2)\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x\to -1}(x^2+3x)\text{,}\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to 0}(x^2+3x)/(x+2)\text{.}\)</span></article></div>
-<div class="para" id="p-23">Using <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a>, we quickly deduce the following quick conclusions (called "corollaries" by mathematicians).</div>
-<article class="corollary theorem-like" id="limitCorollaries"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
-</h3>
-<ol class="decimal">
-<li id="li-1"><div class="para" id="p-24">If <span class="process-math">\(q\)</span> is a nonzero rational number and <span class="process-math">\(a\)</span> is a nonzero number at which <span class="process-math">\(a^q\)</span> is defined, then <span class="process-math">\(\displaystyle \lim_{x\to a}x^q=a^q\text{.}\)</span>
-</div></li>
-<li id="li-2"><div class="para" id="p-25">If <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> are polynomials and <span class="process-math">\(q(a)\ne 0\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x\to a}(p(x)/q(x))=p(a)/q(a)\text{.}\)</span>
-</div></li>
-</ol></article><div class="para" id="p-26">Finally, we provide here a short list of known limits for use in subsequent sections.</div>
-<article class="theorem theorem-like" id="thm-AFewKnownLimits"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span>
-</h3>
-<ol class="decimal">
-<li id="li-3"><div class="para" id="p-27">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}sin(x)=sin(a)\text{.}\)</span>
-</div></li>
-<li id="li-4"><div class="para" id="p-28">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}cos(x)=cos(a)\text{.}\)</span>
-</div></li>
-<li id="li-5"><div class="para" id="p-29">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}e^x=e^a\text{.}\)</span>
-</div></li>
-<li id="li-6"><div class="para" id="p-30">If <span class="process-math">\(a &gt; 0\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x\to a}ln(x)=ln(a)\text{.}\)</span>
-</div></li>
-</ol></article></section></div>
+<nav class="summary-links"><ul>
+<li><a href="sec-areaProblem.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Area Problem</span></a></li>
+<li><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></li>
+<li><a href="sec-defOfIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definition</span></a></li>
+</ul></nav></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="infinityLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-modeling.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-areaProblem.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

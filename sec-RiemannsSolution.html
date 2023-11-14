@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Limit Properties</title>
+<title>Riemann’s Solution</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="infinityLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Limits.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-areaProblem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-integration.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-defOfIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -224,7 +224,7 @@ window.MathJax = {
 <ul class="structural">
 <li><div class="toc-item"><a href="mainIdea.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Main Idea</span></a></div></li>
 <li><div class="toc-item"><a href="infinityLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Infinity Stuff</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limit Properties</span></a></div></li>
+<li><div class="toc-item"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Limit Properties</span></a></div></li>
 </ul>
 </li>
 <li>
@@ -258,63 +258,46 @@ window.MathJax = {
 <div class="toc-item"><a href="ch-integration.html" class="internal"><span class="codenumber">5</span> <span class="title">Integration</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec-areaProblem.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Area Problem</span></a></div></li>
-<li><div class="toc-item"><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></div></li>
 <li><div class="toc-item"><a href="sec-defOfIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definition</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="limitProps"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.3</span><span class="space"> </span><span class="title">Limit Properties</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-RiemannsSolution"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">5.2</span><span class="space"> </span><span class="title">Riemann’s Solution</span>
 </h2>
-<div class="para" id="p-15">A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed.  Consider, for example, our friend <span class="process-math">\(sin(x)/x\text{.}\)</span>  Look at the table we made at the beginning of the first section.  We stopped looking once we let <span class="process-math">\(x\)</span> get down to <span class="process-math">\(0.001\text{.}\)</span>  But what about even closer?  Like <span class="process-math">\(x=0.0003\)</span> or <span class="process-math">\(x=0.0000000162\)</span> or <span class="process-math">\(x=0.0000000000004\text{?}\)</span>  Maybe waaaay down there <span class="process-math">\(sin(x)/x\)</span> starts getting wonky.  Maybe.  So, right now we’re just guessing that <span class="process-math">\(\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1\text{.}\)</span>  Educated guessing ... yes.  But still just guessing.  We’d like to start moving past just guessing.  We start doing that in this section.  We start by looking at a couple of functions whose limits are not in question.</div>
-<div class="para" id="p-16">First, consider a constant function like <span class="process-math">\(f(x)=5\text{.}\)</span>  No matter what you put in for <span class="process-math">\(x\text{,}\)</span> it gives us <span class="process-math">\(5\text{.}\)</span>  So, there’s no question what it’s approaching regardless of where we let <span class="process-math">\(x\)</span> go.  It’s always giving <span class="process-math">\(5\text{.}\)</span>  So, we have ...</div>
-<article class="theorem theorem-like" id="thm-limitOfConstants"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-17">If <span class="process-math">\(f(x)\)</span> is constant, say <span class="process-math">\(f(x)=k\)</span> for some number <span class="process-math">\(k\text{,}\)</span> and <span class="process-math">\(a\)</span> is any number, Then <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=k\text{.}\)</span>
-</div></article><div class="para" id="p-18">Secondly, consider the function <span class="process-math">\(f(x)=x\text{.}\)</span>  Well, this function just does whatever <span class="process-math">\(x\)</span> does.  So, where <span class="process-math">\(x\)</span> goes, so does <span class="process-math">\(f(x)=x\text{.}\)</span>  Thus, we have ...</div>
-<article class="theorem theorem-like" id="thm-limitOfIdentity"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-19">If <span class="process-math">\(f(x)=x\)</span> and <span class="process-math">\(a\)</span> is any number, Then <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=a\text{.}\)</span>
-</div></article><div class="para" id="p-20">It is our good fortune that limits behave according to the following theorem.</div>
-<article class="theorem theorem-like" id="thm-limitBasicProperties"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
-</h3>
-<div class="para" id="p-21">If <span class="process-math">\(\displaystyle \lim_{x\to a}f(x)=l\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a}g(x)=k\)</span> and <span class="process-math">\(r\)</span> and <span class="process-math">\(s\)</span> are any two numbers and the right hand side of the following equalities are defined, Then <span class="process-math">\(\displaystyle \lim_{x\to a}(rf(x)+sg(x))=rl+sk\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)g(x))=lk\text{,}\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k\text{.}\)</span>
-</div></article><article class="remark remark-like" id="remark-2"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.4</span><span class="period">.</span>
-</h3>It is also the case that if all of the <span class="process-math">\(\displaystyle \lim_{x\to a}\)</span> are replaced with either <span class="process-math">\(\displaystyle \lim_{x\to a^{+}}\)</span> or <span class="process-math">\(\displaystyle \lim_{x\to a^{-}}\text{,}\)</span> then the theorem <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a> is still correct.</article><div class="para" id="p-22">Often, people cite this basic properties theorem by saying, "the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits".</div>
-<article class="remark remark-like" id="remark-3"><h3 class="heading">
-<span class="type">Remark</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
-</h3>Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn’t valid, isn’t a thing).  For example, if <span class="process-math">\(k=0\)</span> in the theorem, then we certainly are not claiming that <span class="process-math">\(\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k\)</span> since the right hand side of this equality is <span class="process-math">\(l/0\)</span> which isn’t even a thing to claim something is.</article><article class="example example-like" id="example-6"><a href="" data-knowl="" class="id-ref example-knowl original" data-refid="hk-example-6"><h3 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.3.6</span><span class="period">.</span>
-</h3></a></article><div class="hidden-content tex2jax_ignore" id="hk-example-6"><article class="example example-like">Use <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a> to compute <span class="process-math">\(\displaystyle \lim_{x\to 2}(x^2)\text{,}\)</span> <span class="process-math">\(\displaystyle \lim_{x\to -1}(x^2+3x)\text{,}\)</span> and <span class="process-math">\(\displaystyle \lim_{x\to 0}(x^2+3x)/(x+2)\text{.}\)</span></article></div>
-<div class="para" id="p-23">Using <a href="" class="xref" data-knowl="./knowl/thm-limitBasicProperties.html" title="Theorem 1.3.3">Theorem 1.3.3</a>, we quickly deduce the following quick conclusions (called "corollaries" by mathematicians).</div>
-<article class="corollary theorem-like" id="limitCorollaries"><h3 class="heading">
-<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">1.3.7</span><span class="period">.</span>
-</h3>
-<ol class="decimal">
-<li id="li-1"><div class="para" id="p-24">If <span class="process-math">\(q\)</span> is a nonzero rational number and <span class="process-math">\(a\)</span> is a nonzero number at which <span class="process-math">\(a^q\)</span> is defined, then <span class="process-math">\(\displaystyle \lim_{x\to a}x^q=a^q\text{.}\)</span>
-</div></li>
-<li id="li-2"><div class="para" id="p-25">If <span class="process-math">\(p(x)\)</span> and <span class="process-math">\(q(x)\)</span> are polynomials and <span class="process-math">\(q(a)\ne 0\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x\to a}(p(x)/q(x))=p(a)/q(a)\text{.}\)</span>
-</div></li>
-</ol></article><div class="para" id="p-26">Finally, we provide here a short list of known limits for use in subsequent sections.</div>
-<article class="theorem theorem-like" id="thm-AFewKnownLimits"><h3 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.8</span><span class="period">.</span>
-</h3>
-<ol class="decimal">
-<li id="li-3"><div class="para" id="p-27">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}sin(x)=sin(a)\text{.}\)</span>
-</div></li>
-<li id="li-4"><div class="para" id="p-28">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}cos(x)=cos(a)\text{.}\)</span>
-</div></li>
-<li id="li-5"><div class="para" id="p-29">If <span class="process-math">\(a\)</span> is any number, then <span class="process-math">\(\displaystyle \lim_{x\to a}e^x=e^a\text{.}\)</span>
-</div></li>
-<li id="li-6"><div class="para" id="p-30">If <span class="process-math">\(a &gt; 0\text{,}\)</span> then <span class="process-math">\(\displaystyle \lim_{x\to a}ln(x)=ln(a)\text{.}\)</span>
-</div></li>
-</ol></article></section></div>
+<div class="para logical" id="p-92">
+<div class="para">Historically, the mathematician Bernhard Riemann is credited with the approach / solution to the area problem presented in this section.  To see how it works, we’ll do a case study on something for which we know the answer.  That way, when we apply Riemann’s approach, we’ll know whether it’s working or not.  So, let’s look at <span class="process-math">\(f(x)=x\)</span> on <span class="process-math">\([0,2]\text{.}\)</span>  Notice that this gives a triangle above the axis with leg lengths 2 and 2 so that the triangle has area 2. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-19.svg" role="img" class="contained"></div> Riemann’s idea is to chop the interval <span class="process-math">\([0,2]\)</span> into equally sized subintervals.  For example, if we chop it into 4 subintervals, each subinterval would have size <span class="process-math">\((2-0)/4 = 1/2\text{.}\)</span>  The subintervals would be <span class="process-math">\([0,1/2], [1/2,2/2], [2/2,3/2],\)</span> and <span class="process-math">\([3/2,4/2]\text{.}\)</span>  For each subinterval, Riemann evaluated the function (<span class="process-math">\(f(x)=x\)</span> for us) somewhere in each subinterval and used that evaluation as the height of a rectangle and the subinterval as the base of the rectangle.  For simplicity, let’s evaluate our function at the right endpoints of the subintervals.  So, here’s what we have. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-20.svg" role="img" class="contained"></div> Now, unlike the area under the curve, these rectangles *are* familiar geometric shapes so we can compute their areas.  Even better, if we add up all of their areas, it will give us an *approximate* value of the area under the curve.  Of course, it will be off by some amount since we can clearly see that the rectangles stick outside of the area in question.  Still ... it gives some approximation.  So, let’s compute it.  Each rectangle has the same size base of <span class="process-math">\(1/2\)</span> and the heights are <span class="process-math">\(f(1/2)=1/2, f(2/2)=2/2, f(3/2)=3/2, \)</span> and <span class="process-math">\(f(4/2)=4/2\text{.}\)</span>  One quick note:  Instead of writing things like <span class="process-math">\(4/2\)</span> as <span class="process-math">\(2\text{,}\)</span> I’m leaving it in terms of the subinterval size <span class="process-math">\(1/2\text{.}\)</span>  That will be helpful later so avoid reducing such things for now.  So, the approximate area as given by these rectangular areas is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_4 \amp = \amp \frac{1}{2}\frac{1}{2} + \frac{1}{2}\frac{2}{2} + \frac{1}{2}\frac{3}{2} + \frac{1}{2}\frac{4}{2} \\
+\amp = \amp \frac{1}{2}(\frac{1}{2} + \frac{2}{2} + \frac{3}{2} + \frac{4}{2}) \\
+\amp = \amp \frac{1}{2}\frac{1 + 2 + 3 + 4}{2} \\
+\amp = \amp \frac{1}{2}\frac{10}{2} \\
+\amp = \amp \frac{5}{2} \\
+\amp = \amp 2.5
+\end{array}
+\end{equation*}
+</div>
+<div class="para">So?  Not bad.  We know the actual, exact, area is 2 but this process estimated it at 2.5.  How could we improve?  The answer is, hopefully, very apparent.  Namely, we could just up the number of subintervals.  When we do that, the size of the subintervals shrinks so that the rectangles are thinner (more like pins).  So, the amount of the rectangle poking out of the actual area will be less.  In other words, the estimate by using them *should* be more accurate.  Let’s check!  Let’s chop the interval into 8 equal subintervals this time.  So each subinterval will have size <span class="process-math">\((2-0)/8=1/4\)</span> this time. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-21.svg" role="img" class="contained"></div> Now, let’s add up all those rectangular areas.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_8 \amp = \amp \frac{1}{4}\frac{1}{4} + \frac{1}{4}\frac{2}{4} + \frac{1}{4}\frac{3}{4} + \frac{1}{4}\frac{4}{4} + \frac{1}{4}\frac{5}{4} + \frac{1}{4}\frac{6}{4} + \frac{1}{4}\frac{7}{4} + \frac{1}{4}\frac{8}{4} \\
+\amp = \amp \frac{1}{4}(\frac{1}{4} + \frac{2}{4} + \frac{3}{4} + \frac{4}{4} + \frac{5}{4} + \frac{6}{4} + \frac{7}{4} + \frac{8}{4}) \\
+\amp = \amp \frac{1}{4}\frac{1 + 2 + 3 + 4 + 5 + 6 + 7 + 8}{4} \\
+\amp = \amp \frac{1}{4}\frac{36}{4} \\
+\amp = \amp \frac{9}{4} \\
+\amp = \amp 2.25
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Using these 8 smaller subintervals gives the more accurate estimate 2.25 instead of 2.5 that we got with the 4 larger subintervals.  So, we have every reason to expect if we continue to use more and more subintervals of equal size (so thinner and thinner rectangles) that we’ll get more and more accurate estimates of the area.</div>
+</div>
+<div class="para" id="p-93">As a final note, you’ll see that we wrote <span class="process-math">\(R_4\)</span> and <span class="process-math">\(R_8\)</span> for these estimates.  Using the <span class="process-math">\(R\)</span> is a nod to Riemann and the 4 and 8 are just indicating how many subintervals we use.  Generally, we refer to these approximations as *Riemann sums*.</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="infinityLimits.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="Continuity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-areaProblem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-defOfIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

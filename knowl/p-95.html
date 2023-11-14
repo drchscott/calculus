@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">For the moment, let’s stay focused on the simple example from the previous section (i.e. <span class="process-math">\(f(x)=x\)</span> on <span class="process-math">\([0,2]\)</span>).  First, we note that the interval we’re working over runs from <span class="process-math">\(x=0\)</span> to <span class="process-math">\(x=2\text{.}\)</span>  So, it has size 2-0 = 2.  Chopping that into n equal subintervals means that each subinterval will have size (1/n)th the size of the whole interval so each one will have size <span class="process-math">\(\frac{2}{n}\text{.}\)</span>  Now that we know the size of the subintervals and we also know that the first one starts at the left end of the whole interval (i.e. at 0 in this case), we see that the subintervals we’re using are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+[0,\frac{2}{n}],\quad [\frac{2}{n},2\frac{2}{n}],\quad [2\frac{2}{n},3\frac{2}{n}],\quad \dots ,\quad [(n-1)\frac{2}{n},n\frac{2}{n}]
+\end{equation*}
+</div>
+<div class="para">Thus, the right endpoints of the subintervals where we’ll be evaluating <span class="process-math">\(f(x)=x\)</span> in order to get the heights of our rectanges are</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{2}{n}, 2\frac{2}{n}, 3\frac{2}{n}, \dots ,n\frac{2}{n}
+\end{equation*}
+</div>
+<div class="para">So, finally, we can compute</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_n \amp = \amp \frac{2}{n}f(\frac{2}{n}) + \frac{2}{n}f(2\frac{2}{n}) + \frac{2}{n}f(3\frac{2}{n}) + \dots + \frac{2}{n}f(n\frac{2}{n}) \\
+\amp = \amp \frac{2}{n}(\frac{2}{n} + 2\frac{2}{n} + 3\frac{2}{n} + \dots + n\frac{2}{n}) \\
+\amp = \amp \frac{2}{n}(\frac{2}{n}(1 + 2 + 3 + \dots + n))\\
+\amp = \amp (\frac{2}{n})^2(1 + 2 + 3 + \dots + n)
+\end{array}
+\end{equation*}
+</div>
+<div class="para">We take a moment now to note some facts about sums like the one that shows up here.  Namely,</div>
+</div>
+<span class="incontext"><a href="sec-defOfIntegral.html#p-95" class="internal">in-context</a></span>
+</body>
+</html>
