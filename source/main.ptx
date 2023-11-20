@@ -1025,6 +1025,10 @@
             </statement>
           </definition>
           <p>
+            At the risk of being more verbose that consistent with the goals of this text, let's put down what <m>R_n</m> looks like in general.  So, for a function <m>f(x)</m> on an interval <m>[a,b]</m> we see that the size of the interval is <m>b-a</m> so that when we divide it into <m>n</m> equal size subintervals, each has size <m>(b-a)/n</m>.  Since our interval starts at <m>a</m>, we see that the first subinterval ends at <m>a+(b-a)/n</m>, the second subinterval ends at <m>a+2(b-a)/n</m>, the third one ends at <m>a+3(b-a)/n</m> and so on until we finally reach the end of the last, <m>n</m>th, subinterval at <m>a+n(b-a)/n</m>.  We evaluate <m>f(x)</m> at each of these subinterval endpoints and multiply each of those evaluations by the size of the subintervals to get the area of each approximating rectangle and add those areas up to get <m>R_n</m>.  In other words, the most general form of the Riemann sums is
+            <me>R_n = \frac{b-a}{n}\left[ f\left(a+\frac{b-a}{n}\right)+f\left(a+2\frac{b-a}{n}\right)+\dots+f\left(a+n\frac{b-a}{n}\right) \right]</me>
+          </p>
+          <p>
             As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.
           </p>
           <theorem xml:id="thm-propertiesOfIntegral">
@@ -1047,8 +1051,62 @@
             </statement>
           </theorem>
     </section>
+
+    <section xml:id="sec-fullExample">
+      <title>A Full Example</title>
+      <p>
+        Let's do a rather full example.  So, let's avoid simple intervals starting at <m>0</m> and functions that have easy geometric formulas for the areas.  A good starting example that isn't too crazy is <m>f(x)=x^2-1</m> on <m>[-1,2]</m>.  For reference, here's the graph.
+        <image width="65%">
+          <sageplot>
+            plot1 = plot(x^2-1, x, -1, 2, color='black')
+            plot1
+          </sageplot>
+        </image>
+        Let's compute the <m>n</m>th Riemann sum.
+        <me>
+          \begin{array}{lll}
+            R_n \amp = \amp \frac{b-a}{n}\left[ f\left(a+\frac{b-a}{n}\right)+f\left(a+2\frac{b-a}{n}\right)+\dots+f\left(a+n\frac{b-a}{n}\right) \right] \\
+               \amp = \amp \frac{2-(-1)}{n}\left[ f\left(-1+\frac{2-(-1)}{n}\right)+f\left(-1+2\frac{2-(-1)}{n}\right)+\dots+f\left(-1+n\frac{2-(-1)}{n}\right) \right] \\
+               \amp = \amp \frac{3}{n}\left[ f\left(-1+\frac{3}{n}\right)+f\left(-1+2\frac{3}{n}\right)+\dots+f\left(-1+n\frac{3}{n}\right) \right] \\
+               \amp = \amp \frac{3}{n}\left[ \left(\left(-1+\frac{3}{n}\right)^2-1\right)+\left(\left(-1+2\frac{3}{n}\right)^2-1\right)+\dots+\left(\left(-1+n\frac{3}{n}\right)^2-1\right) \right] \\
+               \amp = \amp \frac{3}{n}\left[ \left((-1)^2-2\frac{3}{n}+(\frac{3}{n})^2-1\right)+\left((-1)^2-2(2\frac{3}{n})+(2\frac{3}{n})^2-1\right)+\right.  \\
+               \amp   \amp \quad\quad \left. \dots+\left((-1)^2-2(n\frac{3}{n})+(n\frac{3}{n})^2-1\right) \right]\\
+               \amp = \amp \frac{3}{n}\left[ \left(1-2\frac{3}{n}+1^2(\frac{3}{n})^2-1\right)+\left(1-2(2\frac{3}{n})+2^2(\frac{3}{n})^2-1\right)+\right.  \\
+               \amp   \amp \quad\quad \left. \dots+\left(1-n(2\frac{3}{n})+n^2(\frac{3}{n})^2-1\right) \right]\\
+               \amp = \amp \frac{3}{n}\left[ \left(-2\frac{3}{n}+1^2(\frac{3}{n})^2\right)+\left(2(-2\frac{3}{n})+2^2(\frac{3}{n})^2\right)+\dots+\left(n(-2\frac{3}{n})+n^2(\frac{3}{n})^2\right) \right]\\
+               \amp = \amp \frac{3}{n}\left[   -(2\frac{3}{n})(1+2+\dots +n) +(\frac{3}{n})^2(1^2+2^2+\dots +n^2) \right]\\
+               \amp = \amp \frac{3}{n}\left[   -(2\frac{3}{n})(\frac{n(n+1)}{2}) +(\frac{3}{n})^2(\frac{n(n+1)(2n+1)}{6}) \right]\\
+               \amp = \amp \frac{3}{n}\left[   \frac{-3}{n}n(n+1) +\frac{9}{n^2}\frac{n(n+1)(2n+1)}{6} \right]\\
+               \amp = \amp -9\left[\frac{n(n+1)}{n^2}\right] +\frac{9}{2}\left[\frac{n(n+1)(2n+1)}{n^3}\right]\\
+               \amp = \amp -9\left[\frac{n+1}{n}\right] +\frac{9}{2}\left[\frac{(n+1)(2n+1)}{n^2}\right]\\
+               \amp = \amp -9\left[\frac{n+1}{n}\right] +\frac{9}{2}\left[\frac{n+1}{n}\right]\left[\frac{2n+1}{n}\right]\\
+               \amp = \amp -9\left[1+\frac{1}{n}\right] +\frac{9}{2}\left[1+\frac{1}{n}\right]\left[2+\frac{1}{n}\right]
+          \end{array}
+        </me>
+        Now, <m>\frac{1}{n} \to 0</m> as <m>n \to \infty</m>.  So we have ...
+        <me>\int_{-1}^2 (x^2+1)dx = \displaystyle \lim_{n \to \infty} R_n = -9[1]+\frac{9}{2}[1][2] = -9+9 = 0</me>
+      </p>
+    </section>
   
 </chapter>
+
+<chapter xml:id="ch-fundamentalTheoremOfCalculus">
+  <title>Fundamental Theorem</title>
+  
+  <section xml:id="sec-antiderivatives">
+    <title>Antiderivatives</title>
+    <p>
+      coming soon...
+    </p>
+  </section>  <section xml:id="sec-fundamentalTheoremofCalculus">
+    <title>The Theorem</title>
+    <p>
+      coming soon...
+    </p>
+  </section>
+
+</chapter>
+
 
 
   </book>
