@@ -1028,28 +1028,6 @@
             At the risk of being more verbose that consistent with the goals of this text, let's put down what <m>R_n</m> looks like in general.  So, for a function <m>f(x)</m> on an interval <m>[a,b]</m> we see that the size of the interval is <m>b-a</m> so that when we divide it into <m>n</m> equal size subintervals, each has size <m>(b-a)/n</m>.  Since our interval starts at <m>a</m>, we see that the first subinterval ends at <m>a+(b-a)/n</m>, the second subinterval ends at <m>a+2(b-a)/n</m>, the third one ends at <m>a+3(b-a)/n</m> and so on until we finally reach the end of the last, <m>n</m>th, subinterval at <m>a+n(b-a)/n</m>.  We evaluate <m>f(x)</m> at each of these subinterval endpoints and multiply each of those evaluations by the size of the subintervals to get the area of each approximating rectangle and add those areas up to get <m>R_n</m>.  In other words, the most general form of the Riemann sums is
             <me>R_n = \frac{b-a}{n}\left[ f\left(a+\frac{b-a}{n}\right)+f\left(a+2\frac{b-a}{n}\right)+\dots+f\left(a+n\frac{b-a}{n}\right) \right]</me>
           </p>
-          <p>
-            As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.
-          </p>
-          <theorem xml:id="thm-propertiesOfIntegral">
-            <title>Basic Properties of Integral</title>
-            <statement>
-              <p>
-                <ol>
-                  <li>
-                    <p>
-                      <m>\int_{a}^{b} (rf(x)+sg(x))dx = r\int_{a}^{b} f(x)dx + s\int_{a}^{b} g(x)dx</m>
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      If <m>a \lt c \lt b</m>, Then <m>\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx</m>
-                    </p>
-                  </li>
-                </ol>
-              </p>
-            </statement>
-          </theorem>
     </section>
 
     <section xml:id="sec-fullExample">
@@ -1085,6 +1063,35 @@
         </me>
         Now, <m>\frac{1}{n} \to 0</m> as <m>n \to \infty</m>.  So we have ...
         <me>\int_{-1}^2 (x^2+1)dx = \displaystyle \lim_{n \to \infty} R_n = -9[1]+\frac{9}{2}[1][2] = -9+9 = 0</me>
+      </p>
+    </section>
+
+    <section xml:id="sec-propertiesOfIntegral">
+      <title>Properties</title>
+      <p>
+        It is, perhaps, terrifying to think about the computations involved in computing integrals for more interesting functions.  After all, the computations in the last section for just the relatively simple function <m>x^2-1</m> were already pretty extensive.  Well, the good news is that the linearity properties we discussed for integrals when the function's graph produces familiar geometric figures *still* work for the more general continuous functions for which we use the limit of Riemann sums for computation.  
+      </p>
+      <theorem xml:id="thm-propertiesOfIntegral">
+        <title>Basic Properties of Integral</title>
+        <statement>
+          <p>
+            <ol>
+              <li>
+                <p>
+                  <m>\int_{a}^{b} (rf(x)+sg(x))dx = r\int_{a}^{b} f(x)dx + s\int_{a}^{b} g(x)dx</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  If <m>a \lt c \lt b</m>, Then <m>\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx</m>
+                </p>
+              </li>
+            </ol>
+          </p>
+        </statement>
+      </theorem>
+      <p>
+      This theorem is broken out into its own section here as a nod to, yet again, a minor deviation from the basic lean tenents of this text.  The proof of these basic properties is straightforward enough that they serve as a nice opportunity to demonstrate proof writing without causing any overload confusion about the concepts.  So, let's take a look at the proof of the fist one of these properties.
       </p>
     </section>
   
