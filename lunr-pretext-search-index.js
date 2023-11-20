@@ -484,7 +484,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.3",
   "title": "Definition",
-  "body": " Definition  Riemann's solution from the previous section suggests that we would get more and more accurate estimates if we computed etc. That way we'd be using thinner and thinner approximating rectangles. But, each time we do a Riemann sum, it's a lot of work. So, let's try something. Suppose we don't specify exactly how many rectangles to use. Just let denote a positive number so that is denoting the Riemann sum for that many rectanges. As gets larger, the rectangles should get thinner and should be a better and better approximation to the area. Can we get written without specifying the exact value of ? Well, let's try.  For the moment, let's stay focused on the simple example from the previous section (i.e. on ). First, we note that the interval we're working over runs from to . So, it has size 2-0 = 2. Chopping that into n equal subintervals means that each subinterval will have size (1\/n)th the size of the whole interval so each one will have size . Now that we know the size of the subintervals and we also know that the first one starts at the left end of the whole interval (i.e. at 0 in this case), we see that the subintervals we're using are Thus, the right endpoints of the subintervals where we'll be evaluating in order to get the heights of our rectanges are So, finally, we can compute We take a moment now to note some facts about sums like the one that shows up here. Namely,   Special Sums                        We present these summation facts without proof here. But, please note, they are fairly straightforward to verify. One can find many nice treatments online and generally if this text is being used for teaching a course, one should expect to see some presentation of one or more verifications in class. The first of them is particularly evident and is often attributed to the hisotric luminary mathematician, Karl Gauss.  With these summation facts in place, we can continue the work above. So, if we want , it's super easy now as we see that it is . Even more, it is now very clear that the more and more (thinner and thinner) rectangles we use, the more this is looking like .   Definition of Integral   For a continuous function definied on a closed interval , we define     As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.   Basic Properties of Integral           If , Then        "
+  "body": " Definition  Riemann's solution from the previous section suggests that we would get more and more accurate estimates if we computed etc. That way we'd be using thinner and thinner approximating rectangles. But, each time we do a Riemann sum, it's a lot of work. So, let's try something. Suppose we don't specify exactly how many rectangles to use. Just let denote a positive number so that is denoting the Riemann sum for that many rectanges. As gets larger, the rectangles should get thinner and should be a better and better approximation to the area. Can we get written without specifying the exact value of ? Well, let's try.  For the moment, let's stay focused on the simple example from the previous section (i.e. on ). First, we note that the interval we're working over runs from to . So, it has size 2-0 = 2. Chopping that into n equal subintervals means that each subinterval will have size (1\/n)th the size of the whole interval so each one will have size . Now that we know the size of the subintervals and we also know that the first one starts at the left end of the whole interval (i.e. at 0 in this case), we see that the subintervals we're using are Thus, the right endpoints of the subintervals where we'll be evaluating in order to get the heights of our rectanges are So, finally, we can compute We take a moment now to note some facts about sums like the one that shows up here. Namely,   Special Sums                        We present these summation facts without proof here. But, please note, they are fairly straightforward to verify. One can find many nice treatments online and generally if this text is being used for teaching a course, one should expect to see some presentation of one or more verifications in class. The first of them is particularly evident and is often attributed to the hisotric luminary mathematician, Karl Gauss.  With these summation facts in place, we can continue the work above. So, if we want , it's super easy now as we see that it is . Even more, it is now very clear that the more and more (thinner and thinner) rectangles we use, the more this is looking like .   Definition of Integral   For a continuous function definied on a closed interval , we define     At the risk of being more verbose that consistent with the goals of this text, let's put down what looks like in general. So, for a function on an interval we see that the size of the interval is so that when we divide it into equal size subintervals, each has size . Since our interval starts at , we see that the first subinterval ends at , the second subinterval ends at , the third one ends at and so on until we finally reach the end of the last, th, subinterval at . We evaluate at each of these subinterval endpoints and multiply each of those evaluations by the size of the subintervals to get the area of each approximating rectangle and add those areas up to get . In other words, the most general form of the Riemann sums is   As we should expect from the fact that the concept of integral has been designed to solve the area problem, we have the following theorem which was discussed in the first section.   Basic Properties of Integral           If , Then        "
 },
 {
   "id": "thm-sumFormulas",
@@ -512,6 +512,33 @@ var ptx_lunr_docs = [
   "number": "5.3.3",
   "title": "Basic Properties of Integral.",
   "body": " Basic Properties of Integral           If , Then       "
+},
+{
+  "id": "sec-fullExample",
+  "level": "1",
+  "url": "sec-fullExample.html",
+  "type": "Section",
+  "number": "5.4",
+  "title": "A Full Example",
+  "body": " A Full Example  Let's do a rather full example. So, let's avoid simple intervals starting at and functions that have easy geometric formulas for the areas. A good starting example that isn't too crazy is on . For reference, here's the graph.   Let's compute the th Riemann sum. Now, as . So we have ...   "
+},
+{
+  "id": "sec-antiderivatives",
+  "level": "1",
+  "url": "sec-antiderivatives.html",
+  "type": "Section",
+  "number": "6.1",
+  "title": "Antiderivatives",
+  "body": " Antiderivatives  coming soon...  "
+},
+{
+  "id": "sec-fundamentalTheoremofCalculus",
+  "level": "1",
+  "url": "sec-fundamentalTheoremofCalculus.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "The Theorem",
+  "body": " The Theorem  coming soon...  "
 }
 ]
 

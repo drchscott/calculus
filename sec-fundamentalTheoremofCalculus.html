@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Implicit Functions</title>
+<title>The Theorem</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-inverseFunctions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-appsOfDerivative.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-introToOptimization.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-antiderivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-fundamentalTheoremOfCalculus.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -248,7 +248,7 @@ window.MathJax = {
 <div class="toc-item"><a href="ch-appsOfDerivative.html" class="internal"><span class="codenumber">4</span> <span class="title">Derivative Applications</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec-inverseFunctions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inverse Functions</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="sec-implicitFunctions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Implicit Functions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-implicitFunctions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Implicit Functions</span></a></div></li>
 <li><div class="toc-item"><a href="sec-introToOptimization.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Intro to Optimization</span></a></div></li>
 <li><div class="toc-item"><a href="sec-theExtremeValueTheorem.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Extreme Value Theorem</span></a></div></li>
 <li><div class="toc-item"><a href="sec-modeling.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Modeling</span></a></div></li>
@@ -267,25 +267,16 @@ window.MathJax = {
 <div class="toc-item"><a href="ch-fundamentalTheoremOfCalculus.html" class="internal"><span class="codenumber">6</span> <span class="title">Fundamental Theorem</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Antiderivatives</span></a></div></li>
-<li><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Theorem</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Theorem</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-implicitFunctions"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">4.2</span><span class="space"> </span><span class="title">Implicit Functions</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-fundamentalTheoremofCalculus"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2</span><span class="space"> </span><span class="title">The Theorem</span>
 </h2>
-<div class="para" id="p-73">I’m thinking of a function with domain variable, say <span class="process-math">\(x\text{.}\)</span>  Let’s call it <span class="process-math">\(y\text{.}\)</span>  Suppose that I told you that <span class="process-math">\(x^2y=1\text{.}\)</span>  Notice that here I have not *explicitly* defined <span class="process-math">\(y\)</span> in terms of <span class="process-math">\(x\text{.}\)</span>  Can you compute the derivative of <span class="process-math">\(y\text{?}\)</span>  Probably you realize that by dividing both sides by <span class="process-math">\(x^2\text{,}\)</span> you find the *explicit* expression <span class="process-math">\(y=1/x^2\)</span> so that you can then compute the derivative directly <span class="process-math">\(y'=-2/x^3\text{.}\)</span>
-</div>
-<div class="para" id="p-74">But, sometimes equations can be very complicated and finding such explicit expressions for the function implied there just might not be possible.  So, suppose we pretend for a moment that we can’t solve <span class="process-math">\(x^2y=1\)</span> explicitly for <span class="process-math">\(y\text{.}\)</span>  I know, we can and we did just above.  But, play along like we can’t.  Is there nothing we can do to get information about <span class="process-math">\(y'\text{?}\)</span>  Well, there is.  Since you know that <span class="process-math">\(y\)</span> is *some* function of <span class="process-math">\(x\text{,}\)</span> that means that <span class="process-math">\(x^2y\)</span> is a product of two functions of <span class="process-math">\(x\)</span> (namely <span class="process-math">\(x^2\)</span> and <span class="process-math">\(y\)</span>)  We also know from previous sections how to differentiate a product.  So, differentiation both sides of the equation <span class="process-math">\(x^2y=1\)</span> gives <span class="process-math">\(2xy+x^2y'=0\text{.}\)</span>  Solving for <span class="process-math">\(y'\)</span> gives <span class="process-math">\(y'=-2xy/x^2=-2y/x\text{.}\)</span>  This doesn’t give <span class="process-math">\(y'\)</span> explicitly yet since we don’t know <span class="process-math">\(y\)</span> explicitly yet.  But, if someone came along and told us that <span class="process-math">\(y=1/x^2\text{,}\)</span> notice that this conclusion gives us immediately that <span class="process-math">\(y'=-2/x^3\text{.}\)</span>
-</div>
-<div class="para" id="p-75">Of course, it may never happen that you explicitly know what <span class="process-math">\(y\)</span> is so that getting an explicit description of <span class="process-math">\(y'\)</span> might not be possible.  So, does this mean we have no information about <span class="process-math">\(y'\text{?}\)</span> Quite the contrary.  Suppose for example that due to some physical knowledge of the situation represented by the equation, we knew that the function <span class="process-math">\(y\)</span> had the value <span class="process-math">\(1\)</span> at <span class="process-math">\(x=1\)</span> (i.e. <span class="process-math">\(y(1)=1\)</span>).  Then the equation we found, <span class="process-math">\(y'=-2y/x\text{,}\)</span> tells us that <span class="process-math">\(y'(1)=-2(1)/1=-2\text{.}\)</span>  So, we know the slope of the tangent line to the graph of <span class="process-math">\(y\)</span> at <span class="process-math">\((1,1)\)</span> even though we have no explicit formula helping us to graph <span class="process-math">\(y\text{.}\)</span>  Now that we have the slope of the tangent line, <span class="process-math">\(2\text{,}\)</span> and the point on the graph it passes through, <span class="process-math">\((1,1)\text{,}\)</span> we can write an equation for the tangent line:</div>
-<div class="displaymath process-math">
-\begin{equation*}
-y-1 = 2(x-1)
-\end{equation*}
-</div></section></div>
+<div class="para" id="p-112">coming soon...</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-inverseFunctions.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-introToOptimization.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-antiderivatives.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

@@ -11,9 +11,38 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body class="ignore-math">
-<h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">If <span class="process-math">\(a \lt c \lt b\text{,}\)</span> Then <span class="process-math">\(\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx\)</span>
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Let’s do a rather full example.  So, let’s avoid simple intervals starting at <span class="process-math">\(0\)</span> and functions that have easy geometric formulas for the areas.  A good starting example that isn’t too crazy is <span class="process-math">\(f(x)=x^2-1\)</span> on <span class="process-math">\([-1,2]\text{.}\)</span>  For reference, here’s the graph. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-22.svg" role="img" class="contained"></div> Let’s compute the <span class="process-math">\(n\)</span>th Riemann sum.</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+R_n \amp = \amp \frac{b-a}{n}\left[ f\left(a+\frac{b-a}{n}\right)+f\left(a+2\frac{b-a}{n}\right)+\dots+f\left(a+n\frac{b-a}{n}\right) \right] \\
+\amp = \amp \frac{2-(-1)}{n}\left[ f\left(-1+\frac{2-(-1)}{n}\right)+f\left(-1+2\frac{2-(-1)}{n}\right)+\dots+f\left(-1+n\frac{2-(-1)}{n}\right) \right] \\
+\amp = \amp \frac{3}{n}\left[ f\left(-1+\frac{3}{n}\right)+f\left(-1+2\frac{3}{n}\right)+\dots+f\left(-1+n\frac{3}{n}\right) \right] \\
+\amp = \amp \frac{3}{n}\left[ \left(\left(-1+\frac{3}{n}\right)^2-1\right)+\left(\left(-1+2\frac{3}{n}\right)^2-1\right)+\dots+\left(\left(-1+n\frac{3}{n}\right)^2-1\right) \right] \\
+\amp = \amp \frac{3}{n}\left[ \left((-1)^2-2\frac{3}{n}+(\frac{3}{n})^2-1\right)+\left((-1)^2-2(2\frac{3}{n})+(2\frac{3}{n})^2-1\right)+\right.  \\
+\amp   \amp \quad\quad \left. \dots+\left((-1)^2-2(n\frac{3}{n})+(n\frac{3}{n})^2-1\right) \right]\\
+\amp = \amp \frac{3}{n}\left[ \left(1-2\frac{3}{n}+1^2(\frac{3}{n})^2-1\right)+\left(1-2(2\frac{3}{n})+2^2(\frac{3}{n})^2-1\right)+\right.  \\
+\amp   \amp \quad\quad \left. \dots+\left(1-n(2\frac{3}{n})+n^2(\frac{3}{n})^2-1\right) \right]\\
+\amp = \amp \frac{3}{n}\left[ \left(-2\frac{3}{n}+1^2(\frac{3}{n})^2\right)+\left(2(-2\frac{3}{n})+2^2(\frac{3}{n})^2\right)+\dots+\left(n(-2\frac{3}{n})+n^2(\frac{3}{n})^2\right) \right]\\
+\amp = \amp \frac{3}{n}\left[   -(2\frac{3}{n})(1+2+\dots +n) +(\frac{3}{n})^2(1^2+2^2+\dots +n^2) \right]\\
+\amp = \amp \frac{3}{n}\left[   -(2\frac{3}{n})(\frac{n(n+1)}{2}) +(\frac{3}{n})^2(\frac{n(n+1)(2n+1)}{6}) \right]\\
+\amp = \amp \frac{3}{n}\left[   \frac{-3}{n}n(n+1) +\frac{9}{n^2}\frac{n(n+1)(2n+1)}{6} \right]\\
+\amp = \amp -9\left[\frac{n(n+1)}{n^2}\right] +\frac{9}{2}\left[\frac{n(n+1)(2n+1)}{n^3}\right]\\
+\amp = \amp -9\left[\frac{n+1}{n}\right] +\frac{9}{2}\left[\frac{(n+1)(2n+1)}{n^2}\right]\\
+\amp = \amp -9\left[\frac{n+1}{n}\right] +\frac{9}{2}\left[\frac{n+1}{n}\right]\left[\frac{2n+1}{n}\right]\\
+\amp = \amp -9\left[1+\frac{1}{n}\right] +\frac{9}{2}\left[1+\frac{1}{n}\right]\left[2+\frac{1}{n}\right]
+\end{array}
+\end{equation*}
 </div>
-<span class="incontext"><a href="sec-defOfIntegral.html#p-110" class="internal">in-context</a></span>
+<div class="para">Now, <span class="process-math">\(\frac{1}{n} \to 0\)</span> as <span class="process-math">\(n \to \infty\text{.}\)</span>  So we have ...</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int_{-1}^2 (x^2+1)dx = \displaystyle \lim_{n \to \infty} R_n = -9[1]+\frac{9}{2}[1][2] = -9+9 = 0
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-fullExample.html#p-110" class="internal">in-context</a></span>
 </body>
 </html>
