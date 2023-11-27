@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-defOfIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-integration.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-propertiesOfIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-defOfIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-integration.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-fundamentalTheoremOfCalculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -261,14 +261,13 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></div></li>
 <li><div class="toc-item"><a href="sec-defOfIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definition</span></a></div></li>
 <li class="active"><div class="toc-item"><a href="sec-fullExample.html" class="internal"><span class="codenumber">5.4</span> <span class="title">A Full Example</span></a></div></li>
-<li><div class="toc-item"><a href="sec-propertiesOfIntegral.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Properties</span></a></div></li>
 </ul>
 </li>
 <li>
 <div class="toc-item"><a href="ch-fundamentalTheoremOfCalculus.html" class="internal"><span class="codenumber">6</span> <span class="title">Fundamental Theorem</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Antiderivatives</span></a></div></li>
-<li><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.2</span> <span class="title">The Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Theorem</span></a></div></li>
+<li><div class="toc-item"><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
@@ -305,9 +304,18 @@ R_n \amp = \amp \frac{b-a}{n}\left[ f\left(a+\frac{b-a}{n}\right)+f\left(a+2\fra
 \int_{-1}^2 (x^2+1)dx = \displaystyle \lim_{n \to \infty} R_n = -9[1]+\frac{9}{2}[1][2] = -9+9 = 0
 \end{equation*}
 </div>
-</div></section></div>
+</div>
+<div class="para" id="p-107">It is, perhaps, terrifying to think about the computations involved in computing integrals for more interesting functions.  After all, the computations above for just the relatively simple function <span class="process-math">\(x^2-1\)</span> are already pretty extensive.  Well, the good news is that the linearity properties we discussed for integrals when the function’s graph produces familiar geometric figures *still* work for the more general continuous functions for which we use the limit of Riemann sums for computation.</div>
+<article class="theorem theorem-like" id="thm-propertiesOfIntegral"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.4.1</span><span class="period">.</span><span class="space"> </span><span class="title">Basic Properties of Integrals.</span>
+</h3>
+<div class="para logical" id="p-108"><ol class="decimal">
+<li id="li-13"><div class="para" id="p-109"><span class="process-math">\(\displaystyle \int_{a}^{b} (rf(x)+sg(x))dx = r\int_{a}^{b} f(x)dx + s\int_{a}^{b} g(x)dx\)</span></div></li>
+<li id="li-14"><div class="para" id="p-110">If <span class="process-math">\(a \lt c \lt b\text{,}\)</span> Then <span class="process-math">\(\int_{a}^{b} f(x)dx = \int_{a}^{c} f(x)dx + \int_{c}^{b} f(x)dx\)</span>
+</div></li>
+</ol></div></article></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-defOfIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-propertiesOfIntegral.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="sec-defOfIntegral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-fundamentalTheoremOfCalculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">

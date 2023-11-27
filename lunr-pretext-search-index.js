@@ -511,43 +511,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.4",
   "title": "A Full Example",
-  "body": " A Full Example  Let's do a rather full example. So, let's avoid simple intervals starting at and functions that have easy geometric formulas for the areas. A good starting example that isn't too crazy is on . For reference, here's the graph.   Let's compute the th Riemann sum. Now, as . So we have ...   "
-},
-{
-  "id": "sec-propertiesOfIntegral",
-  "level": "1",
-  "url": "sec-propertiesOfIntegral.html",
-  "type": "Section",
-  "number": "5.5",
-  "title": "Properties",
-  "body": " Properties  It is, perhaps, terrifying to think about the computations involved in computing integrals for more interesting functions. After all, the computations in the last section for just the relatively simple function were already pretty extensive. Well, the good news is that the linearity properties we discussed for integrals when the function's graph produces familiar geometric figures *still* work for the more general continuous functions for which we use the limit of Riemann sums for computation.   Basic Properties of Integral           If , Then        This theorem is broken out into its own section here as a nod to, yet again, a minor deviation from the basic lean tenents of this text. The proof of these basic properties is straightforward enough that they serve as a nice opportunity to demonstrate proof writing without causing any overload confusion about the concepts. So, let's take a look at the proof of the fist one of these properties.  "
+  "body": " A Full Example  Let's do a rather full example. So, let's avoid simple intervals starting at and functions that have easy geometric formulas for the areas. A good starting example that isn't too crazy is on . For reference, here's the graph.   Let's compute the th Riemann sum. Now, as . So we have ...   It is, perhaps, terrifying to think about the computations involved in computing integrals for more interesting functions. After all, the computations above for just the relatively simple function are already pretty extensive. Well, the good news is that the linearity properties we discussed for integrals when the function's graph produces familiar geometric figures *still* work for the more general continuous functions for which we use the limit of Riemann sums for computation.   Basic Properties of Integrals           If , Then        "
 },
 {
   "id": "thm-propertiesOfIntegral",
   "level": "2",
-  "url": "sec-propertiesOfIntegral.html#thm-propertiesOfIntegral",
+  "url": "sec-fullExample.html#thm-propertiesOfIntegral",
   "type": "Theorem",
-  "number": "5.5.1",
-  "title": "Basic Properties of Integral.",
-  "body": " Basic Properties of Integral           If , Then       "
-},
-{
-  "id": "sec-antiderivatives",
-  "level": "1",
-  "url": "sec-antiderivatives.html",
-  "type": "Section",
-  "number": "6.1",
-  "title": "Antiderivatives",
-  "body": " Antiderivatives  coming soon...  "
+  "number": "5.4.1",
+  "title": "Basic Properties of Integrals.",
+  "body": " Basic Properties of Integrals           If , Then       "
 },
 {
   "id": "sec-fundamentalTheoremofCalculus",
   "level": "1",
   "url": "sec-fundamentalTheoremofCalculus.html",
   "type": "Section",
-  "number": "6.2",
+  "number": "6.1",
   "title": "The Theorem",
   "body": " The Theorem  coming soon...  "
+},
+{
+  "id": "sec-antiderivatives",
+  "level": "1",
+  "url": "sec-antiderivatives.html",
+  "type": "Section",
+  "number": "6.2",
+  "title": "Antiderivatives",
+  "body": " Antiderivatives  coming soon...  "
 }
 ]
 
