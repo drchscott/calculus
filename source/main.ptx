@@ -1137,7 +1137,7 @@
       </statement>
     </definition>
     <p>
-      Unfortunately, this uses the notation we used earlier for integrals.  That's a historic fact and we no power to change it.  It differs in that the notation doesn't use the endpoints of any definite interval (i.e. we are just using <m>\int</m> instead of <m>\int_a^b</m>).  For that reason, some people add to the confusion by referring to the collection of all antiderivatives as the "indefinite integral".  But, it is important to remember, this symbol denotes a collection of functions.  It is not simply one function and it is certainly not an integral.
+      Unfortunately, this uses the notation we used earlier for integrals.  That's a historic fact and we have no power to change it.  It differs in that the notation doesn't use the endpoints of any definite interval (i.e. we are just using <m>\int</m> instead of <m>\int_a^b</m>).  For that reason, some people add to the confusion by referring to the collection of all antiderivatives as the "indefinite integral".  But, it is important to remember, this symbol denotes a collection of functions.  It is not simply one function and it is certainly not an integral.
     </p>
     <p>
       Perhaps the next most natural thing to wonder is, "How wild and weird does the full collection of antiderivatives for a given function get?"  Well, the good news is ... not very weird.
@@ -1159,16 +1159,16 @@
     <p>
       Since we have the FTC, it is clear that getting good at finding antiderivatives is critical.  Even more, this theorem now points out we really just need to find one of them.  So, how do we get good at finding one antiderivative for a given function?  Well, it takes practice.  That is generally taken up in a subsequent calculus course.  But, let's take a little bit of time to improve our skills at least a little bit.  Remember, when you are looking at a function and are hoping to find where it came from via differentiation, you should be looking at the function for *clues* as to what differentiation properties may have been used to get you there.  For example, consider something like
       <me>\int 2xcos(x^2)dx</me>
-      Where could this have come from?  Well, it's a product of two functions (<m>2x</m> and <m>cos(x)</m>).  So, look back at differentiation properties and see if any of them result in a product of functions.  You'll quickly notice that the chain rule gives you a product.  Specifically, <m>(f(g(x)))'=g'(x)f'(g(x))</m>.  So, it's reasonable to expect that you got to <m>2xcos(x^2)</m> via the chain rule!  If so, what functions are playing the roles of <m>f</m> and <m>g</m>.  Well, the only *inside* function to a composition here is <m>x^2</m>.  So that might be <m>g</m>.  It's inside <m>cos</m>.  So, <m>cos</m> is apparently the <m>f'</m> which means that <m>sin</m> could be <m>f</m>.  In all, it looks like we may have differentiated <m>sin(x^2)</m> (i.e.<m>f(g(x))</m> ).  Let's check!
+      Where could this have come from?  Well, it's a product of two functions (<m>2x</m> and <m>cos(x^2)</m>).  So, look back at differentiation properties and see if any of them result in a product of functions.  You'll quickly notice that the chain rule gives you a product.  Specifically, <m>(f(g(x)))'=g'(x)f'(g(x))</m>.  So, it's reasonable to expect that you got to <m>2xcos(x^2)</m> via the chain rule!  If so, what functions are playing the roles of <m>f</m> and <m>g</m>.  Well, the only *inside* function to a composition here is <m>x^2</m>.  So that might be <m>g</m>.  It's inside <m>cos</m>.  So, <m>cos</m> is apparently the <m>f'</m> which means that <m>sin</m> could be <m>f</m>.  In all, it looks like we may have differentiated <m>sin(x^2)</m> (i.e.<m>f(g(x))</m> ).  Let's check!
       
       <me>
         \begin{array}{lll}
-          (sin(x*2))' \amp = \amp (x*2)'sin'(x^2) \\
+          (sin(x^2))' \amp = \amp (x^2)'sin'(x^2) \\
              \amp = \amp  2xcos(x^2)
         \end{array}
       </me>
       Bingo!  We got it.  We can now say that
-      <me>\int 2xcos(x*2)dx  = sin(x^2) + c</me>
+      <me>\int 2xcos(x^2)dx  = sin(x^2) + c</me>
     </p>
   </section> 
 
