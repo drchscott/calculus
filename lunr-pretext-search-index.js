@@ -529,7 +529,16 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.1",
   "title": "The Theorem",
-  "body": " The Theorem  coming soon...  "
+  "body": " The Theorem  Even with the basic properties theorem , there are still very few integrals we can find exactly. This next theorem resolves that problem in a dramatic and fairly comprehensive way.   The Fundamental Theorem of Calculus (FTC)   If is continuous on and there, then     In other words, all we really need to understand is differentiation. Integrals are just an application of differentiation! So long as we can get good at moving *backwards* through differentiation to *pre* or *anti* derivatives, we can get the value of integrals exactly and quickly. For example, let's look at from the earlier section. A little thought reveals that So, is an antiderivative of and according to the FTC, we have Just as we found with the limit of Riemann sums earlier!  "
+},
+{
+  "id": "thm-fundamentalTheoremOfCalculus",
+  "level": "2",
+  "url": "sec-fundamentalTheoremofCalculus.html#thm-fundamentalTheoremOfCalculus",
+  "type": "Theorem",
+  "number": "6.1.1",
+  "title": "The Fundamental Theorem of Calculus (FTC).",
+  "body": " The Fundamental Theorem of Calculus (FTC)   If is continuous on and there, then    "
 },
 {
   "id": "sec-antiderivatives",
@@ -538,7 +547,25 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "6.2",
   "title": "Antiderivatives",
-  "body": " Antiderivatives  coming soon...  "
+  "body": " Antiderivatives  Due to the FTC, we now see that moving backwards through differentiation (finding antiderivatives) is important. It may not have occurred to you but while functions have only one derivative, they have more than one antiderivative. Whaaaa??? Sure, notice that and also . So, there is some sort of *collection* of antiderivatives for a given function. To denote this collection of antiderivatives, we adopt a new notation.    We use to denote the collection of *all* antiderivatives for     Unfortunately, this uses the notation we used earlier for integrals. That's a historic fact and we have no power to change it. It differs in that the notation doesn't use the endpoints of any definite interval (i.e. we are just using instead of ). For that reason, some people add to the confusion by referring to the collection of all antiderivatives as the \"indefinite integral\". But, it is important to remember, this symbol denotes a collection of functions. It is not simply one function and it is certainly not an integral.  Perhaps the next most natural thing to wonder is, \"How wild and weird does the full collection of antiderivatives for a given function get?\" Well, the good news is ... not very weird.    If is continuous on an interval and is an antiderivative there, then where is any constant    So, the collection of all antiderivatives of a given function can be found by just finding *one* antiderivative and then adding to it any constant you wish. That's all of them. So, for example, we have   Since we have the FTC, it is clear that getting good at finding antiderivatives is critical. Even more, this theorem now points out we really just need to find one of them. So, how do we get good at finding one antiderivative for a given function? Well, it takes practice. That is generally taken up in a subsequent calculus course. But, let's take a little bit of time to improve our skills at least a little bit. Remember, when you are looking at a function and are hoping to find where it came from via differentiation, you should be looking at the function for *clues* as to what differentiation properties may have been used to get you there. For example, consider something like Where could this have come from? Well, it's a product of two functions ( and ). So, look back at differentiation properties and see if any of them result in a product of functions. You'll quickly notice that the chain rule gives you a product. Specifically, . So, it's reasonable to expect that you got to via the chain rule! If so, what functions are playing the roles of and . Well, the only *inside* function to a composition here is . So that might be . It's inside . So, is apparently the which means that could be . In all, it looks like we may have differentiated (i.e. ). Let's check! Bingo! We got it. We can now say that   "
+},
+{
+  "id": "thm-indefiniteIntegral",
+  "level": "2",
+  "url": "sec-antiderivatives.html#thm-indefiniteIntegral",
+  "type": "Definition",
+  "number": "6.2.1",
+  "title": "",
+  "body": "  We use to denote the collection of *all* antiderivatives for    "
+},
+{
+  "id": "thm-antiderivatives",
+  "level": "2",
+  "url": "sec-antiderivatives.html#thm-antiderivatives",
+  "type": "Theorem",
+  "number": "6.2.2",
+  "title": "",
+  "body": "  If is continuous on an interval and is an antiderivative there, then where is any constant   "
 }
 ]
 

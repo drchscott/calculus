@@ -274,7 +274,47 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-antiderivatives"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2</span><span class="space"> </span><span class="title">Antiderivatives</span>
 </h2>
-<div class="para" id="p-112">coming soon...</div></section></div>
+<div class="para" id="p-114">Due to the FTC, we now see that moving backwards through differentiation (finding antiderivatives) is important.  It may not have occurred to you but while functions have only one derivative, they have more than one antiderivative.  Whaaaa???  Sure, notice that <span class="process-math">\((x^2)'=2x\)</span> and also <span class="process-math">\((x^2 + 1)'=2x\text{.}\)</span>  So, there is some sort of *collection* of antiderivatives for a given function.  To denote this collection of antiderivatives, we adopt a new notation.</div>
+<article class="definition definition-like" id="thm-indefiniteIntegral"><h3 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-115">We use <span class="process-math">\(\int f(x)dx\)</span> to denote the collection of *all* antiderivatives for <span class="process-math">\(f\)</span>
+</div></article><div class="para" id="p-116">Unfortunately, this uses the notation we used earlier for integrals.  That’s a historic fact and we have no power to change it.  It differs in that the notation doesn’t use the endpoints of any definite interval (i.e. we are just using <span class="process-math">\(\int\)</span> instead of <span class="process-math">\(\int_a^b\)</span>).  For that reason, some people add to the confusion by referring to the collection of all antiderivatives as the "indefinite integral".  But, it is important to remember, this symbol denotes a collection of functions.  It is not simply one function and it is certainly not an integral.</div>
+<div class="para" id="p-117">Perhaps the next most natural thing to wonder is, "How wild and weird does the full collection of antiderivatives for a given function get?"  Well, the good news is ... not very weird.</div>
+<article class="theorem theorem-like" id="thm-antiderivatives"><h3 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h3>
+<div class="para" id="p-118">If <span class="process-math">\(f\)</span> is continuous on an interval and <span class="process-math">\(F\)</span> is an antiderivative there, then <span class="process-math">\(\int f(x)dx = F + c\)</span> where <span class="process-math">\(c\)</span> is any constant</div></article><div class="para logical" id="p-119">
+<div class="para">So, the collection of all antiderivatives of a given function can be found by just finding *one* antiderivative and then adding to it any constant you wish.  That’s all of them.  So, for example, we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 2xdx  = x^2 + c
+\end{equation*}
+</div>
+</div>
+<div class="para logical" id="p-120">
+<div class="para">Since we have the FTC, it is clear that getting good at finding antiderivatives is critical.  Even more, this theorem now points out we really just need to find one of them.  So, how do we get good at finding one antiderivative for a given function?  Well, it takes practice.  That is generally taken up in a subsequent calculus course.  But, let’s take a little bit of time to improve our skills at least a little bit.  Remember, when you are looking at a function and are hoping to find where it came from via differentiation, you should be looking at the function for *clues* as to what differentiation properties may have been used to get you there.  For example, consider something like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 2xcos(x^2)dx
+\end{equation*}
+</div>
+<div class="para">Where could this have come from?  Well, it’s a product of two functions (<span class="process-math">\(2x\)</span> and <span class="process-math">\(cos(x^2)\)</span>).  So, look back at differentiation properties and see if any of them result in a product of functions.  You’ll quickly notice that the chain rule gives you a product.  Specifically, <span class="process-math">\((f(g(x)))'=g'(x)f'(g(x))\text{.}\)</span>  So, it’s reasonable to expect that you got to <span class="process-math">\(2xcos(x^2)\)</span> via the chain rule!  If so, what functions are playing the roles of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span>  Well, the only *inside* function to a composition here is <span class="process-math">\(x^2\text{.}\)</span>  So that might be <span class="process-math">\(g\text{.}\)</span>  It’s inside <span class="process-math">\(cos\text{.}\)</span>  So, <span class="process-math">\(cos\)</span> is apparently the <span class="process-math">\(f'\)</span> which means that <span class="process-math">\(sin\)</span> could be <span class="process-math">\(f\text{.}\)</span>  In all, it looks like we may have differentiated <span class="process-math">\(sin(x^2)\)</span> (i.e.<span class="process-math">\(f(g(x))\)</span> ).  Let’s check!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+(sin(x^2))' \amp = \amp (x^2)'sin'(x^2) \\
+\amp = \amp  2xcos(x^2)
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Bingo!  We got it.  We can now say that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 2xcos(x^2)dx  = sin(x^2) + c
+\end{equation*}
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-fundamentalTheoremofCalculus.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
 </div></main>

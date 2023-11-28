@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex, nofollow">
+</head>
+<body class="ignore-math">
+<h3 class="heading"><span class="type">Paragraph</span></h3>
+<div class="para logical">
+<div class="para">Since we have the FTC, it is clear that getting good at finding antiderivatives is critical.  Even more, this theorem now points out we really just need to find one of them.  So, how do we get good at finding one antiderivative for a given function?  Well, it takes practice.  That is generally taken up in a subsequent calculus course.  But, let’s take a little bit of time to improve our skills at least a little bit.  Remember, when you are looking at a function and are hoping to find where it came from via differentiation, you should be looking at the function for *clues* as to what differentiation properties may have been used to get you there.  For example, consider something like</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 2xcos(x^2)dx
+\end{equation*}
+</div>
+<div class="para">Where could this have come from?  Well, it’s a product of two functions (<span class="process-math">\(2x\)</span> and <span class="process-math">\(cos(x^2)\)</span>).  So, look back at differentiation properties and see if any of them result in a product of functions.  You’ll quickly notice that the chain rule gives you a product.  Specifically, <span class="process-math">\((f(g(x)))'=g'(x)f'(g(x))\text{.}\)</span>  So, it’s reasonable to expect that you got to <span class="process-math">\(2xcos(x^2)\)</span> via the chain rule!  If so, what functions are playing the roles of <span class="process-math">\(f\)</span> and <span class="process-math">\(g\text{.}\)</span>  Well, the only *inside* function to a composition here is <span class="process-math">\(x^2\text{.}\)</span>  So that might be <span class="process-math">\(g\text{.}\)</span>  It’s inside <span class="process-math">\(cos\text{.}\)</span>  So, <span class="process-math">\(cos\)</span> is apparently the <span class="process-math">\(f'\)</span> which means that <span class="process-math">\(sin\)</span> could be <span class="process-math">\(f\text{.}\)</span>  In all, it looks like we may have differentiated <span class="process-math">\(sin(x^2)\)</span> (i.e.<span class="process-math">\(f(g(x))\)</span> ).  Let’s check!</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+(sin(x^2))' \amp = \amp (x^2)'sin'(x^2) \\
+\amp = \amp  2xcos(x^2)
+\end{array}
+\end{equation*}
+</div>
+<div class="para">Bingo!  We got it.  We can now say that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\int 2xcos(x^2)dx  = sin(x^2) + c
+\end{equation*}
+</div>
+</div>
+<span class="incontext"><a href="sec-antiderivatives.html#p-120" class="internal">in-context</a></span>
+</body>
+</html>
