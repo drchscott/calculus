@@ -155,7 +155,7 @@
     </section>
 
     <section xml:id="limitProps">
-      <title>Limit Properties</title>
+      <title>Properties</title>
       <p>
         A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed.  Consider, for example, our friend <m>sin(x)/x</m>.  Look at the table we made at the beginning of the first section.  We stopped looking once we let <m>x</m> get down to <m>0.001</m>.  But what about even closer?  Like <m>x=0.0003</m> or <m>x=0.0000000162</m> or <m>x=0.0000000000004</m>?  Maybe waaaay down there <m>sin(x)/x</m> starts getting wonky.  Maybe.  So, right now we're just guessing that <m>\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1</m>.  Educated guessing ... yes.  But still just guessing.  We'd like to start moving past just guessing.  We start doing that in this section.  We start by looking at a couple of functions whose limits are not in question.  
       </p>
@@ -1171,6 +1171,63 @@
       <me>\int 2xcos(x^2)dx  = sin(x^2) + c</me>
     </p>
   </section> 
+
+</chapter>
+
+<chapter xml:id="ch-appendix">
+  <title>Appendix</title>
+
+  <section xml:id="sec-areas">
+    <title>Areas</title>
+    <p>
+      Our study of integrals was motivated by the area problem so it feels necessary to at least note that in a fairly broad sense, we've solved the area problem.  Consider, for example, <m>f(x)=\sqrt{x}</m> and <m>g(x)=x^3</m>.  Let's graph them both together.
+    <image width="65%">
+      <sageplot>
+        f(x)=x^(1/2)
+        g(x)=x^3
+        plot1 = plot(f(x), x, 0, 1.5, color='black')
+        plot2 = plot(g(x), x, -1, 1.5, color='black')
+        plot1+plot2
+      </sageplot>
+    </image>
+    Take a look at that oddly shaped area trapped between the two curves.  Can we calculate that area?  Sure.  We have the skills now.  Notice that the area occurs over the interval <m>0\le x \le 1</m>.  The curve on top is <m>f(x)=\sqrt{x}</m>,
+    <image width="65%">
+      <sageplot>
+        f(x)=x^(1/2)
+        g(x)=x^3
+        plot1 = plot(f(x), x, 0, 1, color='black')
+        plot2 = plot(g(x), x, 0, 1, color='black')
+        plot1
+      </sageplot>
+    </image>
+    An antiderivative of <m>\sqrt{x}</m> is <m>2x^{3/2}/3</m> so that according to the FTC, the area under that curve is <m>\int_0^1 \sqrt{x} dx = 2(1)^{3/2}/3 - 2(0)^{3/2}/3 = 2/3</m>.  The curve on the bottom is <m>g(x)=x^3</m>, 
+    <image width="65%">
+      <sageplot>
+        f(x)=x^(1/2)
+        g(x)=x^3
+        plot1 = plot(f(x), x, 0, 1, color='black')
+        plot2 = plot(g(x), x, 0, 1, color='black')
+        plot2
+      </sageplot>
+    </image>
+    An antiderivative of <m>x^3</m> is <m>x^4/4</m> so that according to the FTC, the area under that curve is <m>\int_0^1 x^3 dx = (1)^{4}/4 - (0)^{4}/4 = 1/4</m>.  So, the area trapped between is <m>2/3-1/4 = 8/12 - 3/12 = 5/12</m>.  -- very quick to calculutate with the skills we now have.
+  </p>
+  <p>
+    In general, it is apparent that if the graph of some function, say <m>f(x)</m>, is above the graph of some other function, say <m>g(x)</m>, over an interval of <m>x</m>, say <m>[a,b]</m> then the area trapped between them can be calculated as
+    <me>
+      \begin{array}{lll}
+        \int_a^b f(x)dx  - \int_a^b g(x)dx \amp = \amp \int_a^b (f(x)-g(x))dx
+      \end{array}
+    </me>
+  </p>
+  </section> 
+
+  <section xml:id="sec-instantaneousVelocity">
+    <title>Instantaneous Velocity</title>
+    <p>
+      Coming soon...
+    </p>
+  </section>
 
 </chapter>
 
