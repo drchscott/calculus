@@ -123,8 +123,8 @@ var ptx_lunr_docs = [
   "url": "limitProps.html",
   "type": "Section",
   "number": "1.3",
-  "title": "Limit Properties",
-  "body": " Limit Properties  A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed. Consider, for example, our friend . Look at the table we made at the beginning of the first section. We stopped looking once we let get down to . But what about even closer? Like or or ? Maybe waaaay down there starts getting wonky. Maybe. So, right now we're just guessing that . Educated guessing ... yes. But still just guessing. We'd like to start moving past just guessing. We start doing that in this section. We start by looking at a couple of functions whose limits are not in question.  First, consider a constant function like . No matter what you put in for , it gives us . So, there's no question what it's approaching regardless of where we let go. It's always giving . So, we have ...    If is constant, say for some number , and is any number, Then .    Secondly, consider the function . Well, this function just does whatever does. So, where goes, so does . Thus, we have ...    If and is any number, Then .    It is our good fortune that limits behave according to the following theorem.    If and and and are any two numbers and the right hand side of the following equalities are defined, Then , , and .    It is also the case that if all of the are replaced with either or , then the theorem is still correct.  Often, people cite this basic properties theorem by saying, \"the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits\".  Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn't valid, isn't a thing). For example, if in the theorem, then we certainly are not claiming that since the right hand side of this equality is which isn't even a thing to claim something is.  Use to compute , , and .  Using , we quickly deduce the following quick conclusions (called \"corollaries\" by mathematicians).      If is a nonzero rational number and is a nonzero number at which is defined, then .    If and are polynomials and , then .      Finally, we provide here a short list of known limits for use in subsequent sections.      If is any number, then .    If is any number, then .    If is any number, then .    If , then .      "
+  "title": "Properties",
+  "body": " Properties  A careful observer will notice that in the previous sections, we only looked at a handful of domain values to essentially make a guess as to where the function is headed. Consider, for example, our friend . Look at the table we made at the beginning of the first section. We stopped looking once we let get down to . But what about even closer? Like or or ? Maybe waaaay down there starts getting wonky. Maybe. So, right now we're just guessing that . Educated guessing ... yes. But still just guessing. We'd like to start moving past just guessing. We start doing that in this section. We start by looking at a couple of functions whose limits are not in question.  First, consider a constant function like . No matter what you put in for , it gives us . So, there's no question what it's approaching regardless of where we let go. It's always giving . So, we have ...    If is constant, say for some number , and is any number, Then .    Secondly, consider the function . Well, this function just does whatever does. So, where goes, so does . Thus, we have ...    If and is any number, Then .    It is our good fortune that limits behave according to the following theorem.    If and and and are any two numbers and the right hand side of the following equalities are defined, Then , , and .    It is also the case that if all of the are replaced with either or , then the theorem is still correct.  Often, people cite this basic properties theorem by saying, \"the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits\".  Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn't valid, isn't a thing). For example, if in the theorem, then we certainly are not claiming that since the right hand side of this equality is which isn't even a thing to claim something is.  Use to compute , , and .  Using , we quickly deduce the following quick conclusions (called \"corollaries\" by mathematicians).      If is a nonzero rational number and is a nonzero number at which is defined, then .    If and are polynomials and , then .      Finally, we provide here a short list of known limits for use in subsequent sections.      If is any number, then .    If is any number, then .    If is any number, then .    If , then .      "
 },
 {
   "id": "thm-limitOfConstants",
@@ -566,6 +566,24 @@ var ptx_lunr_docs = [
   "number": "6.2.2",
   "title": "",
   "body": "  If is continuous on an interval and is an antiderivative there, then where is any constant   "
+},
+{
+  "id": "sec-areas",
+  "level": "1",
+  "url": "sec-areas.html",
+  "type": "Section",
+  "number": "7.1",
+  "title": "Areas",
+  "body": " Areas  Our study of integrals was motivated by the area problem so it feels necessary to at least note that in a fairly broad sense, we've solved the area problem. Consider, for example, and . Let's graph them both together.   Take a look at that oddly shaped area trapped between the two curves. Can we calculate that area? Sure. We have the skills now. Notice that the area occurs over the interval . The curve on top is ,   An antiderivative of is so that according to the FTC, the area under that curve is . The curve on the bottom is ,   An antiderivative of is so that according to the FTC, the area under that curve is . So, the area trapped between is . -- very quick to calculutate with the skills we now have.  In general, it is apparent that if the graph of some function, say , is above the graph of some other function, say , over an interval of , say then the area trapped between them can be calculated as   "
+},
+{
+  "id": "sec-instantaneousVelocity",
+  "level": "1",
+  "url": "sec-instantaneousVelocity.html",
+  "type": "Section",
+  "number": "7.2",
+  "title": "Instantaneous Velocity",
+  "body": " Instantaneous Velocity  Coming soon...  "
 }
 ]
 

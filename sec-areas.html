@@ -8,7 +8,7 @@
 <html lang="en-US" dir="ltr">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Fundamental Theorem</title>
+<title>Areas</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -101,7 +101,7 @@ window.MathJax = {
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-fullExample.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="Lean-Calculus.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-fundamentalTheoremofCalculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-appendix.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-appendix.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-instantaneousVelocity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -263,7 +263,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-fullExample.html" class="internal"><span class="codenumber">5.4</span> <span class="title">A Full Example</span></a></div></li>
 </ul>
 </li>
-<li class="active">
+<li>
 <div class="toc-item"><a href="ch-fundamentalTheoremOfCalculus.html" class="internal"><span class="codenumber">6</span> <span class="title">Fundamental Theorem</span></a></div>
 <ul class="structural">
 <li><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Theorem</span></a></div></li>
@@ -273,20 +273,27 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-appendix.html" class="internal"><span class="codenumber">7</span> <span class="title">Appendix</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-areas.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Areas</span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-areas.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Areas</span></a></div></li>
 <li><div class="toc-item"><a href="sec-instantaneousVelocity.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
-<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="chapter" id="ch-fundamentalTheoremOfCalculus"><h2 class="heading">
-<span class="type">Chapter</span><span class="space"> </span><span class="codenumber">6</span><span class="space"> </span><span class="title">Fundamental Theorem</span>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-areas"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">7.1</span><span class="space"> </span><span class="title">Areas</span>
 </h2>
-<nav class="summary-links"><ul>
-<li><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Theorem</span></a></li>
-<li><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Antiderivatives</span></a></li>
-</ul></nav></section></div>
+<div class="para" id="p-121">Our study of integrals was motivated by the area problem so it feels necessary to at least note that in a fairly broad sense, we’ve solved the area problem.  Consider, for example, <span class="process-math">\(f(x)=\sqrt{x}\)</span> and <span class="process-math">\(g(x)=x^3\text{.}\)</span>  Let’s graph them both together. <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-23.svg" role="img" class="contained"></div> Take a look at that oddly shaped area trapped between the two curves.  Can we calculate that area?  Sure.  We have the skills now.  Notice that the area occurs over the interval <span class="process-math">\(0\le x \le 1\text{.}\)</span>  The curve on top is <span class="process-math">\(f(x)=\sqrt{x}\text{,}\)</span> <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-24.svg" role="img" class="contained"></div> An antiderivative of <span class="process-math">\(\sqrt{x}\)</span> is <span class="process-math">\(2x^{3/2}/3\)</span> so that according to the FTC, the area under that curve is <span class="process-math">\(\int_0^1 \sqrt{x} dx = 2(1)^{3/2}/3 - 2(0)^{3/2}/3 = 2/3\text{.}\)</span>  The curve on the bottom is <span class="process-math">\(g(x)=x^3\text{,}\)</span> <div class="image-box" style="width: 65%; margin-left: 17.5%; margin-right: 17.5%;"><img src="generated/sageplot/image-25.svg" role="img" class="contained"></div> An antiderivative of <span class="process-math">\(x^3\)</span> is <span class="process-math">\(x^4/4\)</span> so that according to the FTC, the area under that curve is <span class="process-math">\(\int_0^1 x^3 dx = (1)^{4}/4 - (0)^{4}/4 = 1/4\text{.}\)</span>  So, the area trapped between is <span class="process-math">\(2/3-1/4 = 8/12 - 3/12 = 5/12\text{.}\)</span>  -- very quick to calculutate with the skills we now have.</div>
+<div class="para logical" id="p-122">
+<div class="para">In general, it is apparent that if the graph of some function, say <span class="process-math">\(f(x)\text{,}\)</span> is above the graph of some other function, say <span class="process-math">\(g(x)\text{,}\)</span> over an interval of <span class="process-math">\(x\text{,}\)</span> say <span class="process-math">\([a,b]\)</span> then the area trapped between them can be calculated as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\begin{array}{lll}
+\int_a^b f(x)dx  - \int_a^b g(x)dx \amp = \amp \int_a^b (f(x)-g(x))dx
+\end{array}
+\end{equation*}
+</div>
+</div></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-fullExample.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-fundamentalTheoremofCalculus.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-appendix.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-instantaneousVelocity.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
