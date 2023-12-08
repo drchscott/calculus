@@ -1,0 +1,10 @@
+INFO    : PreTeXt project found in `/workspaces/calculus`.
+WARNING : Using CLI version 2.0.0 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or changing `requirements.txt` to match 2.0.0.
+ERROR   : XML Syntax Error caused build to fail:
+ERROR   : /workspaces/calculus/source/main.ptx:1271:46:ERROR:VALID:DTD_ID_REDEFINED: ID sec-instantaneousVelocity already defined
+CRITICAL: XML syntax for source file is invalid
+INFO    : ------------------------
+INFO    : While running pretext, the following errors occurred:
+
