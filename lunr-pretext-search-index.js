@@ -28,18 +28,18 @@ var ptx_lunr_docs = [
   "body": "If approaches a number, say , as approaches a number from its right hand side, then we write which is pronounced \"The limit of is as approaches from the right\". We also say that has a right hand limit of at . Analogously, If approaches a number, say as approaches from its left hand side, then we write which is pronounced \"The limit of is as approaches from the left\". Again, we also say that has a left hand limit of at . "
 },
 {
-  "id": "remark-1",
+  "id": "mainIdea-9",
   "level": "2",
-  "url": "mainIdea.html#remark-1",
+  "url": "mainIdea.html#mainIdea-9",
   "type": "Remark",
   "number": "1.1.2",
   "title": "",
   "body": "It is critical to note here that we are using the word \"approach\" in the definition above to indicate that we simply take values of the domain variable *close* to but not equal to it. In computing limits, we do not use . We're just identifying what is becoming as *approaches* . In fact, in many cases such as , we can't even compute the function at . "
 },
 {
-  "id": "example-1",
+  "id": "mainIdea-10",
   "level": "2",
-  "url": "mainIdea.html#example-1",
+  "url": "mainIdea.html#mainIdea-10",
   "type": "Example",
   "number": "1.1.3",
   "title": "",
@@ -55,9 +55,9 @@ var ptx_lunr_docs = [
   "body": "In case both the left hand and right hand limit of a function are the same (i.e. ), then we simply write without any reference to or . In this case we say that has a limit of at . "
 },
 {
-  "id": "example-2",
+  "id": "mainIdea-13",
   "level": "2",
-  "url": "mainIdea.html#example-2",
+  "url": "mainIdea.html#mainIdea-13",
   "type": "Example",
   "number": "1.1.5",
   "title": "",
@@ -73,9 +73,9 @@ var ptx_lunr_docs = [
   "body": " Infinity Stuff  Consider the function . What can you say about ? Well, let's make a table and see.         1.000  1    0.100  10    0.010  100    0.001  1000     So, it's pretty apparent that as , the function isn't headed toward any number. So, there is no limit. Said differently, the right hand limit of does not exist at . So, the limit notation we've created so far isn't useful. However, it would be useful to record this information. To do that, we write . Please note here that this notation is *not* saying that a limit exists. It just is language explaining *how* it doesn't exist.  Make another table for but this time with value of approaching from the left. What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?  When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions.  We also use the symbol as a *place* to let the domain variable *approach*. When we let get arbitrarily positively large, we write So, for example, consider our friend . If you make a table for this taking larger and larger positive values of , you'll see that approaches . So, in that case, we can write .  Make another table for but this time with value of getting negatively large without bound (e.g. ). What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?  To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write .  Use limit notation and the infinity symbol to express what is happening to as grows positively without bound.  "
 },
 {
-  "id": "example-3",
+  "id": "infinityLimits-5",
   "level": "2",
-  "url": "infinityLimits.html#example-3",
+  "url": "infinityLimits.html#infinityLimits-5",
   "type": "Example",
   "number": "1.2.1",
   "title": "",
@@ -91,9 +91,9 @@ var ptx_lunr_docs = [
   "body": "When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions. "
 },
 {
-  "id": "example-4",
+  "id": "infinityLimits-8",
   "level": "2",
-  "url": "infinityLimits.html#example-4",
+  "url": "infinityLimits.html#infinityLimits-8",
   "type": "Example",
   "number": "1.2.3",
   "title": "",
@@ -109,9 +109,9 @@ var ptx_lunr_docs = [
   "body": "To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write . "
 },
 {
-  "id": "example-5",
+  "id": "infinityLimits-10",
   "level": "2",
-  "url": "infinityLimits.html#example-5",
+  "url": "infinityLimits.html#infinityLimits-10",
   "type": "Example",
   "number": "1.2.5",
   "title": "",
@@ -154,27 +154,27 @@ var ptx_lunr_docs = [
   "body": "  If and and and are any two numbers and the right hand side of the following equalities are defined, Then , , and .   "
 },
 {
-  "id": "remark-2",
+  "id": "limitProps-9",
   "level": "2",
-  "url": "limitProps.html#remark-2",
+  "url": "limitProps.html#limitProps-9",
   "type": "Remark",
   "number": "1.3.4",
   "title": "",
   "body": "It is also the case that if all of the are replaced with either or , then the theorem is still correct. "
 },
 {
-  "id": "remark-3",
+  "id": "limitProps-11",
   "level": "2",
-  "url": "limitProps.html#remark-3",
+  "url": "limitProps.html#limitProps-11",
   "type": "Remark",
   "number": "1.3.5",
   "title": "",
   "body": "Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn't valid, isn't a thing). For example, if in the theorem, then we certainly are not claiming that since the right hand side of this equality is which isn't even a thing to claim something is. "
 },
 {
-  "id": "example-6",
+  "id": "limitProps-12",
   "level": "2",
-  "url": "limitProps.html#example-6",
+  "url": "limitProps.html#limitProps-12",
   "type": "Example",
   "number": "1.3.6",
   "title": "",
@@ -208,9 +208,9 @@ var ptx_lunr_docs = [
   "body": " Definition  Consider ...     First discontinuity example     Which, for the record, happens to be the graph of the following function   Using the limit notation developed to this point, we notice that . As it happens for this function though, we notice that this does not match the value of . That is, for this particular function at the domain value , we have Visually (i.e. looking at the graph of ), this shows up as some sort of \"break\" in the graph of at . In such cases, we say that has a \"discontinuity\" at . Precisely, we have  When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \".  It is worth noting here that some discontinuities are \"removable\" and some are not. Consider . This familiar function has the graph     Bad discontinuity example     At , this function has no limit of any kind (and isn't even defined) at . Even worse, if we chose to define a function that was for all and set it to be *something* at , there is nothing we could set it to in order to make it continuous since has no limit at . So, this discontinuity at is quite bad.  On the other hand, looking at the graph at the start of the section, if we had just defined that function to be instead of , then would have been continuous at and, as apparent from the graph, everywhere else between and . Such discontinuities are often called \"removable\". So, we'd say that for the function at the start of the section, the discontinuity at is \"removable\".  "
 },
 {
-  "id": "figure-1",
+  "id": "defContinuitySection-3",
   "level": "2",
-  "url": "defContinuitySection.html#figure-1",
+  "url": "defContinuitySection.html#defContinuitySection-3",
   "type": "Figure",
   "number": "2.1.1",
   "title": "",
@@ -226,9 +226,9 @@ var ptx_lunr_docs = [
   "body": "When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \". "
 },
 {
-  "id": "figure-2",
+  "id": "defContinuitySection-8",
   "level": "2",
-  "url": "defContinuitySection.html#figure-2",
+  "url": "defContinuitySection.html#defContinuitySection-8",
   "type": "Figure",
   "number": "2.1.3",
   "title": "",
@@ -289,9 +289,9 @@ var ptx_lunr_docs = [
   "body": " Tangent Problem  Consider this graph of .   In addition to , a couple of lines are plotted here. They both pass through the point on the graph. Notice that the black line is special in a particular way. Namely, it just \"touches\" the graph at without \"cutting\" through the graph. If you used any other line passing touching (i.e. touch but use a different slope) like the dashed line, then it \"cuts through\". You should recall from your precalculus experience that lines like the black one here are called \"tangent\" lines. Tangent lines to graphs are very important to applied scientists such as physicists. It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that. Why? Well, after a little thought you hopefully realized that while we have a point that the line passes through , we would need either another point the line passes through or the slope of the line in order to write an equation for it. But, we have neither. So, the tangent line is just an idea and not something we can concretely describe at this point. Our goal is to solve this \"tangent line problem\" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.  So... how? How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem? Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through and a point on the graph just a teensy bit to the right or left of . So, suppose is a teensy number. We could adjust by that amount and look up at the graph to the point . For example, we could take giving us the point on the graph . The line going through the two points and has a slope (rise\/run) equal to (i.e. ). So, that line *can* be plotted since we have both a slope, ), and a point the line passes through, . Here, let's plot that line as a dashed line and show it along with the tangent line.   You'll notice that while this dashed line is not quite the tangent line, it is ... close. We could get even closer by choosing a point even closer to . In other words, make smaller (either a teensier positive or negative number). For smaller and smaller values of , the resulting lines should look more and more line the tangent line. For example, suppose we take like and . Those give lines with the following slopes         .75  2.75    0.5  2.5    0.1  2.1    0.01  2.01     If we plot all of these lines, here is what they look like     So, what do we think the slope of the tangent line is likely to be? It's apparent that if we let continue to shrink, the associated lines have slopes that are getting closer and closer to . Plotting the line through with slope gives us exactly the tangent line depicted in black. So, at least for the function and the point on its graph, we've solved the tangent line problem!  Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.)  "
 },
 {
-  "id": "example-7",
+  "id": "sec-tangentProblem-7",
   "level": "2",
-  "url": "sec-tangentProblem.html#example-7",
+  "url": "sec-tangentProblem.html#sec-tangentProblem-7",
   "type": "Example",
   "number": "3.1.1",
   "title": "",
@@ -448,7 +448,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.5",
   "title": "Modeling",
-  "body": " Modeling  The goal of this text is to keep the calculus presentation as lean and clear as possible. But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus. So, in this section let's quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus. The general notion here is that of \"modeling\". This sort of process is very natural for us humans. The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you. So, we're taking the interest in travelling about the world and modeling it using paper and drawings. In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around. How useful the information is depends on how good the model is and how well we can work with it. The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.  Let's avoid getting too complicated but also make sure we don't produce something trivial. We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.  Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container. We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal. The dimensions of the container don't much matter to them but they want the containers to have a volume of 1000 cubic centimeters. After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter. So, what dimensions should we use?  Well, generally when people say \"cylindrical containers\" they mean right circular cyclinders so they could be described with 2 dimensions. For example, we could use the radius of the circular ends and the height of the container. Hmmmm... but, if we have one of those dimensions, it occurs to us that the other dimension would be determined since the container is supposed to have volume . After all, from our geometry background, we know that if we denote the radius with an and the height with an , then volume is given by . So, for us, we have That means that for any given radius, we have This is good news because it means we're down to just one variable... .  Now, we're trying to deal with costs. So, let's make a function for cost based on our variable . We'll do it in terms of cents since that is how the problem was described to us. Well, the area of the top and bottom combined is . Since the cost for those is 2 cents per , we see that the top and bottom contribute cents to the cost. Now, if you lay out the side of the cylinder flat, you see it is a rectangle with dimensions and circumference of the circle making the top and bottom of the cylinder, . So, the area of the side of the cylinder is the product of those two dimensions giving an area of That area only costs 1 cent per so it contributes cents to the cost. Finally, we have a cost function. Let's denote cost with a so that now we have Even more, we know that the domain we want to use is any positive (i.e. the open interval ).  That's it! We've created a mathematical model of the original problem. From here on, the work is done with familiar mathamematics. We're simply using optimization skills from previous experience. As a matter of completeness, let's work through the math. So... From this, we see that only when which means To the left of that , isn't 0, so it's either positive or negative and we can easily evaluate at some point to the left and see that it is negative. So, decreases until it reaches . Similarly, to the right of that , we see that is positive so increases. Thus, by first derivative analysis, we see that is minimal at .  We can now report that to minimize cost in this situation, we should use which means for a minimal cost of approximately cents.  "
+  "body": " Modeling  The goal of this text is to keep the calculus presentation as lean and clear as possible. But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus. So, in this section let's quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus. The general notion here is that of \"modeling\". This sort of process is very natural for us humans. The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you. So, we're taking the interest in travelling about the world and modeling it using paper and drawings. In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around. How useful the information is depends on how good the model is and how well we can work with it. The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.  Let's avoid getting too complicated but also make sure we don't produce something trivial. We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.  Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container. We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal. The dimensions of the container don't much matter to them but they want the containers to have a volume of 1000 cubic centimeters. After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1 cent per square centimeter. So, what dimensions should we use?  Well, generally when people say \"cylindrical containers\" they mean right circular cyclinders so they could be described with 2 dimensions. For example, we could use the radius of the circular ends and the height of the container. Hmmmm... but, if we have one of those dimensions, it occurs to us that the other dimension would be determined since the container is supposed to have volume . After all, from our geometry background, we know that if we denote the radius with an and the height with an , then volume is given by . So, for us, we have That means that for any given radius, we have This is good news because it means we're down to just one variable... .  Now, we're trying to deal with costs. So, let's make a function for cost based on our variable . We'll do it in terms of cents since that is how the problem was described to us. Well, the area of the top and bottom combined is . Since the cost for those is 2 cents per , we see that the top and bottom contribute cents to the cost. Now, if you lay out the side of the cylinder flat, you see it is a rectangle with dimensions and circumference of the circle making the top and bottom of the cylinder, . So, the area of the side of the cylinder is the product of those two dimensions giving an area of That area only costs 1 cent per so it contributes cents to the cost. Finally, we have a cost function. Let's denote cost with a so that now we have Even more, we know that the domain we want to use is any positive (i.e. the open interval ).  That's it! We've created a mathematical model of the original problem. From here on, the work is done with familiar mathamematics. We're simply using optimization skills from previous experience. As a matter of completeness, let's work through the math. So... From this, we see that only when which means To the left of that , isn't 0, so it's either positive or negative and we can easily evaluate at some point to the left and see that it is negative. So, decreases until it reaches . Similarly, to the right of that , we see that is positive so increases. Thus, by first derivative analysis, we see that is minimal at .  We can now report that to minimize cost in this situation, we should use which means for a minimal cost of approximately cents.  "
 },
 {
   "id": "sec-areaProblem",
@@ -591,6 +591,7 @@ var ptx_lunr_idx = lunr(function () {
   this.ref('id')
   this.field('title')
   this.field('body')
+  this.metadataWhitelist = ['position']
 
   ptx_lunr_docs.forEach(function (doc) {
     this.add(doc)

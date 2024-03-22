@@ -57,7 +57,7 @@ window.MathJax = {
       "[pretext]/mathjaxknowl3.js"
     ],
     "paths": {
-      "pretext": "https://pretextbook.org/js/lib"
+      "pretext": "_static/pretext/js/lib"
     }
   },
   "startup": {
@@ -69,8 +69,8 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.3/pretext_search.js"></script><link href="https://pretextbook.org/css/0.8/pretext_search.css" rel="stylesheet" type="text/css">
-<script>js_version = 0.3</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.3/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.3/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.3/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script><link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
@@ -78,135 +78,35 @@ window.MathJax = {
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
-<link href="https://pretextbook.org/css/0.8/pretext.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/pretext_add_on.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/shell_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/banner_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/navbar_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/toc_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/knowls_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/style_default.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/colors_blue_red.css" rel="stylesheet" type="text/css">
-<link href="https://pretextbook.org/css/0.8/setcolors.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_red.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext book ignore-math">
 <a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
-<a id="logo-link" class="logo-link" href=""></a><div class="title-container">
+<a id="logo-link" class="logo-link" target="_blank" href=""></a><div class="title-container">
 <h1 class="heading"><a href="Lean-Calculus.html"><span class="title">Lean Calculus</span></a></h1>
 <p class="byline">Dr. Chad Scott</p>
 </div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
 <div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
-<button id="closesearchresults" class="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms" class="searchterms"></span>
-</h2>
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-theExtremeValueTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-appsOfDerivative.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-integration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
-<input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
-</div></div>
-<span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
-<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
-<ol class="hidden avatar">
-<li data-val="You!" tabindex="-1">
-<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
-<li data-val="😺" tabindex="-1">
-<span id="the😺" class="avatarcheck"></span>😺</li>
-<li data-val="👤" tabindex="-1">
-<span id="the👤" class="avatarcheck"></span>👤</li>
-<li data-val="👽" tabindex="-1">
-<span id="the👽" class="avatarcheck"></span>👽</li>
-<li data-val="🐶" tabindex="-1">
-<span id="the🐶" class="avatarcheck"></span>🐶</li>
-<li data-val="🐼" tabindex="-1">
-<span id="the🐼" class="avatarcheck"></span>🐼</li>
-<li data-val="🌈" tabindex="-1">
-<span id="the🌈" class="avatarcheck"></span>🌈</li>
-</ol>
-</li>
-<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
-<ol class="hidden fontfamily">
-<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
-<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
-</li>
-<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
-<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
-</li>
-</ol>
-</li>
-<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
-<ol class="hidden fonts">
-<li>Size</li>
-<li><span id="thesize">12</span></li>
-<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
-<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
-<li>Width</li>
-<li><span id="thewdth">100</span></li>
-<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
-<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
-<li>Weight</li>
-<li><span id="thewght">400</span></li>
-<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
-<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
-<li>Letter spacing</li>
-<li>
-<span id="thelspace">0</span><span class="byunits">/200</span>
-</li>
-<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
-<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
-<li>Word spacing</li>
-<li>
-<span id="thewspace">0</span><span class="byunits">/50</span>
-</li>
-<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
-<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
-<li>Line Spacing</li>
-<li>
-<span id="theheight">135</span><span class="byunits">/100</span>
-</li>
-<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
-<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
-</ol>
-</li>
-<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
-<ol class="hidden atmosphere">
-<li data-val="default" tabindex="-1">
-<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
-<li data-val="pastel" tabindex="-1">
-<span id="thepastel" class="atmospherecheck"></span>pastel</li>
-<li data-val="darktwilight" tabindex="-1">
-<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
-<li data-val="dark" tabindex="-1">
-<span id="thedark" class="atmospherecheck"></span>dark</li>
-<li data-val="darkmidnight" tabindex="-1">
-<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
-</ol>
-</li>
-<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
-<ol class="hidden ruler">
-<li data-val="none" tabindex="-1">
-<span id="thenone" class="rulercheck">✔️</span>none</li>
-<li data-val="underline" tabindex="-1">
-<span id="theunderline" class="rulercheck"></span>underline</li>
-<li data-val="lunderline" tabindex="-1">
-<span id="thelunderline" class="rulercheck"></span>L-underline</li>
-<li data-val="greybar" tabindex="-1">
-<span id="thegreybar" class="rulercheck"></span>grey bar</li>
-<li data-val="lightbox" tabindex="-1">
-<span id="thelightbox" class="rulercheck"></span>light box</li>
-<li data-val="sunrise" tabindex="-1">
-<span id="thesunrise" class="rulercheck"></span>sunrise</li>
-<li data-val="sunriseunderline" tabindex="-1">
-<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
-<li class="moveQ">Motion by:</li>
-<li data-val="mouse" tabindex="-1">
-<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
-<li data-val="arrow" tabindex="-1">
-<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
-<li data-val="eye" tabindex="-1">
-<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
-</ol>
-</li>
-</ol></div></button></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-theExtremeValueTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-appsOfDerivative.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="ch-integration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\R}{\mathbb R}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -214,77 +114,77 @@ window.MathJax = {
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
 <div class="ptx-page">
-<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
-<li>
-<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
-<ul class="structural"><li><div class="toc-item"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface.html" class="internal"><span class="title">Preface</span></a></div></li></ul>
 </li>
-<li>
-<div class="toc-item"><a href="Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="mainIdea.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Main Idea</span></a></div></li>
-<li><div class="toc-item"><a href="infinityLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Infinity Stuff</span></a></div></li>
-<li><div class="toc-item"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Properties</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Limits.html" class="internal"><span class="codenumber">1</span> <span class="title">Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="mainIdea.html" class="internal"><span class="codenumber">1.1</span> <span class="title">The Main Idea</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="infinityLimits.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Infinity Stuff</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="limitProps.html" class="internal"><span class="codenumber">1.3</span> <span class="title">Properties</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="defContinuitySection.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition</span></a></div></li>
-<li><div class="toc-item"><a href="basicPropsOfContinuity.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Basic Properties</span></a></div></li>
-<li><div class="toc-item"><a href="otherPropsOfContinuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Intermediate Values</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Continuity.html" class="internal"><span class="codenumber">2</span> <span class="title">Continuity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="defContinuitySection.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Definition</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="basicPropsOfContinuity.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Basic Properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="otherPropsOfContinuity.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Intermediate Values</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="Derivatives.html" class="internal"><span class="codenumber">3</span> <span class="title">Derivatives</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-tangentProblem.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangent Problem</span></a></div></li>
-<li><div class="toc-item"><a href="sec-definitionOfDerivative.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definition</span></a></div></li>
-<li><div class="toc-item"><a href="sec-propertiesOfDerivative.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Basic Properties</span></a></div></li>
-<li><div class="toc-item"><a href="sec-chainRule.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Chain Rule</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="Derivatives.html" class="internal"><span class="codenumber">3</span> <span class="title">Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-tangentProblem.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Tangent Problem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-definitionOfDerivative.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Definition</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-propertiesOfDerivative.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Basic Properties</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-chainRule.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Chain Rule</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="ch-appsOfDerivative.html" class="internal"><span class="codenumber">4</span> <span class="title">Derivative Applications</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-inverseFunctions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inverse Functions</span></a></div></li>
-<li><div class="toc-item"><a href="sec-implicitFunctions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Implicit Functions</span></a></div></li>
-<li><div class="toc-item"><a href="sec-introToOptimization.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Intro to Optimization</span></a></div></li>
-<li><div class="toc-item"><a href="sec-theExtremeValueTheorem.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Extreme Value Theorem</span></a></div></li>
-<li class="active"><div class="toc-item"><a href="sec-modeling.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Modeling</span></a></div></li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="ch-appsOfDerivative.html" class="internal"><span class="codenumber">4</span> <span class="title">Derivative Applications</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-inverseFunctions.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Inverse Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-implicitFunctions.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Implicit Functions</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-introToOptimization.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Intro to Optimization</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-theExtremeValueTheorem.html" class="internal"><span class="codenumber">4.4</span> <span class="title">Extreme Value Theorem</span></a></div></li>
+<li class="toc-item toc-section active"><div class="toc-title-box"><a href="sec-modeling.html" class="internal"><span class="codenumber">4.5</span> <span class="title">Modeling</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="ch-integration.html" class="internal"><span class="codenumber">5</span> <span class="title">Integration</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-areaProblem.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Area Problem</span></a></div></li>
-<li><div class="toc-item"><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></div></li>
-<li><div class="toc-item"><a href="sec-defOfIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definition</span></a></div></li>
-<li><div class="toc-item"><a href="sec-fullExample.html" class="internal"><span class="codenumber">5.4</span> <span class="title">A Full Example</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-integration.html" class="internal"><span class="codenumber">5</span> <span class="title">Integration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-areaProblem.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Area Problem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-RiemannsSolution.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Riemann’s Solution</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-defOfIntegral.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Definition</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-fullExample.html" class="internal"><span class="codenumber">5.4</span> <span class="title">A Full Example</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="ch-fundamentalTheoremOfCalculus.html" class="internal"><span class="codenumber">6</span> <span class="title">Fundamental Theorem</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Theorem</span></a></div></li>
-<li><div class="toc-item"><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Antiderivatives</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-fundamentalTheoremOfCalculus.html" class="internal"><span class="codenumber">6</span> <span class="title">Fundamental Theorem</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-fundamentalTheoremofCalculus.html" class="internal"><span class="codenumber">6.1</span> <span class="title">The Theorem</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-antiderivatives.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Antiderivatives</span></a></div></li>
 </ul>
 </li>
-<li>
-<div class="toc-item"><a href="ch-appendix.html" class="internal"><span class="codenumber">7</span> <span class="title">Appendix</span></a></div>
-<ul class="structural">
-<li><div class="toc-item"><a href="sec-areas.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Areas</span></a></div></li>
-<li><div class="toc-item"><a href="sec-instantaneousVelocity.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Velocity</span></a></div></li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="ch-appendix.html" class="internal"><span class="codenumber">7</span> <span class="title">Appendix</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-areas.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Areas</span></a></div></li>
+<li class="toc-item toc-section"><div class="toc-title-box"><a href="sec-instantaneousVelocity.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Velocity</span></a></div></li>
 </ul>
 </li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-modeling"><h2 class="heading hide-type">
 <span class="type">Section</span><span class="space"> </span><span class="codenumber">4.5</span><span class="space"> </span><span class="title">Modeling</span>
 </h2>
-<div class="para" id="p-84">The goal of this text is to keep the calculus presentation as lean and clear as possible.  But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus.  So, in this section let’s quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus.  The general notion here is that of "modeling".  This sort of process is very natural for us humans.  The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you.  So, we’re taking the interest in travelling about the world and modeling it using paper and drawings.  In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around.  How useful the information is depends on how good the model is and how well we can work with it.  The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.</div>
-<div class="para" id="p-85">Let’s avoid getting too complicated but also make sure we don’t produce something trivial.  We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.</div>
-<div class="para" id="p-86">Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container.  We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal.  The dimensions of the container don’t much matter to them but they want the containers to have a volume of 1000 cubic centimeters.  After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1.5 cents per square centimeter.  So, what dimensions should we use?</div>
-<div class="para logical" id="p-87">
+<div class="para" id="sec-modeling-2">The goal of this text is to keep the calculus presentation as lean and clear as possible.  But, ultimately, I feel that some nod has to be given to seeing how the rest of the world ends up seeing value in calculus.  So, in this section let’s quit doing math for a bit and instead look at some other kind of work and see how it can benefit from calculus.  The general notion here is that of "modeling".  This sort of process is very natural for us humans.  The idea is that we have a problem in one sphere of interest and it turns out that we can create a version of that problem in some other sphere of interest -- think making maps of the world on paper so you can roll the world up and take it with you.  So, we’re taking the interest in travelling about the world and modeling it using paper and drawings.  In that way, we can work on travel problems by doing stuff with paper and such instead of actually being out there in the world moving around.  How useful the information is depends on how good the model is and how well we can work with it.  The development of math has substantially been driven by the fact that so many spheres of interest lend themselves to good mathematical models.</div>
+<div class="para" id="sec-modeling-3">Let’s avoid getting too complicated but also make sure we don’t produce something trivial.  We do this to avoid having to learn a lot of new ideas from some other sphere of interest from which we can then draw a model.</div>
+<div class="para" id="sec-modeling-4">Sooooo.... suppose we are a specialized shipping company and we need to design a cylindrical container.  We have a company that wants containers to ship a precious substance in cylindrical containers using a specific kind of metal.  The dimensions of the container don’t much matter to them but they want the containers to have a volume of 1000 cubic centimeters.  After talking with our production department, we learn that making the top and bottom of the cylindrical container is a bit more expensive at 2 cents per square centimeter while the side only costs 1 cent per square centimeter.  So, what dimensions should we use?</div>
+<div class="para logical" id="sec-modeling-5">
 <div class="para">Well, generally when people say "cylindrical containers" they mean right circular cyclinders so they could be described with 2 dimensions.  For example, we could use the radius of the circular ends and the height of the container.  Hmmmm... but, if we have one of those dimensions, it occurs to us that the other dimension would be determined since the container is supposed to have volume <span class="process-math">\(1000cm^3\text{.}\)</span>  After all, from our geometry background, we know that if we denote the radius with an <span class="process-math">\(r\)</span> and the height with an <span class="process-math">\(h\text{,}\)</span> then volume is given by <span class="process-math">\(\pi r^2h\text{.}\)</span>  So, for us, we have</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -300,7 +200,7 @@ h=\frac{1000}{\pi r^2}
 <div class="para">This is good news because it means we’re down to just one variable... <span class="process-math">\(r\text{.}\)</span>
 </div>
 </div>
-<div class="para logical" id="p-88">
+<div class="para logical" id="sec-modeling-6">
 <div class="para">Now, we’re trying to deal with costs.  So, let’s make a function for cost based on our variable <span class="process-math">\(r\text{.}\)</span>  We’ll do it in terms of cents since that is how the problem was described to us.  Well, the area of the top and bottom combined is <span class="process-math">\(2\pi r^2cm^2\text{.}\)</span>  Since the cost for those is 2 cents per <span class="process-math">\(cm^2\text{,}\)</span> we see that the top and bottom contribute <span class="process-math">\(4\pi r^2\)</span> cents to the cost.  Now, if you lay out the side of the cylinder flat, you see it is a rectangle with dimensions <span class="process-math">\(h=\frac{1000}{\pi r^2}\)</span> and circumference of the circle making the top and bottom of the cylinder, <span class="process-math">\(2\pi r\text{.}\)</span>  So, the area of the side of the cylinder is the product of those two dimensions giving an area of</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -315,7 +215,7 @@ C(r)=4\pi r^2 + \frac{2000}{r}
 </div>
 <div class="para">Even more, we know that the domain we want to use is any positive <span class="process-math">\(r\)</span> (i.e. the open interval <span class="process-math">\((0,\infty)\)</span>).</div>
 </div>
-<div class="para logical" id="p-89">
+<div class="para logical" id="sec-modeling-7">
 <div class="para">That’s it!  We’ve created a mathematical model of the original problem.  From here on, the work is done with familiar mathamematics.  We’re simply using optimization skills from previous experience.  As a matter of completeness, let’s work through the math.  So...</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -331,7 +231,7 @@ r=(\frac{250}{\pi})^\frac{1}{3} \approx 4.3
 <div class="para">To the left of that <span class="process-math">\(r\text{,}\)</span> <span class="process-math">\(C'(r)\)</span> isn’t 0, so it’s either positive or negative and we can easily evaluate <span class="process-math">\(C'(r)\)</span> at some point to the left and see that it is negative.  So, <span class="process-math">\(C(r)\)</span> decreases until it reaches <span class="process-math">\(r \approx 4.3\text{.}\)</span>  Similarly, to the right of that <span class="process-math">\(r\text{,}\)</span> we see that <span class="process-math">\(C'(r)\)</span> is positive so <span class="process-math">\(C(r)\)</span> increases.  Thus, by first derivative analysis, we see that <span class="process-math">\(C(r)\)</span> is minimal at <span class="process-math">\(r \approx 4.3\text{.}\)</span>
 </div>
 </div>
-<div class="para" id="p-90">We can now report that to minimize cost in this situation, we should use <span class="process-math">\(r \approx 4.3\)</span> which means <span class="process-math">\(h \approx 17.2\)</span> for a minimal cost of approximately <span class="process-math">\(697.47\)</span> cents.</div></section></div>
+<div class="para" id="sec-modeling-8">We can now report that to minimize cost in this situation, we should use <span class="process-math">\(r \approx 4.3\)</span> which means <span class="process-math">\(h \approx 17.2\)</span> for a minimal cost of approximately <span class="process-math">\(697.47\)</span> cents.</div></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-theExtremeValueTheorem.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="ch-integration.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
