@@ -1,0 +1,14 @@
+WARNING : Using CLI version 2.19.3 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.19.3.
+INFO    : Staging deployment according to strategy default_target
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Staging latest build located in `/workspaces/calculus/output/web` at `/workspaces/calculus/output/stage`.
+INFO    : 
+INFO    : Preparing to deploy from active `main` git branch.
+
+INFO    : Changes to project source since last commit detected.
+INFO    : Committing these changes to local Git repository.
+
