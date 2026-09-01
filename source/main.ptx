@@ -74,7 +74,7 @@
       </p>
 
       <definition xml:id="sideLimit">
-        If <m>f(x)</m> approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its <underline>left</underline> hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.
+        If f(x) approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its <underline>left</underline> hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.
       </definition>
       <p>
         So now, with this new notation, it seems reasonable to write 
