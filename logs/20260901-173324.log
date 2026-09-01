@@ -1,0 +1,73 @@
+WARNING : Using CLI version 2.19.3 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.19.3.
+INFO    : Since no target was supplied, we will use "web".
+
+INFO    : Building target web
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/2.19.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/utilities/pretext-enhanced-source.xsl
+INFO    : Generating any needed assets.
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to HTML graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : extracting Sage diagrams from /workspaces/calculus/source/main.ptx
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/2.19.3/core/xsl/extract-sageplot.xsl
+INFO    : messages from the log for XSL processing:
+INFO    : * PTX:INFO:   checking ONLY the last TWO YEARS of element deprecations.
+Rerun with the string parameter "author.deprecations.all" set to "yes" to check your source against all deprecations.
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/extract-sageplot.xsl
+INFO    : converting Sage diagrams from /workspaces/calculus/source/main.ptx to SVG graphics for placement in /workspaces/calculus/generated-assets/sageplot
+INFO    : converting sec-introToOptimization-4-3.sage to sec-introToOptimization-4-3.svg
+INFO    : converting sec-introToOptimization-3-2.sage to sec-introToOptimization-3-2.svg
+INFO    : converting sec-definitionOfDerivative-13-12.sage to sec-definitionOfDerivative-13-12.svg
+INFO    : converting otherPropsOfContinuity-2-1.sage to otherPropsOfContinuity-2-1.svg
+INFO    : converting sec-RiemannsSolution-2-3.sage to sec-RiemannsSolution-2-3.svg
+INFO    : converting sec-tangentProblem-5-1.sage to sec-tangentProblem-5-1.svg
+INFO    : converting otherPropsOfContinuity-4-2.sage to otherPropsOfContinuity-4-2.svg
+INFO    : converting sec-theExtremeValueTheorem-2-3.sage to sec-theExtremeValueTheorem-2-3.svg
+INFO    : converting sec-areaProblem-2-10.sage to sec-areaProblem-2-10.svg
+INFO    : converting sec-tangentProblem-2-2.sage to sec-tangentProblem-2-2.svg
+INFO    : converting sec-areaProblem-2-3.sage to sec-areaProblem-2-3.svg
+INFO    : converting sec-RiemannsSolution-2-9.sage to sec-RiemannsSolution-2-9.svg
+INFO    : converting sec-areaProblem-2-6.sage to sec-areaProblem-2-6.svg
+INFO    : converting sec-areas-2-3.sage to sec-areas-2-3.svg
+INFO    : converting sec-tangentProblem-3-14.sage to sec-tangentProblem-3-14.svg
+INFO    : converting badDiscontinuityExampleGraph.sage to badDiscontinuityExampleGraph.svg
+INFO    : converting sec-areas-2-6.sage to sec-areas-2-6.svg
+INFO    : converting sec-theExtremeValueTheorem-2-10.sage to sec-theExtremeValueTheorem-2-10.svg
+INFO    : converting sageplot-sine.sage to sageplot-sine.svg
+INFO    : converting sec-areas-2-11.sage to sec-areas-2-11.svg
+INFO    : converting sec-RiemannsSolution-2-18.sage to sec-RiemannsSolution-2-18.svg
+INFO    : converting sec-introToOptimization-4-7.sage to sec-introToOptimization-4-7.svg
+INFO    : converting sec-fullExample-2-4.sage to sec-fullExample-2-4.svg
+INFO    : converting sec-definitionOfDerivative-9.sage to sec-definitionOfDerivative-9.svg
+INFO    : converting sec-definitionOfDerivative-13-2.sage to sec-definitionOfDerivative-13-2.svg
+INFO    : Removing temporary directory /ptx-s11eli4d
+INFO    : Removing temporary directory /ptx-qbh504ij
+INFO    : Finished generating assets.
+
+INFO    : Preparing to build into /workspaces/calculus/output/web.
+INFO    : discovering source file's directory name: /workspaces/calculus/source
+INFO    : verifying and expanding input directory: /workspaces/calculus/source/../generated-assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus/generated-assets
+INFO    : verifying and expanding input directory: /workspaces/calculus/source/../assets
+INFO    : input directory expanded to absolute path: /workspaces/calculus/assets
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/2.19.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/utilities/report-publisher-variables.xsl
+INFO    : Downloading rs services file from https://runestone.academy/cdn/runestone/latest/webpack_static_imports.xml.
+INFO    : Runestone Services via online CDN query: version 8.2.10
+INFO    : Downloading Runestone Services, version 8.2.10
+INFO    : Extracting Runestone Services from archive file
+INFO    : Using prebuilt CSS theme: default-legacy with options: {'options': {'primary-color': '#195684', 'secondary-color': '#932c1c'}, 'contrast-checks': {}}
+INFO    : converting /workspaces/calculus/source/main.ptx to HTML in /ptx-iuyxj78d
+INFO    : XSL conversion of /workspaces/calculus/source/main.ptx by /root/.ptx/2.19.3/core/xsl/pretext-html.xsl
+WARNING : * PTX:DEPRECATE: (2024-10-08) elements previously included in a "titlepage" element inside the "frontmatter" (author, editor, credit, date, and event) should now be placed in "frontmatter/bibinfo".  To ensure a title page is created, put only the empty element "titlepage-items" inside "titlepage".  Until you move these elements, we will try to honor your intent. (1 time)
+INFO    : *              located within: "frontmatter" (xml:id)
+INFO    : * --------------
+WARNING : * PTX:DEPRECATE: (2024-07-12) the html/css/@style publication file entry has been deprecated for replacement by @theme. See the Guide for theme options.
+INFO    : successful application of /root/.ptx/2.19.3/core/xsl/pretext-html.xsl
+INFO    : Removing temporary directory /ptx-iuyxj78d
+INFO    : Removing temporary directory /ptx-ovl6852d
+INFO    : 
+Success! Run `pretext view web` to see the results.
+
+INFO    : 

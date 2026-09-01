@@ -74,9 +74,8 @@
       </p>
 
       <definition xml:id="sideLimit">
-        <title>my title</title>
         <statement>
-        If <m>f(x)</m> approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its <underline>left</underline> hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.
+        <p>If <m>f(x)</m> approaches a number, say <m>l</m>, as <m>x</m> approaches a number <m>a</m> from its right hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{+}}f(x)=l</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>l</m> as <m>x</m> approaches <m>a</m> from the right".  We also say that <m>f(x)</m> has a right hand limit of <m>l</m> at <m>a</m>.  Analogously, If <m>f(x)</m> approaches a number, say <m>k</m> as <m>x</m> approaches <m>a</m> from its left hand side, then we write <md><mrow>\displaystyle \lim_{x\to a^{-}}f(x)=k</mrow></md> which is pronounced "The limit of <m>f(x)</m> is <m>k</m> as <m>x</m> approaches <m>a</m> from the left".  Again, we also say that <m>f(x)</m> has a left hand limit of <m>k</m> at <m>a</m>.</p>
         </statement>
       </definition>
       <p>
@@ -84,11 +83,11 @@
         <md><mrow>\displaystyle \lim_{x\to 0^{+}}(sin(x)/x)=1</mrow></md>
       </p>
       <remark>
-        It is critical to note here that we are using the word "approach" in the definition above to indicate that we simply take values of the domain variable <m>x</m> *close* to <m>a</m> but not equal to it.  In computing limits, we do not use <m>x=a</m>.  We're just identifying what <m>f(x)</m> is becoming as <m>x</m> *approaches* <m>a</m>.  In fact, in many cases such as <m>sin(x)/x</m>, we can't even compute the function at <m>x=a=0</m>.
+        <p>It is critical to note here that we are using the word "approach" in the definition above to indicate that we simply take values of the domain variable <m>x</m> *close* to <m>a</m> but not equal to it.  In computing limits, we do not use <m>x=a</m>.  We're just identifying what <m>f(x)</m> is becoming as <m>x</m> *approaches* <m>a</m>.  In fact, in many cases such as <m>sin(x)/x</m>, we can't even compute the function at <m>x=a=0</m>.</p>
       </remark>
 
       <example>
-        For <m>f(x)=sin(x)/x</m> from above, make a table like the one above but this time use 4 or 5 domain values approaching <m>0</m> from the left.  Use the notation from the definition above to write your conclusion about the left hand limit.
+        <p>For <m>f(x)=sin(x)/x</m> from above, make a table like the one above but this time use 4 or 5 domain values approaching <m>0</m> from the left.  Use the notation from the definition above to write your conclusion about the left hand limit.</p>
       </example>
 
       <p>
@@ -96,11 +95,13 @@
       </p>
 
       <definition xml:id="limit">
+        <statement><p>
         In case both the left hand and right hand limit of a function are the same (i.e. <m>\displaystyle \lim_{x\to a^{+}}f(x)=\displaystyle \lim_{x\to a^{-}}f(x)=l</m>), then we simply write <m>\displaystyle \lim_{x\to a}f(x)=l</m> without any reference to <m>+</m> or <m>-</m>.  In this case we say that <m>f(x)</m> has a limit of <m>l</m> at <m>a</m>.
+        </p></statement>
       </definition>
 
       <example>
-        For <m>f(x)=|x|/x</m>, notice that once again <m>0</m> is not in its domain.  Make tables for left and right hand approaches to <m>0</m> and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.
+        <p>For <m>f(x)=|x|/x</m>, notice that once again <m>0</m> is not in its domain.  Make tables for left and right hand approaches to <m>0</m> and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.</p>
       </example>
 
     </section>
@@ -137,24 +138,27 @@
       <p>
         So, it's pretty apparent that as <m>x\to 0^{+}</m>, the function <m>1/x</m> isn't headed toward any number.  So, there is no limit.  Said differently, the right hand limit of <m>1/x</m>does not exist at <m>0</m>.  So, the limit notation we've created so far isn't useful.  However, it would be useful to record this information.  To do that, we write <m>\displaystyle \lim_{x\to 0^{+}}f(x)=\infty</m>.  Please note here that this notation is *not* saying that a limit exists.  It just is language explaining *how* it doesn't exist.
       </p>
-      <example>
+      <example><p>
         Make another table for <m>1/x</m> but this time with value of <m>x</m> approaching <m>0</m> from the left.  What do you see?  What is a reasonable way to use limit notation and the <m>\infty</m> symbol to express what you find?
-      </example>
+      </p></example>
       <definition xml:id="defInfinityLimits1">
+        <statement><p>
         When <m>f(x)</m> grows positively without bound as <m>x</m> goes to <m>a</m> from the right, we write <m>\displaystyle \lim_{x\to a^{+}}f(x)=\infty</m>.  Also, when <m>f(x)</m> grows positively without bound as <m>x</m> goes to <m>a</m> from the left, we write <m>\displaystyle \lim_{x\to a^{-}}f(x)=\infty</m>.   Similarly, when <m>f(x)</m> grows negatively without bound as <m>x</m> goes to <m>a</m> from the right, we write <m>\displaystyle \lim_{x\to a^{+}}f(x)=-\infty</m> and when <m>f(x)</m> grows negatively without bound as <m>x</m> goes to <m>a</m> from the left, we write <m>\displaystyle \lim_{x\to a^{-}}f(x)=-\infty</m>.  As with actual limits, if we omit the <m>+</m> and <m>-</m> then we are saying that the behavior is the same from both directions.
+        </p></statement>
       </definition>
       <p>
         We also use the <m>\infty</m> symbol as a *place* to let the domain variable *approach*.  When we let <m>x</m> get arbitrarily positively large, we write <m>x \to \infty</m>  So, for example, consider our friend <m>1/x</m>.   If you make a table for this taking larger and larger positive values of <m>x</m>, you'll see that <m>1/x</m> approaches <m>0</m>.  So, in that case, we can write <m>\displaystyle \lim_{x\to \infty}1/x=0</m>.
       </p>
-      <example>
+      <example><p>
         Make another table for <m>1/x</m> but this time with value of <m>x</m> getting negatively large without bound (e.g. <m>-1, -10, -100, -1000, etc.</m>).  What do you see?  What is a reasonable way to use limit notation and the <m>\infty</m> symbol to express what you find?
-      </example>
+      </p></example>
       <definition xml:id="defInfinityLimits2">
+        <statement><p>
         To express a limit when we let the domain variable grow positively without bound, we write <m>\displaystyle \lim_{x\to \infty}</m> and to express a limit when we let the domain variable grow negatively without bound, we write <m>\displaystyle \lim_{x\to -\infty}</m>.
-      </definition>
-      <example>
+      </p></statement></definition>
+      <example><p>
         Use limit notation and the infinity symbol to express what is happening to <m>x^2</m> as <m>x</m> grows positively without bound.
-      </example>
+      </p></example>
     </section>
 
     <section xml:id="limitProps">
@@ -193,23 +197,23 @@
           </p>
         </statement>
       </theorem>
-      <remark>
+      <remark><p>
         It is also the case that if all of the <m>\displaystyle \lim_{x\to a}</m> are replaced with either <m>\displaystyle \lim_{x\to a^{+}}</m> or <m>\displaystyle \lim_{x\to a^{-}}</m>, then the theorem <xref ref="thm-limitBasicProperties"/> is still correct.
-      </remark>
+      </p></remark>
       <p>
         Often, people cite this basic properties theorem by saying, "the limit of a sum is the sum of the limits, the limit of a product is the product of the limits, and the limit of a ratio is the ratio of the limits".
       </p>
-      <remark>
+      <remark><p>
         Please note that, from the conditions of the theorem, if the right hand side of any of the equalities in this theorem can not be computed, then the theorem is not making a statement (i.e. isn't valid, isn't a thing).  For example, if <m>k=0</m> in the theorem, then we certainly are not claiming that <m>\displaystyle \lim_{x\to a}(f(x)/g(x))=l/k</m> since the right hand side of this equality is <m>l/0</m> which isn't even a thing to claim something is.
-      </remark>
-      <example>
+      </p></remark>
+      <example><p>
         Use <xref ref="thm-limitBasicProperties"/> to compute <m>\displaystyle \lim_{x\to 2}(x^2)</m>, <m>\displaystyle \lim_{x\to -1}(x^2+3x)</m>, and <m>\displaystyle \lim_{x\to 0}(x^2+3x)/(x+2)</m>.
-      </example>
+      </p></example>
       <p>
         Using <xref ref="thm-limitBasicProperties" />, we quickly deduce the following quick conclusions (called "corollaries" by mathematicians).
       </p>
       <corollary xml:id="limitCorollaries">
-        <statement>
+        <statement><p>
           <ol>
             <li>
               <p>
@@ -222,13 +226,13 @@
               </p>
             </li>
           </ol>
-        </statement>
+        </p></statement>
       </corollary>
       <p>
         Finally, we provide here a short list of known limits for use in subsequent sections.
       </p>
       <theorem xml:id="thm-AFewKnownLimits">
-        <statement>
+        <statement><p>
           <ol>
             <li>
               <p>
@@ -251,7 +255,7 @@
               </p>
             </li>
           </ol>
-        </statement>
+        </p></statement>
       </theorem>
       
       
@@ -270,7 +274,7 @@
       <figure>
         <caption></caption>
         <image xml:id="firstDiscontinuityExampleGraph" width="65%">
-            <description>First discontinuity example</description>
+            <shortdescription>First discontinuity example</shortdescription>
             <sageplot>
               p1 = plot(x^2, x, 0, .99, color='black', ymax=2)
               p2 = plot(-x+2, x, 1.02, 2, color='black', ymax=2)
@@ -280,6 +284,7 @@
             </sageplot>
         </image>
       </figure>
+
       <p>
         Which, for the record, happens to be the graph of the following function
         <me>
@@ -297,7 +302,9 @@
         Visually (i.e. looking at the graph of <m>f</m>), this shows up as some sort of "break" in the graph of <m>f</m> at <m>x=1</m>.  In such cases, we say that <m>f</m> has a "discontinuity" at <m>x=1</m>.  Precisely, we have
       </p>
       <definition xml:id="defContinuity">
+        <statement><p>
         When it is the case that <m>\displaystyle \lim_{x\to a}f(x)=f(a)</m>, we say that <m>f</m> is "continuous at <m>a</m>".  Otherwise, we say that <m>f</m> is "discontinuous at <m>a</m>".
+        </p></statement>
       </definition>
       <p>
         It is worth noting here that some discontinuities are "removable" and some are not.  Consider <m>f(x)=1/x</m>.  This familiar function has the graph
@@ -305,7 +312,7 @@
         <figure>
           <caption></caption>
           <image xml:id="badDiscontinuityExampleGraph" width="65%">
-              <description>Bad discontinuity example</description>
+              <shortdescription>Bad discontinuity example</shortdescription>
               <sageplot>
                 p1 = plot(1/x, x, -1, 1, color='black', ymax=10, ymin=-10)
                 p1
@@ -325,17 +332,17 @@
         In light of the definition of continuity from the previous section, we see that <xref ref="limitCorollaries"/> and <xref ref="thm-AFewKnownLimits"/> are really saying ...
       </p>
       <theorem xml:id="thm-AFewKnownContinuities">
-        <statement>
+        <statement><p>
           Rational functions, <m>e^x</m>, <m>ln(x)</m>, <m>sin(x)</m> and <m>cos(x)</m> are all continuous wherever they are defined.
-        </statement>
+        </p></statement>
       </theorem>
       <p>
         The basic limit properties then yield the following
       </p>
       <corollary xml:id="cor-basicContinuityProps">
-        <statement>
+        <statement><p>
           If <m>f(x)</m> and <m>g(x)</m> are both continuous at a given <m>x</m>, then <m>rf(x)+sg(x)</m> and <m>f(x)g(x)</m> are all continuous at that <m>x</m>.  Further, if also <m>g(x)\ne 0</m> then <m>f(x)/g(x)</m> is continuous at <m>x</m>.
-        </statement>
+        </p></statement>
       </corollary>
       <p>
         So, for example, if we want to calculate the limit of <m>tan(x)</m> at <m>7.2</m>, it's very easy since we know from the corollary above that <m>tan(x)</m>, which is simply <m>sin(x)/cos(x)</m> is continuous at <m>7.2</m>.  Thus
@@ -346,7 +353,10 @@
       <title>Intermediate Values</title>
       <p>
         Recall the graph of this function from the first section of this chapter.
-        <image width="65%">
+      </p>
+
+      <figure><caption></caption>
+        <image width="65%"><shortdescription></shortdescription>
             <sageplot>
               p1 = plot(x^2, x, 0, .99, color='black', ymax=2)
               p2 = plot(-x+2, x, 1.02, 2, color='black', ymax=2)
@@ -355,15 +365,20 @@
               p1+p2+pt1+pt2
             </sageplot>
         </image>
+      </figure>
+
+      <p>
         Notice that it has the value <m>0</m> at <m>0</m> (i.e. <m>f(0)=0</m>) and it has the value <m>1.5</m> at <m>1</m> (i.e. <m>f(1)=1.5</m>).  But, does it ever have the value <m>1.3</m> (i.e. is there a domain value <m>x</m> for which <m>f(x)=1.3</m>)?  Imagine a horizontal line on the graph at a height of <m>1.3</m> and you'll see that the answer is "no".  So, why not?  What goes wrong that this function has the value <m>0</m> and <m>1.5</m> but never not has the intermediate value <m>1.3</m>?  Hopefully the answer is apparent.  Namely, the function has a discontinuity so there is a "break" / "jump" over some of the intermediate values like <m>1.3</m>.  One of the nice properties of functions that are continuous on an interval of numbers (i.e. continous at every number in an interval) is that it obtains all of its intermediate values.  Specifically, we have the following theorem known by mathematicians as the "Intermediate Value Theorem (IVT)".
       </p>
       <theorem xml:id="thm-IVT">
-        <statement>
+        <statement><p>
           If <m>f</m> is continuous on an interval <m>I</m> (whether open, half open, or closed) and <m>r</m> and <m>s</m> are two values that <m>f</m> obtains and finally <m>w</m> happens to be a number between (i.e. intermediate to) <m>r</m> and <m>s</m>, then there is some <m>x</m> in <m>I</m> so that <m>f(x)=w</m>.
-        </statement>
+        </p></statement>
       </theorem>
     <p>
       Consider for example the function above but this time defined with <m>f(1)=1</m>.  Here, let's plot it.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           p1 = plot(x^2, x, 0, 1, color='black', ymax=2)
@@ -372,6 +387,8 @@
           p1+p2+pt1
         </sageplot>
       </image>
+    </figure>
+    <p>
       Now, if you look at any two values the function obtains, you'll see that every value in between them is also obtained by the function.  In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between.  Look over at the graph and you'll see that the function also obtains that value.  Why?  Well, we removed the disontinuity so now this function is continuous on the interval <m>I=[0,2]</m> so we have the IVT.
     </p> 
   </section>
@@ -382,7 +399,9 @@
   <section xml:id="sec-tangentProblem">
     <title>Tangent Problem</title>
     <p>
-      Consider this graph of <m>f(x)=x^2</m>.      
+      Consider this graph of <m>f(x)=x^2</m>. 
+    </p> 
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg = plot(x^2, x, -.5, 2, color='black')
@@ -392,10 +411,14 @@
           fg+tl+l1+pt
         </sageplot>
       </image>
+    </figure>
+    <p>
       In addition to <m>x^2</m>, a couple of lines are plotted here.  They both pass through the point <m>(1,1)</m> on the graph.  Notice that the black line is special in a particular way.  Namely, it just "touches" the graph at <m>(1,1)</m> without "cutting" through the graph.  If you used any other line passing touching <m>(1,1)</m> (i.e. touch <m>(1,1)</m> but use a different slope) like the dashed line, then it "cuts through".  You should recall from your precalculus experience that lines like the black one here are called "tangent" lines.  Tangent lines to graphs are very important to applied scientists such as physicists.  It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that.  Why?  Well, after a little thought you hopefully realized that while we have a point that the line passes through <m>(1,1)</m>, we would need either another point the line passes through or the slope of the line in order to write an equation for it.  But, we have neither.  So, the tangent line is just an idea and not something we can concretely describe at this point.  Our goal is to solve this "tangent line problem" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.
     </p>
     <p>
     So... how?  How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem?  Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through <m>(1,1)</m> and a point on the graph just a teensy bit to the right or left of <m>(1,1)</m>.  So, suppose <m>h</m> is a teensy number.  We could adjust <m>1</m> by that amount and look up at the graph to the point <m>(1+h, f(1+h))</m>.  For example, we could take <m>h=.75</m> giving us the point on the graph <m>(1.75,1.75^2)=(1.75,3.0625)</m>.  The line going through the two points <m>(1,1)</m> and <m>(1.75,1.75^2)=(1.75,3.0625)</m> has a slope (rise/run) equal to <m>(3.0625-1)/(1.75-1) = 2.75</m> (i.e. <m>(f(1+h)-f(1))/h</m>).  So, that line *can* be plotted since we have both a slope, <m>2.75</m>), and a point the line passes through, <m>(1,1)</m>.  Here, let's plot that line as a dashed line and show it along with the tangent line.
+    </p>
+    <figure><caption></caption>
     <image width="65%">
       <sageplot>
         fg = plot(x^2, x, -.5, 2, color='black')
@@ -406,9 +429,10 @@
         fg+tl+l1+pt+pt2
       </sageplot>
     </image>
+    </figure>
+    <p>
     You'll notice that while this dashed line is not quite the tangent line, it is ... close.  We could get even closer by choosing a point even closer to <m>(1,1)</m>.  In other words, make <m>h</m> smaller (either a teensier positive or negative number).  For smaller and smaller values of <m>h</m>, the resulting lines should look more and more line the tangent line. For example, suppose we take <m>h's</m> like <m>.75, .5, .1,</m> and <m>.01</m>.  Those give lines with the following slopes
-  </p>
-  <p>
+    </p>
     <tabular halign="center">
       <row header="yes" bottom="minor" >
         <cell><m>h</m></cell>
@@ -431,11 +455,15 @@
         <cell>2.01</cell>
       </row>
     </tabular>
-    </p>
     <p>
       If we plot all of these lines, here is what they look like
-      <image width="65%">
-        <sageplot>
+    </p>
+
+
+
+    <figure><caption></caption>
+    <image width="65%">
+      <sageplot>
           fg = plot(x^2, x, -.5, 2, color='black')
           tl = plot(2*(x-1)+1, x, -.5, 2, color='black')
           l1 = plot(2.75*(x-1)+1, x, -.5, 2, color='red', linestyle='dashed')
@@ -448,14 +476,19 @@
           pt3 = point((1.1, 1.21), rgbcolor='red', pointsize=30)
           pt4 = point((1.01, 1.0201), rgbcolor='red', pointsize=30)
           fg+tl+l1+l2+l3+l4+pt+pt1+pt2+pt3+pt4
-        </sageplot>
-      </image>
-    </p>
+      </sageplot>
+    </image>
+    </figure>
+
+
+
+
+
     <p>
       So, what do we think the slope of the tangent line is likely to be?  It's apparent that if we let <m>h</m> continue to shrink, the associated lines have slopes that are getting closer and closer to <m>2</m>.  Plotting the line through <m>(1,1)</m> with slope <m>2</m> gives us exactly the tangent line depicted in black.  So, at least for the function <m>f(x)=x^2</m> and the point <m>(1,1)</m> on its graph, we've solved the tangent line problem!
     </p>
-    <example>
-      Implement the same solution but this time look at a different point on the graph of <m>f(x)=x^2</m> (e.g. maybe <m>x=1.5</m> or <m>x=-0.5</m>) etc.)
+    <example><p>
+      Implement the same solution but this time look at a different point on the graph of <m>f(x)=x^2</m> (e.g. maybe <m>x=1.5</m> or <m>x=-0.5</m>) etc.)</p>
     </example>
   </section>
   <section xml:id="sec-definitionOfDerivative">
@@ -463,12 +496,13 @@
     <p>
       The tangent problem solution from the previous section motivates us to define a function in the following way.
     </p>
-    <definition xml:id="def-derivative">
+    <definition xml:id="def-derivative"><statement><p>
       For a fucntion defined on an interval and a point <m>x</m> in that interval, we define
       <me>
         f'(x)=\displaystyle \lim_{h\to 0}\frac{f(x+h)-f(x)}{h}
       </me>
-      for any <m>x</m> for which this limit exists.  We call this function the "derivative" of <m>f</m> and for any <m>x</m> where its defined, we say that <m>f</m> is "differentiable" there.  The derivative function <m>f'(x)</m> is sometimes denoted <m>\frac{df}{dx}(x)</m>.  
+      for any <m>x</m> for which this limit exists.  We call this function the "derivative" of <m>f</m> and for any <m>x</m> where its defined, we say that <m>f</m> is "differentiable" there.  The derivative function <m>f'(x)</m> is sometimes denoted <m>\frac{df}{dx}(x)</m>.
+      </p></statement>  
     </definition>
     <p>
       For example, suppose the function is just a constant like <m>f(x)=k</m>.  Think about the graph of that function.  It's just a flat line at a height of <m>k</m>.  Consequently, regardless of the value of <m>x</m>, the tangent line is flat (i.e. <m>0</m> slope), so when <m>f(x)</m> is constant, we get <m>f'(x)=0</m> for all values of <m>x</m>.  We note here that when the expression for the definition of <m>f</m> is particularly simple, we often lazily just write the expression down instead of the name of the function.  So, for example, we could write <m>k'=0</m>.
@@ -512,7 +546,8 @@
       We looked at this limit in the chapter on limits.  It turns out that it doesn't exist as we found <m>\displaystyle \lim_{h\to 0^{+}} \frac{|h|}{h} = 1</m> but unfortunately <m>\displaystyle \lim_{h\to 0^{-}} \frac{|h|}{h} = -1</m>.  So, <m>f'(x)</m> does not exist / is not defined when <m>x=0</m>.  Apparently, that is generally the case when "cusps" like this exist in the graph.
     </p>
     <p>
-      There is another circumstance where one can see that derivatives do not exist.  Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there.  For example, look at the function  
+      There is another circumstance where one can see that derivatives do not exist.  Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there.  For example, look at the function
+    </p>  
       <me>
         f(x) = \left\{ \begin{array}{cc}
           1 \amp 0 \lt x\\
@@ -520,7 +555,10 @@
         \end{array}
         \right.
       </me>
+    <p>
       which is graphed here.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg1 = plot(1, x, .005, 2, color='black', ymax=2, ymin=-2)
@@ -530,7 +568,11 @@
           fg1+fg2+pt1+pt2
         </sageplot>
       </image>
+    </figure>
+    <p>
       Suppose we try to find its derivative at <m>x=0</m> (i.e. slope of the tangent line to <m>(0,f(0))=(0,-1)</m>).  To see what it should be from the definition, let's add tiny positive values of <m>h</m> like <m>.5, .2,</m> and <m>.1</m> to <m>x=0</m>.  These give <m>f(.5)=1, f(.2)=1,</m> and <m>f(.1)=1</m>.  Let's plot those and see what the lines through those points and <m>(0,-1)</m> look like.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg1 = plot(1, x, .005, 2, color='black')
@@ -546,6 +588,8 @@
           fg1+fg2+pt1+pt2+s1+s2+s3+spt1+spt2+spt3
         </sageplot>
       </image>
+    </figure>
+    <p>
       We see here that the limit of those slopes is positively infinite.  In other words, it doesn't exist.  In general it is true that a failure of continuity at a point means that the function can't be differentiated there.  Stated more directly we have ...   
     </p> 
       <theorem xml:id="thm-differentiableImpliesContinuous">
@@ -704,6 +748,8 @@
     </p>
     <p>
       To move forward, let's set down some language often used in optimization.  For us, it's easiest to talk about this in the context of a function since generally we use functions to describe circumstances to which mathematics applies.  When we say *local* or alternatively *relative* maximum, we mean a value the function obtains at some location in its domain that is larger than or equal to any other value it obtains in some interval (possible a very small interval) containing the location.  In otherwords, the function is maximal at that point in that little neighborhood but might get bigger outside of the neighborhood.  Local / relative minimum is analogously defined.  When we say *global* or *absolute* maximum, we mean a value the function obtains at some location in its domain and that value is larger than or equal to any other value the function obtains in its domain.  Global / Absolute minimum is analogously defined.  When we say the function obtains an *optimum* or *extreme* value, we are just indicating that it obtains a max or min but aren't specifying which one.  Let's look at and example to practice the language.  Consider the graph of <m>f(x)=2x^3-3x^2-12x+18</m> given below.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg = plot(2*x^3-3*x^2-12*x+18, x, -3, 3, color='black')
@@ -713,10 +759,14 @@
           fg+pt1+pt2
         </sageplot>
       </image>
+    </figure>
+    <p>
       This function has domain <m>[-3,3]</m>.  You'll notice that by the definitions given above it has a *local* min at 2.  Notice the language here.  There is a local min *at* 2.  That local min *is* <m>-2=f(2)</m>.  Let's explore further.  Can you find a global min?  What is it and where does it happen?  Well, yes ... there is one.  It happens *at* <m>x=-3</m> and it *is* <m>-28</m> (i.e. <m>f(-3)</m>).  Okay, finish it out on your own.  Do you find any other extremes?  There are two more.  Can you say what they are and also where they occur?
     </p>
     <p>
       So, how does calculus help find these optimums?  Take a look at the graph above.  Consider the open interval from -1 to 2 (i.e. <m>(-1,2)</m>).  You'll notice there are no optimums on that interval.  Indeed, if you look at any point on the graph in that interval you'll see that there are larger values just to the left of it and smaller values just to the right of it.  If you haven't looked ... look.  Look, for example, at <m>(1,5)=(1,f(1))</m> on the graph.  
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg = plot(2*x^3-3*x^2-12*x+18, x, -3, 3, color='black')
@@ -727,7 +777,11 @@
           fg+pt3
         </sageplot>
       </image>
+    </figure>
+    <p>
       Look at the values of the function to the left and right of this point.  Like any other value of the function in this interval (from <m>x=-1</m> to <m>x=2</m>), the value of the function is *not* optimal in any way (i.e. it has larger results to the left and smaller ones to the right).  So, if we are looking for optimums, this interval can be ignored.  There are no optimums there.  Now, how could calculus help us spot this useless interval?  Do you see any calculus connection in this interval.  Here, let's plot the tangent line at <m>(1,5)</m> in case the connection isn't evident.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg = plot(2*x^3-3*x^2-12*x+18, x, -3, 3, color='black')
@@ -739,6 +793,8 @@
           fg+pt3+tl
         </sageplot>
       </image>
+    </figure>
+    <p>
       What do you notice about the slope of that tangent line?  Yes, it's negative.  In other words, <m>f'(1)</m> is negative.  In fact, you can see that the derivative (i.e. slopes of tangent lines) are negative in that entire subinterval from -1 to 2.  The derivative being negative there ensures that the function is strictly decreasing, always has negative slope and so the function can't obtain an optimum there.  Similarly, you can see that the derivative is always positive from -3 to -1 so the function doesn't have an optimum in that open interval and the derivative is always positive from 2 to 3 so there is no optimum in that open interval.  That quickly leaves only <m>x=-3, -2, 1</m> and <m>x=3</m> as places where optimums can occur.  This leads to what we call a first derivative analysis theorem.
     </p>
     <theorem xml:id="thm-firstDerivativeAnalysis">
@@ -766,6 +822,8 @@
         \right.
       </me>
       Does this function have an absolute max?  Let's plot it to see if we can understand the question better.
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg1 = plot(x, x, 0, 1, color='black')
@@ -775,7 +833,11 @@
           fg1+fg2+pt+cpt
         </sageplot>
       </image>
+    </figure>
+    <p>
       Now that we see its graph, what do you think?  Does it *obtain* an absolute max?  You might say, "Well, yeah. Isn't it 2?  Right there at <m>x=1</m>?"  But... no.  At <m>x=1</m> the value of the function is <m>1</m>.  It never actually obtains the value 2.  In fact, no matter where you evaluate this function, there are always larger values that the function obtains.  So, what went wrong?  A little thought leads us to conclude that it is that annoying discontinuity at 1 that is the problem.  So, maybe as long as a function is continuous, we can avoid situations where the function does not obtain its absolute max.  So, suppose we have *better* behaved, continuous function similar to the one we're studying.  For example, suppose that we just use the nice continuous function <m>f(x)=x</m>.  Now, that one is continous everywhere so it shouldn't have a problem.  Right?  Not so fast.  Suppose we define it on the partially open interval <m>[0,2)</m> instead of the closed interval <m>[0,2]</m>.  Then we get this graph
+    </p>
+    <figure><caption></caption>
       <image width="65%">
         <sageplot>
           fg1 = plot(x, x, 0, 1.99, color='black')
@@ -785,6 +847,8 @@
           fg1+cpt1+cpt2
         </sageplot>
       </image>
+    </figure>
+    <p>
       Once again, we see that the function does not obtain an absolute maximum.  The problem this time is that the domain interval has that darned open end.  At this point, you may be thinking that there might be tons of ways a function could have problems that prevent extremes from being obtained.  Fortunately, that's not really the case.  The two problems identified above are the only real issues.  In fact, we have ...
     </p>
     <theorem xml:id="thm-extremeValueTheorem">
@@ -847,13 +911,19 @@
       <title>Area Problem</title>
       <p>
         For a given function defined on a closed interval, let's try to find the area that its graph traps above the axis minus the area it traps below the axis.  For example, if we plot <m>f(x)=x</m> on <m>-1 \le x \le 2</m> we get
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             plot1 = plot(x, x, -1, 2, color='black')
             plot1
           </sageplot>
         </image>
+      </figure>
+      <p>
         Notice that this graph traps some area above the axis (in a triangle with legs of length 2 and 2 over <m>0 \le x \le 2</m>) and some area below the axis (in a triangle with legs of length 1 and 1 over <m>-1 \le x \le 0</m>).  Do you see them?  Here, let's highlight them.
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             plot1 = plot(x, x, -1, 2, color='black')
@@ -862,13 +932,19 @@
             plot1+tri1+tri2
           </sageplot>
         </image>
+      </figure>
+      <p>
         If we subtract the area below from the area above we get <m>2 - 0.5 = 1.5</m>.  Of course, that is a case where we have well established formulas for calculating areas (triangles in this case).  What if the graph produces shapes for which we do *not* have familiar geometric formulas.  Consider, for example, <m>f(x)=x^2-1</m> on the interval <m>0 \le x \le 2</m>.
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             plot1 = plot(x^2-1, x, 0, 2, color='black')
             plot1
           </sageplot>
         </image>
+      </figure>
+      <p>
         Now what?  That's the area problem.  Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function.  This area trapped above minus area trapped below needs some notation and language.  So....
       </p>
         <definition xml:id="def-integralNotation">
@@ -893,13 +969,19 @@
       <title>Riemann's Solution</title>
       <p>
         Historically, the mathematician Bernhard Riemann is credited with the approach / solution to the area problem presented in this section.  To see how it works, we'll do a case study on something for which we know the answer.  That way, when we apply Riemann's approach, we'll know whether it's working or not.  So, let's look at <m>f(x)=x</m> on <m>[0,2]</m>.  Notice that this gives a triangle above the axis with leg lengths 2 and 2 so that the triangle has area 2.
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             plot1 = plot(x, x, 0, 2, color='black')
             plot1
           </sageplot>
         </image>
+      </figure>
+      <p>
         Riemann's idea is to chop the interval <m>[0,2]</m> into equally sized subintervals.  For example, if we chop it into 4 subintervals, each subinterval would have size <m>(2-0)/4 = 1/2</m>.  The subintervals would be <m>[0,1/2], [1/2,2/2], [2/2,3/2],</m> and <m>[3/2,4/2]</m>.  For each subinterval, Riemann evaluated the function (<m>f(x)=x</m> for us) somewhere in each subinterval and used that evaluation as the height of a rectangle and the subinterval as the base of the rectangle.  For simplicity, let's evaluate our function at the right endpoints of the subintervals.  So, here's what we have.
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             f(x)=x
@@ -911,6 +993,8 @@
             plot1+r1+r2+r3+r4
           </sageplot>
         </image>
+      </figure>
+      <p>
         Now, unlike the area under the curve, these rectangles *are* familiar geometric shapes so we can compute their areas.  Even better, if we add up all of their areas, it will give us an *approximate* value of the area under the curve.  Of course, it will be off by some amount since we can clearly see that the rectangles stick outside of the area in question.  Still ... it gives some approximation.  So, let's compute it.  Each rectangle has the same size base of <m>1/2</m> and the heights are <m>f(1/2)=1/2, f(2/2)=2/2, f(3/2)=3/2, </m> and <m>f(4/2)=4/2</m>.  One quick note:  Instead of writing things like <m>4/2</m> as <m>2</m>, I'm leaving it in terms of the subinterval size <m>1/2</m>.  That will be helpful later so avoid reducing such things for now.  So, the approximate area as given by these rectangular areas is
         <me>
           \begin{array}{lll}
@@ -923,6 +1007,8 @@
           \end{array}
         </me>
         So?  Not bad.  We know the actual, exact, area is 2 but this process estimated it at 2.5.  How could we improve?  The answer is, hopefully, very apparent.  Namely, we could just up the number of subintervals.  When we do that, the size of the subintervals shrinks so that the rectangles are thinner (more like pins).  So, the amount of the rectangle poking out of the actual area will be less.  In other words, the estimate by using them *should* be more accurate.  Let's check!  Let's chop the interval into 8 equal subintervals this time.  So each subinterval will have size <m>(2-0)/8=1/4</m> this time.
+      </p>
+      <figure><caption></caption>
         <image width="65%">
           <sageplot>
             f(x)=x
@@ -938,6 +1024,8 @@
             plot1+r1+r2+r3+r4+r5+r6+r7+r8
           </sageplot>
         </image>
+      </figure>
+      <p>
         Now, let's add up all those rectangular areas.
         <me>
           \begin{array}{lll}

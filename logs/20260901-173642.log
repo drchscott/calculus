@@ -1,0 +1,8 @@
+WARNING : Using CLI version 2.19.3 but project's `requirements.txt`
+WARNING : is configured to use 1.7.5. Consider either installing
+WARNING : CLI version 1.7.5 or running `pretext update`
+WARNING : to update `requirements.txt` and other managed files to match 2.19.3.
+INFO    : Found server at localhost:8128
+INFO    : Server is already available at https://probable-enigma-xjx4pqjv56q34vj-8128.app.github.dev
+INFO    : Now opening browser for target `web` at https://probable-enigma-xjx4pqjv56q34vj-8128.app.github.dev/output/web
+INFO    : 
