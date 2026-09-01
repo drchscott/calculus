@@ -16,7 +16,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.1",
   "title": "The Main Idea",
-  "body": " The Main Idea  Consider the function   Notice that this function can't be evaluated at x=0 (i.e. 0 is not in its domain.) But, we could compute it for values of x *close* to 0. For example, consider the following table for sin(x)\/x.         0.500  0.958851    0.100  0.998334    0.010  0.999983    0.001  0.999999     Look at this table. As we move the values closer to , what are the values getting closer to? It's apparent that as approaches , that approaches . Of course, to be fair, at the moment we're only letting approach from the right hand (positive) side of . Let's create some notation to record this kind of information.  If approaches a number, say , as approaches a number from its right hand side, then we write which is pronounced \"The limit of is as approaches from the right\". We also say that has a right hand limit of at . Analogously, If approaches a number, say as approaches from its left hand side, then we write which is pronounced \"The limit of is as approaches from the left\". Again, we also say that has a left hand limit of at .  So now, with this new notation, it seems reasonable to write   It is critical to note here that we are using the word \"approach\" in the definition above to indicate that we simply take values of the domain variable *close* to but not equal to it. In computing limits, we do not use . We're just identifying what is becoming as *approaches* . In fact, in many cases such as , we can't even compute the function at .  For from above, make a table like the one above but this time use 4 or 5 domain values approaching from the left. Use the notation from the definition above to write your conclusion about the left hand limit.  Finally, since it will often be the case that both the left hand and right hand limit come out the same (but not always) for a function, we just drop the and in that case. In other words ...  In case both the left hand and right hand limit of a function are the same (i.e. ), then we simply write without any reference to or . In this case we say that has a limit of at .  For , notice that once again is not in its domain. Make tables for left and right hand approaches to and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.  "
+  "body": " The Main Idea  Consider the function   Notice that this function can't be evaluated at x=0 (i.e. 0 is not in its domain.) But, we could compute it for values of x *close* to 0. For example, consider the following table for sin(x)\/x.         0.500  0.958851    0.100  0.998334    0.010  0.999983    0.001  0.999999     Look at this table. As we move the values closer to , what are the values getting closer to? It's apparent that as approaches , that approaches . Of course, to be fair, at the moment we're only letting approach from the right hand (positive) side of . Let's create some notation to record this kind of information.    If approaches a number, say , as approaches a number from its right hand side, then we write which is pronounced \"The limit of is as approaches from the right\". We also say that has a right hand limit of at . Analogously, If approaches a number, say as approaches from its left hand side, then we write which is pronounced \"The limit of is as approaches from the left\". Again, we also say that has a left hand limit of at .    So now, with this new notation, it seems reasonable to write    It is critical to note here that we are using the word \"approach\" in the definition above to indicate that we simply take values of the domain variable *close* to but not equal to it. In computing limits, we do not use . We're just identifying what is becoming as *approaches* . In fact, in many cases such as , we can't even compute the function at .    For from above, make a table like the one above but this time use 4 or 5 domain values approaching from the left. Use the notation from the definition above to write your conclusion about the left hand limit.   Finally, since it will often be the case that both the left hand and right hand limit come out the same (but not always) for a function, we just drop the and in that case. In other words ...   In case both the left hand and right hand limit of a function are the same (i.e. ), then we simply write without any reference to or . In this case we say that has a limit of at .    For , notice that once again is not in its domain. Make tables for left and right hand approaches to and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.   "
 },
 {
   "id": "sideLimit",
@@ -25,7 +25,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.1",
   "title": "",
-  "body": "If approaches a number, say , as approaches a number from its right hand side, then we write which is pronounced \"The limit of is as approaches from the right\". We also say that has a right hand limit of at . Analogously, If approaches a number, say as approaches from its left hand side, then we write which is pronounced \"The limit of is as approaches from the left\". Again, we also say that has a left hand limit of at . "
+  "body": "  If approaches a number, say , as approaches a number from its right hand side, then we write which is pronounced \"The limit of is as approaches from the right\". We also say that has a right hand limit of at . Analogously, If approaches a number, say as approaches from its left hand side, then we write which is pronounced \"The limit of is as approaches from the left\". Again, we also say that has a left hand limit of at .   "
 },
 {
   "id": "mainIdea-9",
@@ -34,7 +34,7 @@ var ptx_lunr_docs = [
   "type": "Remark",
   "number": "1.1.2",
   "title": "",
-  "body": "It is critical to note here that we are using the word \"approach\" in the definition above to indicate that we simply take values of the domain variable *close* to but not equal to it. In computing limits, we do not use . We're just identifying what is becoming as *approaches* . In fact, in many cases such as , we can't even compute the function at . "
+  "body": " It is critical to note here that we are using the word \"approach\" in the definition above to indicate that we simply take values of the domain variable *close* to but not equal to it. In computing limits, we do not use . We're just identifying what is becoming as *approaches* . In fact, in many cases such as , we can't even compute the function at .  "
 },
 {
   "id": "mainIdea-10",
@@ -43,7 +43,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.3",
   "title": "",
-  "body": "For from above, make a table like the one above but this time use 4 or 5 domain values approaching from the left. Use the notation from the definition above to write your conclusion about the left hand limit. "
+  "body": " For from above, make a table like the one above but this time use 4 or 5 domain values approaching from the left. Use the notation from the definition above to write your conclusion about the left hand limit.  "
 },
 {
   "id": "limit",
@@ -52,7 +52,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.1.4",
   "title": "",
-  "body": "In case both the left hand and right hand limit of a function are the same (i.e. ), then we simply write without any reference to or . In this case we say that has a limit of at . "
+  "body": " In case both the left hand and right hand limit of a function are the same (i.e. ), then we simply write without any reference to or . In this case we say that has a limit of at .  "
 },
 {
   "id": "mainIdea-13",
@@ -61,7 +61,7 @@ var ptx_lunr_docs = [
   "type": "Example",
   "number": "1.1.5",
   "title": "",
-  "body": "For , notice that once again is not in its domain. Make tables for left and right hand approaches to and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit. "
+  "body": " For , notice that once again is not in its domain. Make tables for left and right hand approaches to and use proper notation as defined above to write your conclusions about right hand limit, left hand limit and limit.  "
 },
 {
   "id": "infinityLimits",
@@ -70,7 +70,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "1.2",
   "title": "Infinity Stuff",
-  "body": " Infinity Stuff  Consider the function . What can you say about ? Well, let's make a table and see.         1.000  1    0.100  10    0.010  100    0.001  1000     So, it's pretty apparent that as , the function isn't headed toward any number. So, there is no limit. Said differently, the right hand limit of does not exist at . So, the limit notation we've created so far isn't useful. However, it would be useful to record this information. To do that, we write . Please note here that this notation is *not* saying that a limit exists. It just is language explaining *how* it doesn't exist.  Make another table for but this time with value of approaching from the left. What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?  When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions.  We also use the symbol as a *place* to let the domain variable *approach*. When we let get arbitrarily positively large, we write So, for example, consider our friend . If you make a table for this taking larger and larger positive values of , you'll see that approaches . So, in that case, we can write .  Make another table for but this time with value of getting negatively large without bound (e.g. ). What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?  To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write .  Use limit notation and the infinity symbol to express what is happening to as grows positively without bound.  "
+  "body": " Infinity Stuff  Consider the function . What can you say about ? Well, let's make a table and see.         1.000  1    0.100  10    0.010  100    0.001  1000     So, it's pretty apparent that as , the function isn't headed toward any number. So, there is no limit. Said differently, the right hand limit of does not exist at . So, the limit notation we've created so far isn't useful. However, it would be useful to record this information. To do that, we write . Please note here that this notation is *not* saying that a limit exists. It just is language explaining *how* it doesn't exist.  Make another table for but this time with value of approaching from the left. What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?   When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions.   We also use the symbol as a *place* to let the domain variable *approach*. When we let get arbitrarily positively large, we write So, for example, consider our friend . If you make a table for this taking larger and larger positive values of , you'll see that approaches . So, in that case, we can write .  Make another table for but this time with value of getting negatively large without bound (e.g. ). What do you see? What is a reasonable way to use limit notation and the symbol to express what you find?   To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write .  Use limit notation and the infinity symbol to express what is happening to as grows positively without bound.  "
 },
 {
   "id": "infinityLimits-5",
@@ -88,7 +88,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.2",
   "title": "",
-  "body": "When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions. "
+  "body": " When grows positively without bound as goes to from the right, we write . Also, when grows positively without bound as goes to from the left, we write . Similarly, when grows negatively without bound as goes to from the right, we write and when grows negatively without bound as goes to from the left, we write . As with actual limits, if we omit the and then we are saying that the behavior is the same from both directions.  "
 },
 {
   "id": "infinityLimits-8",
@@ -106,7 +106,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "1.2.4",
   "title": "",
-  "body": "To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write . "
+  "body": " To express a limit when we let the domain variable grow positively without bound, we write and to express a limit when we let the domain variable grow negatively without bound, we write . "
 },
 {
   "id": "infinityLimits-10",
@@ -205,7 +205,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.1",
   "title": "Definition",
-  "body": " Definition  Consider ...     First discontinuity example     Which, for the record, happens to be the graph of the following function   Using the limit notation developed to this point, we notice that . As it happens for this function though, we notice that this does not match the value of . That is, for this particular function at the domain value , we have Visually (i.e. looking at the graph of ), this shows up as some sort of \"break\" in the graph of at . In such cases, we say that has a \"discontinuity\" at . Precisely, we have  When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \".  It is worth noting here that some discontinuities are \"removable\" and some are not. Consider . This familiar function has the graph     Bad discontinuity example     At , this function has no limit of any kind (and isn't even defined) at . Even worse, if we chose to define a function that was for all and set it to be *something* at , there is nothing we could set it to in order to make it continuous since has no limit at . So, this discontinuity at is quite bad.  On the other hand, looking at the graph at the start of the section, if we had just defined that function to be instead of , then would have been continuous at and, as apparent from the graph, everywhere else between and . Such discontinuities are often called \"removable\". So, we'd say that for the function at the start of the section, the discontinuity at is \"removable\".  "
+  "body": " Definition  Consider ...     First discontinuity example     Which, for the record, happens to be the graph of the following function   Using the limit notation developed to this point, we notice that . As it happens for this function though, we notice that this does not match the value of . That is, for this particular function at the domain value , we have Visually (i.e. looking at the graph of ), this shows up as some sort of \"break\" in the graph of at . In such cases, we say that has a \"discontinuity\" at . Precisely, we have   When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \".   It is worth noting here that some discontinuities are \"removable\" and some are not. Consider . This familiar function has the graph     Bad discontinuity example     At , this function has no limit of any kind (and isn't even defined) at . Even worse, if we chose to define a function that was for all and set it to be *something* at , there is nothing we could set it to in order to make it continuous since has no limit at . So, this discontinuity at is quite bad.  On the other hand, looking at the graph at the start of the section, if we had just defined that function to be instead of , then would have been continuous at and, as apparent from the graph, everywhere else between and . Such discontinuities are often called \"removable\". So, we'd say that for the function at the start of the section, the discontinuity at is \"removable\".  "
 },
 {
   "id": "defContinuitySection-3",
@@ -223,7 +223,7 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "2.1.2",
   "title": "",
-  "body": "When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \". "
+  "body": " When it is the case that , we say that is \"continuous at \". Otherwise, we say that is \"discontinuous at \".  "
 },
 {
   "id": "defContinuitySection-8",
@@ -268,16 +268,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "2.3",
   "title": "Intermediate Values",
-  "body": " Intermediate Values  Recall the graph of this function from the first section of this chapter.   Notice that it has the value at (i.e. ) and it has the value at (i.e. ). But, does it ever have the value (i.e. is there a domain value for which )? Imagine a horizontal line on the graph at a height of and you'll see that the answer is \"no\". So, why not? What goes wrong that this function has the value and but never not has the intermediate value ? Hopefully the answer is apparent. Namely, the function has a discontinuity so there is a \"break\" \/ \"jump\" over some of the intermediate values like . One of the nice properties of functions that are continuous on an interval of numbers (i.e. continous at every number in an interval) is that it obtains all of its intermediate values. Specifically, we have the following theorem known by mathematicians as the \"Intermediate Value Theorem (IVT)\".   If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .   Consider for example the function above but this time defined with . Here, let's plot it.   Now, if you look at any two values the function obtains, you'll see that every value in between them is also obtained by the function. In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between. Look over at the graph and you'll see that the function also obtains that value. Why? Well, we removed the disontinuity so now this function is continuous on the interval so we have the IVT.  "
+  "body": " Intermediate Values  Recall the graph of this function from the first section of this chapter.       Notice that it has the value at (i.e. ) and it has the value at (i.e. ). But, does it ever have the value (i.e. is there a domain value for which )? Imagine a horizontal line on the graph at a height of and you'll see that the answer is \"no\". So, why not? What goes wrong that this function has the value and but never not has the intermediate value ? Hopefully the answer is apparent. Namely, the function has a discontinuity so there is a \"break\" \/ \"jump\" over some of the intermediate values like . One of the nice properties of functions that are continuous on an interval of numbers (i.e. continous at every number in an interval) is that it obtains all of its intermediate values. Specifically, we have the following theorem known by mathematicians as the \"Intermediate Value Theorem (IVT)\".   If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .   Consider for example the function above but this time defined with . Here, let's plot it.       Now, if you look at any two values the function obtains, you'll see that every value in between them is also obtained by the function. In other words, point one finger at a number on the vertical axis that the function obtains and also point a finger at another number on the vertical axis that the function obtains and then consider any number in between. Look over at the graph and you'll see that the function also obtains that value. Why? Well, we removed the disontinuity so now this function is continuous on the interval so we have the IVT.  "
+},
+{
+  "id": "otherPropsOfContinuity-3",
+  "level": "2",
+  "url": "otherPropsOfContinuity.html#otherPropsOfContinuity-3",
+  "type": "Figure",
+  "number": "2.3.1",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "thm-IVT",
   "level": "2",
   "url": "otherPropsOfContinuity.html#thm-IVT",
   "type": "Theorem",
-  "number": "2.3.1",
+  "number": "2.3.2",
   "title": "",
   "body": " If is continuous on an interval (whether open, half open, or closed) and and are two values that obtains and finally happens to be a number between (i.e. intermediate to) and , then there is some in so that .  "
+},
+{
+  "id": "otherPropsOfContinuity-7",
+  "level": "2",
+  "url": "otherPropsOfContinuity.html#otherPropsOfContinuity-7",
+  "type": "Figure",
+  "number": "2.3.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "sec-tangentProblem",
@@ -286,16 +304,43 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.1",
   "title": "Tangent Problem",
-  "body": " Tangent Problem  Consider this graph of .   In addition to , a couple of lines are plotted here. They both pass through the point on the graph. Notice that the black line is special in a particular way. Namely, it just \"touches\" the graph at without \"cutting\" through the graph. If you used any other line passing touching (i.e. touch but use a different slope) like the dashed line, then it \"cuts through\". You should recall from your precalculus experience that lines like the black one here are called \"tangent\" lines. Tangent lines to graphs are very important to applied scientists such as physicists. It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that. Why? Well, after a little thought you hopefully realized that while we have a point that the line passes through , we would need either another point the line passes through or the slope of the line in order to write an equation for it. But, we have neither. So, the tangent line is just an idea and not something we can concretely describe at this point. Our goal is to solve this \"tangent line problem\" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.  So... how? How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem? Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through and a point on the graph just a teensy bit to the right or left of . So, suppose is a teensy number. We could adjust by that amount and look up at the graph to the point . For example, we could take giving us the point on the graph . The line going through the two points and has a slope (rise\/run) equal to (i.e. ). So, that line *can* be plotted since we have both a slope, ), and a point the line passes through, . Here, let's plot that line as a dashed line and show it along with the tangent line.   You'll notice that while this dashed line is not quite the tangent line, it is ... close. We could get even closer by choosing a point even closer to . In other words, make smaller (either a teensier positive or negative number). For smaller and smaller values of , the resulting lines should look more and more line the tangent line. For example, suppose we take like and . Those give lines with the following slopes         .75  2.75    0.5  2.5    0.1  2.1    0.01  2.01     If we plot all of these lines, here is what they look like     So, what do we think the slope of the tangent line is likely to be? It's apparent that if we let continue to shrink, the associated lines have slopes that are getting closer and closer to . Plotting the line through with slope gives us exactly the tangent line depicted in black. So, at least for the function and the point on its graph, we've solved the tangent line problem!  Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.)  "
+  "body": " Tangent Problem  Consider this graph of .       In addition to , a couple of lines are plotted here. They both pass through the point on the graph. Notice that the black line is special in a particular way. Namely, it just \"touches\" the graph at without \"cutting\" through the graph. If you used any other line passing touching (i.e. touch but use a different slope) like the dashed line, then it \"cuts through\". You should recall from your precalculus experience that lines like the black one here are called \"tangent\" lines. Tangent lines to graphs are very important to applied scientists such as physicists. It would be nice to write an equation for this tangent line but you'll notice that we can't quite do that. Why? Well, after a little thought you hopefully realized that while we have a point that the line passes through , we would need either another point the line passes through or the slope of the line in order to write an equation for it. But, we have neither. So, the tangent line is just an idea and not something we can concretely describe at this point. Our goal is to solve this \"tangent line problem\" by finding a way to compute the slope of lines tangent to graphs so that we can write equations for them.  So... how? How did historical mathematical luminaries such as Isaac Newton solve this tangent line problem? Well, suppose for a moment that instead of looking at the tangent line, we look at a line passing through and a point on the graph just a teensy bit to the right or left of . So, suppose is a teensy number. We could adjust by that amount and look up at the graph to the point . For example, we could take giving us the point on the graph . The line going through the two points and has a slope (rise\/run) equal to (i.e. ). So, that line *can* be plotted since we have both a slope, ), and a point the line passes through, . Here, let's plot that line as a dashed line and show it along with the tangent line.       You'll notice that while this dashed line is not quite the tangent line, it is ... close. We could get even closer by choosing a point even closer to . In other words, make smaller (either a teensier positive or negative number). For smaller and smaller values of , the resulting lines should look more and more line the tangent line. For example, suppose we take like and . Those give lines with the following slopes        .75  2.75    0.5  2.5    0.1  2.1    0.01  2.01    If we plot all of these lines, here is what they look like       So, what do we think the slope of the tangent line is likely to be? It's apparent that if we let continue to shrink, the associated lines have slopes that are getting closer and closer to . Plotting the line through with slope gives us exactly the tangent line depicted in black. So, at least for the function and the point on its graph, we've solved the tangent line problem!  Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.)   "
 },
 {
-  "id": "sec-tangentProblem-7",
+  "id": "sec-tangentProblem-3",
   "level": "2",
-  "url": "sec-tangentProblem.html#sec-tangentProblem-7",
-  "type": "Example",
+  "url": "sec-tangentProblem.html#sec-tangentProblem-3",
+  "type": "Figure",
   "number": "3.1.1",
   "title": "",
-  "body": "Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.) "
+  "body": "    "
+},
+{
+  "id": "sec-tangentProblem-6",
+  "level": "2",
+  "url": "sec-tangentProblem.html#sec-tangentProblem-6",
+  "type": "Figure",
+  "number": "3.1.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-tangentProblem-10",
+  "level": "2",
+  "url": "sec-tangentProblem.html#sec-tangentProblem-10",
+  "type": "Figure",
+  "number": "3.1.3",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-tangentProblem-12",
+  "level": "2",
+  "url": "sec-tangentProblem.html#sec-tangentProblem-12",
+  "type": "Example",
+  "number": "3.1.4",
+  "title": "",
+  "body": "Implement the same solution but this time look at a different point on the graph of (e.g. maybe or ) etc.)  "
 },
 {
   "id": "sec-definitionOfDerivative",
@@ -304,7 +349,7 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "3.2",
   "title": "Definition",
-  "body": " Definition  The tangent problem solution from the previous section motivates us to define a function in the following way.  For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .  For example, suppose the function is just a constant like . Think about the graph of that function. It's just a flat line at a height of . Consequently, regardless of the value of , the tangent line is flat (i.e. slope), so when is constant, we get for all values of . We note here that when the expression for the definition of is particularly simple, we often lazily just write the expression down instead of the name of the function. So, for example, we could write .  Here's another example. Consider . The graph of is a straight line with slope . So, this is any easy one to get the derivative at any value of . Namely, for , we have (i.e. ) for any value of .  So, those two examples don't require the use of any of our new limit finding skills. They are obvious from geometry. But, In the previous section, we did some of these computations for . Looking back, you'll recall we found . Even more, if you worked through the example there doing both of the given values, you would have found that and . So, based on those facts, can you speculate on a general expression for ? Well, let's use our limit finding skills to compute for a very broad range of values all at once. So, suppose is, generically, a number in the domain of . Now,   Notice here that the derivative function requires computing a limit using the value . So, the domain of the derivative is, at most, the domain of . So, does that mean that it is always the case that for every in the domain of , we can find ? No. Unfortunately not. Consider for example . Let's graph this function near .     Think for a moment of the point on this graph. It is not entirely clear what the tangent line there should be. There are lots of lines touching that point that don't \"cut\" through the graph and could be possible tangent lines. It's apparent that for the slope of the tangent line is and for the slope of the tangent line is . But what about at ? Well, let's compute using the definition.   We looked at this limit in the chapter on limits. It turns out that it doesn't exist as we found but unfortunately . So, does not exist \/ is not defined when . Apparently, that is generally the case when \"cusps\" like this exist in the graph.  There is another circumstance where one can see that derivatives do not exist. Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there. For example, look at the function which is graphed here.   Suppose we try to find its derivative at (i.e. slope of the tangent line to ). To see what it should be from the definition, let's add tiny positive values of like and to . These give and . Let's plot those and see what the lines through those points and look like.   We see here that the limit of those slopes is positively infinite. In other words, it doesn't exist. In general it is true that a failure of continuity at a point means that the function can't be differentiated there. Stated more directly we have ...    If is differentiable at a given value in its domain, then it must be continous there too.    "
+  "body": " Definition  The tangent problem solution from the previous section motivates us to define a function in the following way.  For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .   For example, suppose the function is just a constant like . Think about the graph of that function. It's just a flat line at a height of . Consequently, regardless of the value of , the tangent line is flat (i.e. slope), so when is constant, we get for all values of . We note here that when the expression for the definition of is particularly simple, we often lazily just write the expression down instead of the name of the function. So, for example, we could write .  Here's another example. Consider . The graph of is a straight line with slope . So, this is any easy one to get the derivative at any value of . Namely, for , we have (i.e. ) for any value of .  So, those two examples don't require the use of any of our new limit finding skills. They are obvious from geometry. But, In the previous section, we did some of these computations for . Looking back, you'll recall we found . Even more, if you worked through the example there doing both of the given values, you would have found that and . So, based on those facts, can you speculate on a general expression for ? Well, let's use our limit finding skills to compute for a very broad range of values all at once. So, suppose is, generically, a number in the domain of . Now,   Notice here that the derivative function requires computing a limit using the value . So, the domain of the derivative is, at most, the domain of . So, does that mean that it is always the case that for every in the domain of , we can find ? No. Unfortunately not. Consider for example . Let's graph this function near .     Think for a moment of the point on this graph. It is not entirely clear what the tangent line there should be. There are lots of lines touching that point that don't \"cut\" through the graph and could be possible tangent lines. It's apparent that for the slope of the tangent line is and for the slope of the tangent line is . But what about at ? Well, let's compute using the definition.   We looked at this limit in the chapter on limits. It turns out that it doesn't exist as we found but unfortunately . So, does not exist \/ is not defined when . Apparently, that is generally the case when \"cusps\" like this exist in the graph.  There is another circumstance where one can see that derivatives do not exist. Specifically, if you look at a function that has a discontinuity somehwere, you would observe that the derivative does not exist there. For example, look at the function   which is graphed here.       Suppose we try to find its derivative at (i.e. slope of the tangent line to ). To see what it should be from the definition, let's add tiny positive values of like and to . These give and . Let's plot those and see what the lines through those points and look like.       We see here that the limit of those slopes is positively infinite. In other words, it doesn't exist. In general it is true that a failure of continuity at a point means that the function can't be differentiated there. Stated more directly we have ...    If is differentiable at a given value in its domain, then it must be continous there too.    "
 },
 {
   "id": "def-derivative",
@@ -313,14 +358,32 @@ var ptx_lunr_docs = [
   "type": "Definition",
   "number": "3.2.1",
   "title": "",
-  "body": "For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted . "
+  "body": "For a fucntion defined on an interval and a point in that interval, we define for any for which this limit exists. We call this function the \"derivative\" of and for any where its defined, we say that is \"differentiable\" there. The derivative function is sometimes denoted .  "
+},
+{
+  "id": "sec-definitionOfDerivative-16",
+  "level": "2",
+  "url": "sec-definitionOfDerivative.html#sec-definitionOfDerivative-16",
+  "type": "Figure",
+  "number": "3.2.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-definitionOfDerivative-18",
+  "level": "2",
+  "url": "sec-definitionOfDerivative.html#sec-definitionOfDerivative-18",
+  "type": "Figure",
+  "number": "3.2.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "thm-differentiableImpliesContinuous",
   "level": "2",
   "url": "sec-definitionOfDerivative.html#thm-differentiableImpliesContinuous",
   "type": "Theorem",
-  "number": "3.2.2",
+  "number": "3.2.4",
   "title": "",
   "body": "  If is differentiable at a given value in its domain, then it must be continous there too.   "
 },
@@ -412,14 +475,41 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.3",
   "title": "Intro to Optimization",
-  "body": " Intro to Optimization  Probably the most far reaching application of calculus is optimization. When we say *optimization*, we are referring to the common applied task of finding the highs and lows of a given circumstance. For example, business people are always looking for maximum profits or minimum costs. Engineers are often looking for maximum stress on something so they can build the right structure. Etc. Optimzation is an important issue in almost every sort of endeavor.  To move forward, let's set down some language often used in optimization. For us, it's easiest to talk about this in the context of a function since generally we use functions to describe circumstances to which mathematics applies. When we say *local* or alternatively *relative* maximum, we mean a value the function obtains at some location in its domain that is larger than or equal to any other value it obtains in some interval (possible a very small interval) containing the location. In otherwords, the function is maximal at that point in that little neighborhood but might get bigger outside of the neighborhood. Local \/ relative minimum is analogously defined. When we say *global* or *absolute* maximum, we mean a value the function obtains at some location in its domain and that value is larger than or equal to any other value the function obtains in its domain. Global \/ Absolute minimum is analogously defined. When we say the function obtains an *optimum* or *extreme* value, we are just indicating that it obtains a max or min but aren't specifying which one. Let's look at and example to practice the language. Consider the graph of given below.   This function has domain . You'll notice that by the definitions given above it has a *local* min at 2. Notice the language here. There is a local min *at* 2. That local min *is* . Let's explore further. Can you find a global min? What is it and where does it happen? Well, yes ... there is one. It happens *at* and it *is* (i.e. ). Okay, finish it out on your own. Do you find any other extremes? There are two more. Can you say what they are and also where they occur?  So, how does calculus help find these optimums? Take a look at the graph above. Consider the open interval from -1 to 2 (i.e. ). You'll notice there are no optimums on that interval. Indeed, if you look at any point on the graph in that interval you'll see that there are larger values just to the left of it and smaller values just to the right of it. If you haven't looked ... look. Look, for example, at on the graph.   Look at the values of the function to the left and right of this point. Like any other value of the function in this interval (from to ), the value of the function is *not* optimal in any way (i.e. it has larger results to the left and smaller ones to the right). So, if we are looking for optimums, this interval can be ignored. There are no optimums there. Now, how could calculus help us spot this useless interval? Do you see any calculus connection in this interval. Here, let's plot the tangent line at in case the connection isn't evident.   What do you notice about the slope of that tangent line? Yes, it's negative. In other words, is negative. In fact, you can see that the derivative (i.e. slopes of tangent lines) are negative in that entire subinterval from -1 to 2. The derivative being negative there ensures that the function is strictly decreasing, always has negative slope and so the function can't obtain an optimum there. Similarly, you can see that the derivative is always positive from -3 to -1 so the function doesn't have an optimum in that open interval and the derivative is always positive from 2 to 3 so there is no optimum in that open interval. That quickly leaves only and as places where optimums can occur. This leads to what we call a first derivative analysis theorem.    If for all in an open interval OR for all in an open interval, Then does not have an optimum on that open interval.    Suppose for example that we hadn't yet studied the function above and someone just hands us . Let's do a first derivative analysis on it without even creating the graph. So, . We see that this derivative is at and . And on the open intervals and we see that is either always positive or always negative so the theorem above concludes that there are no optimums there. Thus, the only *possible* places for optimums are and . It's really that simple. Having narrowed down to just that handful of options, we can study the behavior or the function on either side of those locations to conclude if we have an optimum there and if so, what kind.  "
+  "body": " Intro to Optimization  Probably the most far reaching application of calculus is optimization. When we say *optimization*, we are referring to the common applied task of finding the highs and lows of a given circumstance. For example, business people are always looking for maximum profits or minimum costs. Engineers are often looking for maximum stress on something so they can build the right structure. Etc. Optimzation is an important issue in almost every sort of endeavor.  To move forward, let's set down some language often used in optimization. For us, it's easiest to talk about this in the context of a function since generally we use functions to describe circumstances to which mathematics applies. When we say *local* or alternatively *relative* maximum, we mean a value the function obtains at some location in its domain that is larger than or equal to any other value it obtains in some interval (possible a very small interval) containing the location. In otherwords, the function is maximal at that point in that little neighborhood but might get bigger outside of the neighborhood. Local \/ relative minimum is analogously defined. When we say *global* or *absolute* maximum, we mean a value the function obtains at some location in its domain and that value is larger than or equal to any other value the function obtains in its domain. Global \/ Absolute minimum is analogously defined. When we say the function obtains an *optimum* or *extreme* value, we are just indicating that it obtains a max or min but aren't specifying which one. Let's look at and example to practice the language. Consider the graph of given below.       This function has domain . You'll notice that by the definitions given above it has a *local* min at 2. Notice the language here. There is a local min *at* 2. That local min *is* . Let's explore further. Can you find a global min? What is it and where does it happen? Well, yes ... there is one. It happens *at* and it *is* (i.e. ). Okay, finish it out on your own. Do you find any other extremes? There are two more. Can you say what they are and also where they occur?  So, how does calculus help find these optimums? Take a look at the graph above. Consider the open interval from -1 to 2 (i.e. ). You'll notice there are no optimums on that interval. Indeed, if you look at any point on the graph in that interval you'll see that there are larger values just to the left of it and smaller values just to the right of it. If you haven't looked ... look. Look, for example, at on the graph.       Look at the values of the function to the left and right of this point. Like any other value of the function in this interval (from to ), the value of the function is *not* optimal in any way (i.e. it has larger results to the left and smaller ones to the right). So, if we are looking for optimums, this interval can be ignored. There are no optimums there. Now, how could calculus help us spot this useless interval? Do you see any calculus connection in this interval. Here, let's plot the tangent line at in case the connection isn't evident.       What do you notice about the slope of that tangent line? Yes, it's negative. In other words, is negative. In fact, you can see that the derivative (i.e. slopes of tangent lines) are negative in that entire subinterval from -1 to 2. The derivative being negative there ensures that the function is strictly decreasing, always has negative slope and so the function can't obtain an optimum there. Similarly, you can see that the derivative is always positive from -3 to -1 so the function doesn't have an optimum in that open interval and the derivative is always positive from 2 to 3 so there is no optimum in that open interval. That quickly leaves only and as places where optimums can occur. This leads to what we call a first derivative analysis theorem.    If for all in an open interval OR for all in an open interval, Then does not have an optimum on that open interval.    Suppose for example that we hadn't yet studied the function above and someone just hands us . Let's do a first derivative analysis on it without even creating the graph. So, . We see that this derivative is at and . And on the open intervals and we see that is either always positive or always negative so the theorem above concludes that there are no optimums there. Thus, the only *possible* places for optimums are and . It's really that simple. Having narrowed down to just that handful of options, we can study the behavior or the function on either side of those locations to conclude if we have an optimum there and if so, what kind.  "
+},
+{
+  "id": "sec-introToOptimization-4",
+  "level": "2",
+  "url": "sec-introToOptimization.html#sec-introToOptimization-4",
+  "type": "Figure",
+  "number": "4.3.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-introToOptimization-7",
+  "level": "2",
+  "url": "sec-introToOptimization.html#sec-introToOptimization-7",
+  "type": "Figure",
+  "number": "4.3.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-introToOptimization-9",
+  "level": "2",
+  "url": "sec-introToOptimization.html#sec-introToOptimization-9",
+  "type": "Figure",
+  "number": "4.3.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "thm-firstDerivativeAnalysis",
   "level": "2",
   "url": "sec-introToOptimization.html#thm-firstDerivativeAnalysis",
   "type": "Theorem",
-  "number": "4.3.1",
+  "number": "4.3.4",
   "title": "",
   "body": "  If for all in an open interval OR for all in an open interval, Then does not have an optimum on that open interval.   "
 },
@@ -430,14 +520,32 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "4.4",
   "title": "Extreme Value Theorem",
-  "body": " Extreme Value Theorem  The function we worked with in the previous section had both an absolute max and an absolute min. So, is that true for every function? Can you picture a function that doesn't have an absolute max or an absolute min? Consider this function defined on the closed interval  Does this function have an absolute max? Let's plot it to see if we can understand the question better.   Now that we see its graph, what do you think? Does it *obtain* an absolute max? You might say, \"Well, yeah. Isn't it 2? Right there at ?\" But... no. At the value of the function is . It never actually obtains the value 2. In fact, no matter where you evaluate this function, there are always larger values that the function obtains. So, what went wrong? A little thought leads us to conclude that it is that annoying discontinuity at 1 that is the problem. So, maybe as long as a function is continuous, we can avoid situations where the function does not obtain its absolute max. So, suppose we have *better* behaved, continuous function similar to the one we're studying. For example, suppose that we just use the nice continuous function . Now, that one is continous everywhere so it shouldn't have a problem. Right? Not so fast. Suppose we define it on the partially open interval instead of the closed interval . Then we get this graph   Once again, we see that the function does not obtain an absolute maximum. The problem this time is that the domain interval has that darned open end. At this point, you may be thinking that there might be tons of ways a function could have problems that prevent extremes from being obtained. Fortunately, that's not really the case. The two problems identified above are the only real issues. In fact, we have ...   The Extreme Value Theorem   If is continuous on a closed interval, Then obtains an global max and a global min on that interval.    Notice that this theorem makes finding optimums pretty easy. Namely, if you have a continuous function on a closed interval, it guarantees that the function WILL obtain an absolute max and an absolute min on that interval. So, we can just do a first derivative analysis to narrow our options down to a few critical numbers in the domain (i.e. eliminate open intervals where optimums can't happen), evaluate our function at those places and the largest result must be the absolute max and the smallest the absolute min.  "
+  "body": " Extreme Value Theorem  The function we worked with in the previous section had both an absolute max and an absolute min. So, is that true for every function? Can you picture a function that doesn't have an absolute max or an absolute min? Consider this function defined on the closed interval  Does this function have an absolute max? Let's plot it to see if we can understand the question better.       Now that we see its graph, what do you think? Does it *obtain* an absolute max? You might say, \"Well, yeah. Isn't it 2? Right there at ?\" But... no. At the value of the function is . It never actually obtains the value 2. In fact, no matter where you evaluate this function, there are always larger values that the function obtains. So, what went wrong? A little thought leads us to conclude that it is that annoying discontinuity at 1 that is the problem. So, maybe as long as a function is continuous, we can avoid situations where the function does not obtain its absolute max. So, suppose we have *better* behaved, continuous function similar to the one we're studying. For example, suppose that we just use the nice continuous function . Now, that one is continous everywhere so it shouldn't have a problem. Right? Not so fast. Suppose we define it on the partially open interval instead of the closed interval . Then we get this graph       Once again, we see that the function does not obtain an absolute maximum. The problem this time is that the domain interval has that darned open end. At this point, you may be thinking that there might be tons of ways a function could have problems that prevent extremes from being obtained. Fortunately, that's not really the case. The two problems identified above are the only real issues. In fact, we have ...   The Extreme Value Theorem   If is continuous on a closed interval, Then obtains an global max and a global min on that interval.    Notice that this theorem makes finding optimums pretty easy. Namely, if you have a continuous function on a closed interval, it guarantees that the function WILL obtain an absolute max and an absolute min on that interval. So, we can just do a first derivative analysis to narrow our options down to a few critical numbers in the domain (i.e. eliminate open intervals where optimums can't happen), evaluate our function at those places and the largest result must be the absolute max and the smallest the absolute min.  "
+},
+{
+  "id": "sec-theExtremeValueTheorem-3",
+  "level": "2",
+  "url": "sec-theExtremeValueTheorem.html#sec-theExtremeValueTheorem-3",
+  "type": "Figure",
+  "number": "4.4.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-theExtremeValueTheorem-5",
+  "level": "2",
+  "url": "sec-theExtremeValueTheorem.html#sec-theExtremeValueTheorem-5",
+  "type": "Figure",
+  "number": "4.4.2",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "thm-extremeValueTheorem",
   "level": "2",
   "url": "sec-theExtremeValueTheorem.html#thm-extremeValueTheorem",
   "type": "Theorem",
-  "number": "4.4.1",
+  "number": "4.4.3",
   "title": "The Extreme Value Theorem.",
   "body": " The Extreme Value Theorem   If is continuous on a closed interval, Then obtains an global max and a global min on that interval.   "
 },
@@ -457,14 +565,41 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.1",
   "title": "Area Problem",
-  "body": " Area Problem  For a given function defined on a closed interval, let's try to find the area that its graph traps above the axis minus the area it traps below the axis. For example, if we plot on we get   Notice that this graph traps some area above the axis (in a triangle with legs of length 2 and 2 over ) and some area below the axis (in a triangle with legs of length 1 and 1 over ). Do you see them? Here, let's highlight them.   If we subtract the area below from the area above we get . Of course, that is a case where we have well established formulas for calculating areas (triangles in this case). What if the graph produces shapes for which we do *not* have familiar geometric formulas. Consider, for example, on the interval .   Now what? That's the area problem. Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function. This area trapped above minus area trapped below needs some notation and language. So....   Definition of Integral   For a function definied on a closed interval that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by and we refer to this as *the integral of on *.    A little thought suggests that, for familiar geometric shapes, integrals have the following *linearity* properties. And when ,   "
+  "body": " Area Problem  For a given function defined on a closed interval, let's try to find the area that its graph traps above the axis minus the area it traps below the axis. For example, if we plot on we get       Notice that this graph traps some area above the axis (in a triangle with legs of length 2 and 2 over ) and some area below the axis (in a triangle with legs of length 1 and 1 over ). Do you see them? Here, let's highlight them.       If we subtract the area below from the area above we get . Of course, that is a case where we have well established formulas for calculating areas (triangles in this case). What if the graph produces shapes for which we do *not* have familiar geometric formulas. Consider, for example, on the interval .       Now what? That's the area problem. Namely, find a way to compute area trapped above the axis minus the area trapped below the axis for a given function. This area trapped above minus area trapped below needs some notation and language. So....   Definition of Integral   For a function definied on a closed interval that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by and we refer to this as *the integral of on *.    A little thought suggests that, for familiar geometric shapes, integrals have the following *linearity* properties. And when ,   "
+},
+{
+  "id": "sec-areaProblem-3",
+  "level": "2",
+  "url": "sec-areaProblem.html#sec-areaProblem-3",
+  "type": "Figure",
+  "number": "5.1.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-areaProblem-5",
+  "level": "2",
+  "url": "sec-areaProblem.html#sec-areaProblem-5",
+  "type": "Figure",
+  "number": "5.1.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-areaProblem-7",
+  "level": "2",
+  "url": "sec-areaProblem.html#sec-areaProblem-7",
+  "type": "Figure",
+  "number": "5.1.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "def-integralNotation",
   "level": "2",
   "url": "sec-areaProblem.html#def-integralNotation",
   "type": "Definition",
-  "number": "5.1.1",
+  "number": "5.1.4",
   "title": "Definition of Integral.",
   "body": " Definition of Integral   For a function definied on a closed interval that produces familiar geometric shapes whose areas we know, we denote the area trapped above the axis minus the area trapped below the axis by and we refer to this as *the integral of on *.   "
 },
@@ -475,7 +610,34 @@ var ptx_lunr_docs = [
   "type": "Section",
   "number": "5.2",
   "title": "Riemann’s Solution",
-  "body": " Riemann's Solution  Historically, the mathematician Bernhard Riemann is credited with the approach \/ solution to the area problem presented in this section. To see how it works, we'll do a case study on something for which we know the answer. That way, when we apply Riemann's approach, we'll know whether it's working or not. So, let's look at on . Notice that this gives a triangle above the axis with leg lengths 2 and 2 so that the triangle has area 2.   Riemann's idea is to chop the interval into equally sized subintervals. For example, if we chop it into 4 subintervals, each subinterval would have size . The subintervals would be and . For each subinterval, Riemann evaluated the function ( for us) somewhere in each subinterval and used that evaluation as the height of a rectangle and the subinterval as the base of the rectangle. For simplicity, let's evaluate our function at the right endpoints of the subintervals. So, here's what we have.   Now, unlike the area under the curve, these rectangles *are* familiar geometric shapes so we can compute their areas. Even better, if we add up all of their areas, it will give us an *approximate* value of the area under the curve. Of course, it will be off by some amount since we can clearly see that the rectangles stick outside of the area in question. Still ... it gives some approximation. So, let's compute it. Each rectangle has the same size base of and the heights are and . One quick note: Instead of writing things like as , I'm leaving it in terms of the subinterval size . That will be helpful later so avoid reducing such things for now. So, the approximate area as given by these rectangular areas is So? Not bad. We know the actual, exact, area is 2 but this process estimated it at 2.5. How could we improve? The answer is, hopefully, very apparent. Namely, we could just up the number of subintervals. When we do that, the size of the subintervals shrinks so that the rectangles are thinner (more like pins). So, the amount of the rectangle poking out of the actual area will be less. In other words, the estimate by using them *should* be more accurate. Let's check! Let's chop the interval into 8 equal subintervals this time. So each subinterval will have size this time.   Now, let's add up all those rectangular areas. Using these 8 smaller subintervals gives the more accurate estimate 2.25 instead of 2.5 that we got with the 4 larger subintervals. So, we have every reason to expect if we continue to use more and more subintervals of equal size (so thinner and thinner rectangles) that we'll get more and more accurate estimates of the area.  As a final note, you'll see that we wrote and for these estimates. Using the is a nod to Riemann and the 4 and 8 are just indicating how many subintervals we use. Generally, we refer to these approximations as *Riemann sums*.  "
+  "body": " Riemann's Solution  Historically, the mathematician Bernhard Riemann is credited with the approach \/ solution to the area problem presented in this section. To see how it works, we'll do a case study on something for which we know the answer. That way, when we apply Riemann's approach, we'll know whether it's working or not. So, let's look at on . Notice that this gives a triangle above the axis with leg lengths 2 and 2 so that the triangle has area 2.       Riemann's idea is to chop the interval into equally sized subintervals. For example, if we chop it into 4 subintervals, each subinterval would have size . The subintervals would be and . For each subinterval, Riemann evaluated the function ( for us) somewhere in each subinterval and used that evaluation as the height of a rectangle and the subinterval as the base of the rectangle. For simplicity, let's evaluate our function at the right endpoints of the subintervals. So, here's what we have.       Now, unlike the area under the curve, these rectangles *are* familiar geometric shapes so we can compute their areas. Even better, if we add up all of their areas, it will give us an *approximate* value of the area under the curve. Of course, it will be off by some amount since we can clearly see that the rectangles stick outside of the area in question. Still ... it gives some approximation. So, let's compute it. Each rectangle has the same size base of and the heights are and . One quick note: Instead of writing things like as , I'm leaving it in terms of the subinterval size . That will be helpful later so avoid reducing such things for now. So, the approximate area as given by these rectangular areas is So? Not bad. We know the actual, exact, area is 2 but this process estimated it at 2.5. How could we improve? The answer is, hopefully, very apparent. Namely, we could just up the number of subintervals. When we do that, the size of the subintervals shrinks so that the rectangles are thinner (more like pins). So, the amount of the rectangle poking out of the actual area will be less. In other words, the estimate by using them *should* be more accurate. Let's check! Let's chop the interval into 8 equal subintervals this time. So each subinterval will have size this time.       Now, let's add up all those rectangular areas. Using these 8 smaller subintervals gives the more accurate estimate 2.25 instead of 2.5 that we got with the 4 larger subintervals. So, we have every reason to expect if we continue to use more and more subintervals of equal size (so thinner and thinner rectangles) that we'll get more and more accurate estimates of the area.  As a final note, you'll see that we wrote and for these estimates. Using the is a nod to Riemann and the 4 and 8 are just indicating how many subintervals we use. Generally, we refer to these approximations as *Riemann sums*.  "
+},
+{
+  "id": "sec-RiemannsSolution-3",
+  "level": "2",
+  "url": "sec-RiemannsSolution.html#sec-RiemannsSolution-3",
+  "type": "Figure",
+  "number": "5.2.1",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-RiemannsSolution-5",
+  "level": "2",
+  "url": "sec-RiemannsSolution.html#sec-RiemannsSolution-5",
+  "type": "Figure",
+  "number": "5.2.2",
+  "title": "",
+  "body": "    "
+},
+{
+  "id": "sec-RiemannsSolution-7",
+  "level": "2",
+  "url": "sec-RiemannsSolution.html#sec-RiemannsSolution-7",
+  "type": "Figure",
+  "number": "5.2.3",
+  "title": "",
+  "body": "    "
 },
 {
   "id": "sec-defOfIntegral",
